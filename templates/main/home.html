@@ -100,6 +100,23 @@
                 <div class="row">
                     <div class="col-6 col-lg-3 col-md-3">
                         <div class="form-group">
+                            <select name="property_type" class="wide select_option">
+                                <option value="">{{Property_Type}}</option>
+                                <option value="House"
+                                {% if request.GET.property_type == 'House' %}
+                                    selected
+                                {% endif %}
+                                >{{House_f}}</option>
+                                <option value="Appartment"
+                                {% if request.GET.property_type == 'Appartment' %}
+                                    selected
+                                {% endif %}
+                                >{{Appartment}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
                             <select name="property_status" class="wide select_option">
                                 <option value="">{{filter_property_status}}</option>
                                 <option value="Sale"
@@ -113,23 +130,6 @@
                                 {% endif %}
                                 >{{filter_For_Rent}}</option>
 
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select name="property_type" class="wide select_option">
-                                <option value="">{{Property_Type}}</option>
-                                <option value="House"
-                                {% if request.GET.property_type == 'House' %}
-                                    selected
-                                {% endif %}
-                                >{{House_f}}</option>
-                                <option value="Appartment"
-                                {% if request.GET.property_type == 'Appartment' %}
-                                    selected
-                                {% endif %}
-                                >{{Appartment}}</option>
                             </select>
                         </div>
                     </div>
