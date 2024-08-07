@@ -1,0 +1,95 @@
+{% load static %}
+<div class="col-lg-12">
+    <div class="card__image card__box-v1">
+        <div class="row no-gutters">
+            <div class="col-md-4 col-lg-3 col-xl-4">
+                <div class="card__image__header h-250">
+                    <a href="{% url 'main:property_details' listing.id %}">
+                        {% comment %} <div class="ribbon text-capitalize">{% trans 'sold out' %}</div> {% endcomment %}
+                        <img src="{% if listing.photo_main %}{{listing.photo_main.url}}{% else %}{% static 'images/news1.png' %}{% endif %}" alt=""
+                            class="img-fluid w100 img-transition">
+                        <div class="info" style="background-color: #db0000;">
+                            {{listing.json_content.property_status}}</div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-6 col-xl-5 my-auto">
+                <div class="card__image__body" onclick="location.href='{% url 'main:property_details' listing.id %}'">
+
+                    <span
+                        class="badge badge-primary bg-mycolor text-capitalize mb-2">{{listing.json_content.property_type}}</span>
+                    <h6>
+                        <a href="{% url 'main:property_details' listing.id %}">{{listing.json_content.property_title}}</a>
+                    </h6>
+                    <div class="card__image__body-desc">
+                        <p class="text-capitalize">
+                            <i class="fa fa-map-marker"></i>
+                            {{listing.json_content.address}}
+                        </p>
+                    </div>
+
+                    <ul class="list-inline card__content">
+                        <li class="list-inline-item">
+
+                            <span style="color: #db0000">
+                                {{baths}} <br>
+                                <i class="fa fa-bath"
+                                    style="color: #db0000"></i> {{listing.json_content.bathrooms}}
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span style="color: #db0000">
+                                {{beds}} <br>
+                                <i class="fa fa-bed" style="color: #db0000"></i>
+                                {{listing.json_content.bedrooms}}
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span style="color: #db0000">
+                                {{floors}} <br>
+                                <i class="fa fa-inbox"
+                                    style="color: #db0000"></i> {{listing.json_content.floors}}
+                            </span>
+                        </li>
+                        <li class="list-inline-item">
+                            <span style="color: #db0000">
+                                {{area}} <br>
+                                <i class="fa fa-map" style="color: #db0000"></i>
+                                {{listing.json_content.area}} sq ft
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                class="col-md-4 col-lg-3 col-xl-3 my-auto card__image__footer-first">
+                <div class="card__image__footer">
+                    <figure>
+                        <img src="{% if listing.realtor.profile_image %}{{listing.realtor.profile_image.url}}{% else %}{% static 'images/p2.png' %}{% endif %}" alt=""
+                            class="img-fluid rounded-circle">
+                    </figure>
+                    <ul class="list-inline my-auto">
+                        <li class="list-inline-item name">
+                            <a href="#">
+                                {{listing.realtor.first_name}}
+                                {{listing.realtor.last_name}}
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+                    <ul class="list-inline my-auto ml-auto price">
+                        <li class="list-inline-item ">
+
+                            <h6>
+                                ${{listing.json_content.property_price}}
+                            </h6>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

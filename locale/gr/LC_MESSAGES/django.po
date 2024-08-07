@@ -1,0 +1,458 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-25 23:13+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\templates\include\base.html:110
+msgid "Home"
+msgstr "Σπίτι"
+
+#: .\templates\include\base.html:114
+msgid "LISTINGS"
+msgstr "ΚΑΤΑΛΟΓΕΣ"
+
+#: .\templates\include\base.html:118
+msgid "Blog"
+msgstr "Ιστολόγιο"
+
+#: .\templates\include\base.html:121
+msgid "contact"
+msgstr "Επικοινωνία"
+
+#: .\templates\include\base.html:123
+msgid "about"
+msgstr "σχετικά με"
+
+#: .\templates\include\base.html:125
+msgid "Profile"
+msgstr "Προφίλ"
+
+#: .\templates\include\base.html:134
+msgid "add listing"
+msgstr "προσθήκη καταχώρισης"
+
+#: .\templates\main\home.html:13 .\templates\main\home.html:25
+#: .\templates\main\home.html:45 .\templates\main\home.html:57
+#, fuzzy
+#| msgid "Sell Properties"
+msgid "walls property"
+msgstr "Πώληση ακινήτων"
+
+#: .\templates\main\home.html:14 .\templates\main\home.html:58
+#: .\templates\main\home.html:70 .\templates\main\home.html:82
+msgid "family house"
+msgstr "οικογενειακό σπίτι"
+
+#: .\templates\main\home.html:26
+#, fuzzy
+#| msgid "family house"
+msgid "Small family house"
+msgstr "οικογενειακό σπίτι"
+
+#: .\templates\main\home.html:46
+#, fuzzy
+#| msgid "family house"
+msgid "Big family house"
+msgstr "οικογενειακό σπίτι"
+
+#: .\templates\main\home.html:69
+msgid "Sell Properties"
+msgstr "Πώληση ακινήτων"
+
+#: .\templates\main\home.html:81
+msgid "For Sale"
+msgstr "Προς πώληση"
+
+#: .\templates\main\home.html:309
+msgid "Our Services"
+msgstr "Οι Υπηρεσίες μας"
+
+#: .\templates\main\home.html:311
+msgid "Choose your best need in your city."
+msgstr "Επιλέξτε την καλύτερη ανάγκη σας στην πόλη σας."
+
+#: .\templates\main\home.html:323
+msgid "Consulting Services"
+msgstr "Συμβουλευτικές υπηρεσίες"
+
+#: .\templates\main\home.html:333
+#, fuzzy
+#| msgid "Property Attachments"
+msgid "Propery Management"
+msgstr "Προσαρτήματα ιδιοκτησίας"
+
+#: .\templates\main\home.html:343
+msgid "Renting & Selling"
+msgstr "Ενοικίαση και πώληση"
+
+#: .\templates\main\home.html:359
+msgid "Based Properties"
+msgstr "Βασισμένες ιδιότητες"
+
+#: .\templates\main\home.html:361
+msgid "handpicked exclusive properties by our team."
+msgstr "επιλεγμένα αποκλειστικά ακίνητα από την ομάδα μας."
+
+#: .\templates\main\home.html:376 .\templates\main\home.html:448
+#: .\templates\main\home.html:520 .\templates\main\home.html:591
+#: .\templates\main\home.html:663 .\templates\main\home.html:733
+#: .\templates\main\home.html:801 .\templates\main\home.html:873
+msgid "featured"
+msgstr "που παρουσιάζεται"
+
+#: .\templates\main\home.html:378 .\templates\main\home.html:450
+#: .\templates\main\home.html:522 .\templates\main\home.html:593
+#: .\templates\main\home.html:665 .\templates\main\home.html:735
+#: .\templates\main\home.html:803 .\templates\main\home.html:875
+msgid "for sale"
+msgstr "προς πώληση"
+
+#: .\templates\main\home.html:382 .\templates\main\home.html:597
+#: .\templates\main\home.html:669 .\templates\main\home.html:738
+#: .\templates\main\home.html:807 .\templates\main\home.html:879
+msgid "house"
+msgstr "σπίτι"
+
+#: .\templates\main\home.html:384
+msgid "vila in coral gables"
+msgstr "βίλα σε κοραλλιογενή αετώματα"
+
+#: .\templates\main\home.html:389 .\templates\main\home.html:461
+#: .\templates\main\home.html:533 .\templates\main\home.html:604
+#: .\templates\main\home.html:676 .\templates\main\home.html:745
+#: .\templates\main\home.html:814 .\templates\main\home.html:886
+msgid "west flaminggo road, las vegas"
+msgstr "δυτικός δρόμος φλαμίνγκο, Λας Βέγκας"
+
+#: .\templates\main\home.html:395 .\templates\main\home.html:467
+#: .\templates\main\home.html:539 .\templates\main\home.html:609
+#: .\templates\main\home.html:682 .\templates\main\home.html:751
+#: .\templates\main\home.html:820 .\templates\main\home.html:892
+#: .\templates\main\listings.html:658 .\templates\main\listings.html:757
+msgid "baths"
+msgstr "λουτρά"
+
+#: .\templates\main\home.html:401 .\templates\main\home.html:473
+#: .\templates\main\home.html:545 .\templates\main\home.html:615
+#: .\templates\main\home.html:688 .\templates\main\home.html:757
+#: .\templates\main\home.html:826 .\templates\main\home.html:898
+#: .\templates\main\listings.html:665 .\templates\main\listings.html:763
+msgid "beds"
+msgstr "κρεβάτια"
+
+#: .\templates\main\home.html:407 .\templates\main\home.html:479
+#: .\templates\main\home.html:551 .\templates\main\home.html:621
+#: .\templates\main\home.html:694 .\templates\main\home.html:763
+#: .\templates\main\home.html:832 .\templates\main\home.html:904
+#: .\templates\main\listings.html:672 .\templates\main\listings.html:769
+msgid "rooms"
+msgstr "δωμάτια"
+
+#: .\templates\main\home.html:413 .\templates\main\home.html:485
+#: .\templates\main\home.html:557 .\templates\main\home.html:627
+#: .\templates\main\home.html:700 .\templates\main\home.html:769
+#: .\templates\main\home.html:838 .\templates\main\home.html:910
+#: .\templates\main\listings.html:679 .\templates\main\listings.html:775
+msgid "area"
+msgstr "περιοχή"
+
+#: .\templates\main\home.html:454
+#, fuzzy
+#| msgid "apartement"
+msgid "apartment"
+msgstr "διαμέρισμα"
+
+#: .\templates\main\home.html:456
+msgid "Ample Apartment At Last Floor"
+msgstr "περιοχή"
+
+#: .\templates\main\home.html:526
+msgid "Condo"
+msgstr "Condo"
+
+#: .\templates\main\home.html:528
+msgid "Contemporary Apartment"
+msgstr "Σύγχρονο διαμέρισμα"
+
+#: .\templates\main\home.html:599 .\templates\main\home.html:881
+msgid "Family Home For Sale"
+msgstr "Οικογενειακό Σπίτι προς Πώληση"
+
+#: .\templates\main\home.html:740
+msgid "Luxury Villa With Pool"
+msgstr "Πολυτελής Βίλα με Πισίνα"
+
+#: .\templates\main\home.html:809
+msgid "The Citizen Apartment 5th Floor"
+msgstr "The Citizen Διαμέρισμα 5ος Όροφος"
+
+#: .\templates\main\home.html:960
+msgid ""
+"The first step in selling your property is to get a valuation from local "
+"experts. They will inspect your home and take into account its unique "
+"features, the area and market conditions before providing you with the most "
+"accurate valuation."
+msgstr ""
+"Το πρώτο βήμα για την πώληση του ακινήτου σας είναι να λάβετε μια αποτίμηση "
+"από την τοπικήΕιδικοί. Θα επιθεωρήσουν το σπίτι σας και θα λάβουν υπόψη το "
+"μοναδικό τουχαρακτηριστικά, την περιοχή και τις συνθήκες της αγοράς πριν σας "
+"παράσχουμε τα περισσότεραακριβής αποτίμηση."
+
+#: .\templates\main\home.html:965 .\templates\main\home.html:1188
+#: .\templates\main\home.html:1230 .\templates\main\home.html:1268
+msgid "read more"
+msgstr "Διαβάστε περισσότερα"
+
+#: .\templates\main\home.html:994
+msgid "our partners"
+msgstr "οι συνεργάτες μας"
+
+#: .\templates\main\home.html:995
+msgid "Brand Partners Successful Projects Trusted Many Clients Real Estate"
+msgstr ""
+"Brand Partners Επιτυχημένα έργα Εμπιστευμένοι πολλοί πελάτες Real Estate"
+
+#: .\templates\main\home.html:1033
+msgid "what people says"
+msgstr "τι λέει ο κόσμος"
+
+#: .\templates\main\home.html:1035
+msgid "people says about walls property."
+msgstr "ο λαός λέει για τους τοίχους ιδιοκτησία."
+
+#: .\templates\main\home.html:1045 .\templates\main\home.html:1063
+#: .\templates\main\home.html:1081 .\templates\main\home.html:1099
+#: .\templates\main\home.html:1117
+msgid ""
+"Thank you walls property help me, choice dream home We were impressed with "
+"the build quality, Plus they are competitively priced."
+msgstr ""
+"Ευχαριστώ τοίχους ιδιοκτησία βοηθήστε με, επιλογή όνειρο σπίτι Μας έκανε "
+"εντύπωσηΗ ποιότητα κατασκευής, καθώς και οι ανταγωνιστικές τιμές."
+
+#: .\templates\main\home.html:1145
+msgid "lastest news"
+msgstr "παιδικά νέα"
+
+#: .\templates\main\home.html:1147
+msgid "Find Of The Most Popular Real Estate Company All Around Indonesia."
+msgstr "Βρείτε τη δημοφιλέστερη εταιρεία ακινήτων σε όλη την Ινδονησία."
+
+#: .\templates\main\home.html:1158 .\templates\main\home.html:1244
+msgid "event"
+msgstr "Εκδήλωση"
+
+#: .\templates\main\home.html:1163
+msgid "Best Interior Oppertunity "
+msgstr "Καλύτερη Εσωτερική Ευκαιρία"
+
+#: .\templates\main\home.html:1166 .\templates\main\home.html:1209
+msgid ""
+"Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+msgstr ""
+"Το φεστιβάλ ακινήτων είναι ένα από τα διάσημα φεβάλια για να σας εξηγήσω πώς "
+"όλαΑυτό το λάθος και που επαινεί τον πόνο ήταν και θα το δώσω ολοκληρωμένο"
+
+#: .\templates\main\home.html:1201
+msgid "Top News"
+msgstr "Κορυφαία Νέα"
+
+#: .\templates\main\home.html:1206
+msgid "Tips & Trick buy real estate"
+msgstr "Tips & Trick αγορά ακινήτων"
+
+#: .\templates\main\home.html:1249
+msgid "Our Must Popular Deluxe House"
+msgstr "Το Must Popular Deluxe House μας"
+
+#: .\templates\main\home.html:1252
+msgid ""
+" Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+msgstr ""
+"Το φεστιβάλ ακινήτων είναι ένα από τα διάσημα φεβάλια για να σας εξηγήσω πώς "
+"όλαΑυτό το λάθος και που επαινεί τον πόνο ήταν και θα το δώσω ολοκληρωμένο"
+
+#: .\templates\main\home.html:1286
+msgid "Looking To Sell Or Rent Your Property?"
+msgstr "Ψάχνετε να πουλήσετε ή να νοικιάσετε το ακίνητό σας;"
+
+#: .\templates\main\home.html:1287
+msgid ""
+"We Will Assist You In The Best And Comfortable Property Services For You"
+msgstr ""
+"Θα σας βοηθήσουμε στις καλύτερες και άνετες υπηρεσίες ιδιοκτησίας για εσάς"
+
+#: .\templates\main\home.html:1291
+msgid "request a quote"
+msgstr "ζητήστε μια προσφορά"
+
+#: .\templates\main\listings.html:562
+msgid "Sort by"
+msgstr "Ταξινόμηση κατά"
+
+#, fuzzy
+#~| msgid "For Sale"
+#~ msgid "Condo Sale!"
+#~ msgstr "Προς πώληση"
+
+#, fuzzy
+#~| msgid "family house"
+#~ msgid "family Condo"
+#~ msgstr "οικογενειακό σπίτι"
+
+#, fuzzy
+#~| msgid "Based Properties"
+#~ msgid "featured properties"
+#~ msgstr "Βασισμένες ιδιότητες"
+
+#~ msgid "Login"
+#~ msgstr "Σύνδεση"
+
+#~ msgid "Register"
+#~ msgstr "Κανω ΕΓΓΡΑΦΗ"
+
+#~ msgid "property filter"
+#~ msgstr "φίλτρο ιδιοκτησίας"
+
+#, fuzzy
+#~| msgid "property filter"
+#~ msgid "Property Status"
+#~ msgstr "φίλτρο ιδιοκτησίας"
+
+#~ msgid "For Rent"
+#~ msgstr "Προς ενοικίαση"
+
+#, fuzzy
+#~| msgid "property filter"
+#~ msgid "Property Type"
+#~ msgstr "φίλτρο ιδιοκτησίας"
+
+#~ msgid "Residential"
+#~ msgstr "Κατοικητικός"
+
+#~ msgid "Commercial"
+#~ msgstr "Εμπορικός"
+
+#~ msgid "Land"
+#~ msgstr "Γη"
+
+#~ msgid "Luxury"
+#~ msgstr "Πολυτέλεια"
+
+#~ msgid "Area From"
+#~ msgstr "Περιοχή από"
+
+#~ msgid "Locations"
+#~ msgstr "Τοποθεσίες"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Ηνωμένο Βασίλειο"
+
+#~ msgid "American Samoa"
+#~ msgstr "Αμερικάνικη Σαμόα"
+
+#~ msgid "Belgium"
+#~ msgstr "Βέλγιο"
+
+#~ msgid "Canada"
+#~ msgstr "Καναδάς"
+
+#~ msgid "Delaware"
+#~ msgstr "Ντέλαγουερ"
+
+#~ msgid "Bedrooms"
+#~ msgstr "Υπνοδωμάτια"
+
+#~ msgid "Bathrooms"
+#~ msgstr "Μπάνια"
+
+#~ msgid "Price range"
+#~ msgstr "Εύρος τιμών"
+
+#~ msgid "Air Conditioning"
+#~ msgstr "Κλιματισμός"
+
+#~ msgid "Swiming Pool"
+#~ msgstr "Πισίνα"
+
+#~ msgid "Central Heating"
+#~ msgstr "Κεντρική θέρμανση"
+
+#~ msgid "Spa & Massage"
+#~ msgstr "Spa & Μασάζ"
+
+#~ msgid "Pets Allow"
+#~ msgstr "Επιτρέπονται τα κατοικίδια"
+
+#~ msgid "Gym"
+#~ msgstr "Γυμναστήριο"
+
+#~ msgid "Alarm"
+#~ msgstr "Τρομάζω"
+
+#~ msgid "Window Covering"
+#~ msgstr "Κάλυμμα παραθύρου"
+
+#~ msgid "Free WiFi"
+#~ msgstr "Δωρεάν ασύρματη σύνδεση στο διαδίκτυο"
+
+#~ msgid "Car Parking"
+#~ msgstr "Χώρος στάθμευσης αυτοκινήτων"
+
+#~ msgid "Categories Property"
+#~ msgstr "Κατηγορίες Ακίνητα"
+
+#~ msgid "apartement"
+#~ msgstr "διαμέρισμα"
+
+#~ msgid "villa"
+#~ msgstr "βίλα"
+
+#~ msgid "modern villa"
+#~ msgstr "μοντέρνα βίλα"
+
+#~ msgid "town house"
+#~ msgstr "αρχοντικό"
+
+#~ msgid "office"
+#~ msgstr "γραφείο"
+
+#~ msgid "Property Attachments"
+#~ msgstr "Προσαρτήματα ιδιοκτησίας"
+
+#~ msgid "Download"
+#~ msgstr "Κατεβάστε"
+
+#~ msgid "Low to High Price"
+#~ msgstr "Χαμηλή έως υψηλή τιμή"
+
+#~ msgid "High to Low Price"
+#~ msgstr "Υψηλή έως χαμηλή τιμή"
+
+#~ msgid "Rent Properties"
+#~ msgstr "Ενοικίαση Ακινήτων"
+
+#~ msgid "sold out"
+#~ msgstr "Εξαντλημένα"
+
+#~ msgid "184 Lexington Avenue"
+#~ msgstr "Λεωφόρος Λέξινγκτον 184"
+
+#~ msgid "Family Home for sale"
+#~ msgstr "Οικογενειακό σπίτι προς πώληση"

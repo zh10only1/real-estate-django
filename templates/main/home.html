@@ -1,0 +1,1483 @@
+{% extends 'include/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block body %}
+    <!-- CAROUSEL HOMEPAGE -->
+    <div class="homepage__property bg-light">
+        <div class="homepage__property-carousel owl-carousel owl-theme">
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c2.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">{{carousel_1_h6}}</h6>
+                            <h2 class="text-capitalize">{{carousel_1_h2}}</h2>
+                            <p>{{carousel_1_p}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c3.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">{{carousel_2_h6}}</h6>
+                            <h2 class="text-capitalize">{{carousel_2_h2}}</h2>
+                            <p>{{carousel_2_p}}</p>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/logo-slider.jpg' %}" alt="img1">
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c4.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">{{carousel_3_h6}}</h6>
+                            <h2 class="text-capitalize">{{carousel_3_h2}}</h2>
+                            <p>{{carousel_3_p}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c6.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="  uppercase text-white">{{carousel_4_h6}}</h6>
+                            <h2 class="text-capitalize">{{carousel_4_h2}}</h2>
+                            <p>{{carousel_4_p}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c7.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">{{carousel_5_h6 }}</h6>
+                            <h2 class="text-capitalize">{{carousel_5_h2}}</h2>
+                            <p>
+                                {{carousel_5_p}}
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="tc-image-caption4">
+                        <img src="{% static 'images/c8.png' %}" alt="img1">
+                        <div class="caption">
+                            <h6 class="text-uppercase text-white">{{carousel_6_h6}}</h6>
+                            <h2 class="text-capitalize">{{carousel_6_h2}}</h2>
+                            <p>{{carousel_6_p}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CAROUSEL HOMEPAGE -->
+    <div class="clearfix"></div>
+
+    <!-- FILTER SEARCH -->
+    <form class="search__area bg-light" action="{% url 'main:listing' %}" method="GET">
+        <div class="container">
+            <div class="search__area-inner">
+                <div class="row">
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select name="property_status" class="wide select_option">
+                                <option value="">{{filter_property_status}}</option>
+                                <option value="Sale"
+                                {% if request.GET.property_status == 'Sale' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_for_sale}}</option>
+                                <option value="Rent"
+                                {% if request.GET.property_status == 'Rent' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_For_Rent}}</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select name="property_type" class="wide select_option">
+                                <option value="">{{Property_Type}}</option>
+                                <option value="House"
+                                {% if request.GET.property_type == 'House' %}
+                                    selected
+                                {% endif %}
+                                >{{House_f}}</option>
+                                <option value="Appartment"
+                                {% if request.GET.property_type == 'Appartment' %}
+                                    selected
+                                {% endif %}
+                                >{{Appartment}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select class="wide select_option" name="area_from">
+                                <option value="">{{filter_Area_From}}</option>
+                                <option value="1500"
+                                {% if request.GET.area_from == '1500' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_1500}}</option>
+                                <option value="1200"
+                                {% if request.GET.area_from == '1200' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_1200}}</option>
+                                <option value="900"
+                                {% if request.GET.area_from == '900' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_900}}</option>
+                                <option value="600"
+                                {% if request.GET.area_from == '600' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_600}}</option>
+                                <option value="300"
+                                {% if request.GET.area_from == '300' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_300}}</option>
+                                <option value="100"
+                                {% if request.GET.area_from == '100' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_100}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select class="wide select_option" name="location">
+                                <option value="">{{Locations}}</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo (Brazzaville)">Congo (Brazzaville)</option>
+                                <option value="Congo (Kinshasa)">Congo (Kinshasa)</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czechia">Czechia</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="East Timor (Timor-Leste)">East Timor (Timor-Leste)</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Eswatini">Eswatini</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea, North">Korea, North</option>
+                                <option value="Korea, South">Korea, South</option>
+                                <option value="Kosovo">Kosovo</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Micronesia">Micronesia</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar (Burma)">Myanmar (Burma)</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="North Macedonia">North Macedonia</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Palestine">Palestine</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Sudan">South Sudan</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syria">Syria</option>
+                                <option value="Taiwan">Taiwan</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom (UK)">United Kingdom (UK)</option>
+                                <option value="United States of America (USA)">United States of America (USA)</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Vatican City (Holy See)">Vatican City (Holy See)</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select class="wide select_option" name="bedrooms">
+                                <option value="">{{filter_Bedrooms}}</option>
+                                <option value="1"
+                                {% if request.GET.bedrooms == '1' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_1}}</option>
+                                <option value="2"
+                                {% if request.GET.bedrooms == '2' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_2}}</option>
+                                <option value="3"
+                                {% if request.GET.bedrooms == '3' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_3}}</option>
+                                <option value="4"
+                                {% if request.GET.bedrooms == '4' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_4}}</option>
+                                <option value="5"
+                                {% if request.GET.bedrooms == '5' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_5}}</option>
+                                <option value="6"
+                                {% if request.GET.bedrooms == '6' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_6}}</option>
+                                <option value="7"
+                                {% if request.GET.bedrooms == '7' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_7}}</option>
+                                <option value="8"
+                                {% if request.GET.bedrooms == '8' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_8}}</option>
+                                <option value="9"
+                                {% if request.GET.bedrooms == '9' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_9}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <select class="wide select_option" name="bathrooms">
+                                <option value="">{{filter_Bathrooms}}</option>
+                                <option value="1"
+                                {% if request.GET.bathrooms == '1' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_1_1}}</option>
+                                <option value="2"
+                                {% if request.GET.bathrooms == '2' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_1_2}}</option>
+                                <option value="3"
+                                {% if request.GET.bathrooms == '3' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_1_3}}</option>
+                                <option value="4"
+                                {% if request.GET.bathrooms == '4' %}
+                                    selected
+                                {% endif %}
+                                >{{filter_1_4}}</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <div class="filter__price">
+                                <input class="price-range" type="text" name="my_range" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-3">
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-outline-blue text-uppercase btn-block"> {{filter_search}} <i
+                                    class="fa fa-search ml-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <!-- POPULAR CITY -->
+    <section class="popular__city-large">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            {% trans 'Our Services'   %}
+                        </h2>
+                        <p class="text-center text-capitalize">{% trans 'Choose your best need in your city.' %}</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <!-- CARD IMAGE -->
+                    <div class="myCard">
+                        <div class="iconDiv">
+                            <i class="fa fa-comments-o myIcon" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="text-capitalize mb-4">{% trans 'Consulting Services' %}</h6>
+                        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- CARD IMAGE -->
+                    <div class="myCard">
+                        <div class="iconDiv">
+                            <i class="fa fa-building-o myIcon" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="text-capitalize mb-4">{% trans 'Propery Management' %}</h6>
+                        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <!-- CARD IMAGE -->
+                    <div class="myCard">
+                        <div class="iconDiv">
+                            <i class="fa fa-handshake-o myIcon" aria-hidden="true"></i>
+                        </div>
+                        <h6 class="text-capitalize mb-4">{% trans 'Renting & Selling' %}</h6>
+                        <p class="text-capitalize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END POPULAR CITY -->
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="featured__property bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            {% trans 'Based Properties' %}
+                        </h2>
+                        <p class="text-center text-capitalize">{% trans 'handpicked exclusive properties by our team.' %}</p>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="featured__property-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <!-- ONE -->
+                            
+                                <div class="card__image card__box">
+                            <a href="{% url 'main:blog_single' %}">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                    <img src="{% static 'images/f1.png' %}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> {% trans 'for sale' %}</div>
+                                </div>
+                            </a>
+                                <div class="card__image-body">
+                                    <span class="badge bg-logo2 text-capitalize mb-2">{% trans 'house' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {% trans 'vila in coral gables' %}
+                                    </h6>
+
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        {% trans 'west flaminggo road, las vegas' %}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+
+                                            <span>
+                                                {% trans 'baths' %} <br>
+                                                <i class="fa fa-bath"></i> 2
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'beds' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                rooms <br>
+                                                <i class="fa fa-inbox"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'area' %} <br>
+                                                <i class="fa fa-map"></i> 4300 sq ft
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="{% static 'images/p1.png' %}" alt="profile1" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                tom wilson
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+
+                                            <h6>$350.000</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="item">
+                            <!-- TWO -->
+                                <div class="card__image card__box">
+                            <a href="{% url 'main:blog_single' %}">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                    <img src="{% static 'images/f2.png' %}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> {% trans 'for sale' %}</div>
+                                </div>
+                            </a>
+                                <div class="card__image-body">
+                                    <span class="badge bg-logo2 text-capitalize mb-2">{% trans 'apartment' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {% trans 'Ample Apartment At Last Floor' %}
+                                    </h6>
+
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        {% trans 'west flaminggo road, las vegas' %}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+
+                                            <span>
+                                                {% trans 'baths' %} <br>
+                                                <i class="fa fa-bath"></i> 2
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'beds' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'rooms' %} <br>
+                                                <i class="fa fa-inbox"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'area' %} <br>
+                                                <i class="fa fa-map"></i> 4300 sq ft
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="{% static 'images/p4.png' %}" alt="" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                Selina Linda
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+
+                                            <h6>$350.000</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="item">
+                            <!-- THREE -->
+                                <div class="card__image card__box">
+                            <a href="{% url 'main:blog_single' %}">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                    <img src="{% static 'images/f3.png' %}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> {% trans 'for sale' %}</div>
+                                </div>
+                            </a>
+                                <div class="card__image-body">
+                                    <span class="badge bg-logo2 text-capitalize mb-2">{% trans 'Condo' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {% trans 'Contemporary Apartment' %}
+                                    </h6>
+
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        {% trans 'west flaminggo road, las vegas' %}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+
+                                            <span>
+                                                {% trans 'baths' %} <br>
+                                                <i class="fa fa-bath"></i> 2
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'beds' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'rooms' %} <br>
+                                                <i class="fa fa-inbox"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'area' %} <br>
+                                                <i class="fa fa-map"></i> 4300 sq ft
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="{% static 'images/p2.png' %}" alt="" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                tom wilson
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+                                            <h6>$350.000</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="item">
+                            <!-- FOUR -->
+                                <div class="card__image card__box">
+                            <a href="{% url 'main:blog_single' %}">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                    <img src="{% static 'images/f4.png' %}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> {% trans 'for sale' %}</div>
+                                </div>
+                            </a>
+                                <div class="card__image-body">
+                                    <span class="badge bg-logo2 text-capitalize mb-2">{% trans 'house' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {% trans 'Family Home For Sale' %}
+                                    </h6>
+
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        {% trans 'west flaminggo road, las vegas' %}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'baths' %} <br>
+                                                <i class="fa fa-bath"></i> 2
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'beds' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'rooms' %} <br>
+                                                <i class="fa fa-inbox"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'area' %} <br>
+                                                <i class="fa fa-map"></i> 4300 sq ft
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="{% static 'images/p5.png' %}" alt="" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                tom wilson
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+
+                                            <h6>$350.000</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="item">
+                            <!-- FIVE -->
+                            
+                                <div class="card__image card__box">
+                                    <a href="{% url 'main:blog_single' %}">
+                                        <div class="card__image-header h-250">
+                                            <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                            <img src="{% static 'images/f5.png' %}" alt="" class="img-fluid w100 img-transition">
+                                            <div class="info"> {% trans 'for sale' %}</div>
+                                        </div>
+                                    </a>
+                                    <div class="card__image-body">
+                                        <span class="badge bg-logo2 text-capitalize mb-2">{% trans 'house' %}</span>
+                                        <h6 class="text-capitalize">
+                                            <a href="#">184 Lexington Avenue</a>
+                                        </h6>
+
+                                        <p class="text-capitalize">
+                                            <i class="fa fa-map-marker"></i>
+                                            {% trans 'west flaminggo road, las vegas' %}
+                                        </p>
+                                        <ul class="list-inline card__content">
+                                            <li class="list-inline-item">
+
+                                                <span>
+                                                    {% trans 'baths' %} <br>
+                                                    <i class="fa fa-bath"></i> 2
+                                                </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span>
+                                                    {% trans 'beds' %} <br>
+                                                    <i class="fa fa-bed"></i> 3
+                                                </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span>
+                                                    {% trans 'rooms' %} <br>
+                                                    <i class="fa fa-inbox"></i> 3
+                                                </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span>
+                                                    {% trans 'area' %} <br>
+                                                    <i class="fa fa-map"></i> 4300 sq ft
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card__image-footer">
+                                        <figure>
+                                            <img src="{% static 'images/p3.png' %}" alt="" class="img-fluid rounded-circle">
+                                        </figure>
+                                        <ul class="list-inline my-auto">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    tom wilson
+                                                </a>
+
+                                            </li>
+
+                                        </ul>
+                                        <ul class="list-inline my-auto ml-auto">
+                                            <li class="list-inline-item ">
+                                                <h6>$350.000</h6>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="item">
+                            <!-- SIX -->
+                            <div class="card__image card__box">
+                            <a href="{% url 'main:blog_single' %}">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                    <img src="{% static 'images/f6.png' %}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> {% trans 'for sale' %}</div>
+                                </div></a>
+                                <div class="card__image-body">
+                                    <span class="badge bg-logo2 text-capitalize mb-2">{% trans 'house' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {% trans 'Luxury Villa With Pool' %}
+                                    </h6>
+
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        {% trans 'west flaminggo road, las vegas' %}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+
+                                            <span>
+                                                {% trans 'baths' %} <br>
+                                                <i class="fa fa-bath"></i> 2
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'beds' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'rooms' %} <br>
+                                                <i class="fa fa-inbox"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'area' %} <br>
+                                                <i class="fa fa-map"></i> 4300 sq ft
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="{% static 'images/p6.png' %}" alt="" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                tom wilson
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+                                            <h6>$350.000</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                                <div class="card__image card__box">
+                            <a href="{% url 'main:blog_single' %}">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                    <img src="{% static 'images/f7.png' %}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> {% trans 'for sale' %}</div>
+                                </div>
+                            </a>
+                                <div class="card__image-body">
+                                    <span class="badge bg-logo2 text-capitalize mb-2">{% trans 'house' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {% trans 'The Citizen Apartment 5th Floor' %}
+                                    </h6>
+
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        {% trans 'west flaminggo road, las vegas' %}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+
+                                            <span>
+                                                {% trans 'baths' %} <br>
+                                                <i class="fa fa-bath"></i> 2
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'beds' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'rooms' %} <br>
+                                                <i class="fa fa-inbox"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'area' %} <br>
+                                                <i class="fa fa-map"></i> 4300 sq ft
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="{% static 'images/p6.png' %}" alt="" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                tom wilson
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item ">
+
+                                            <h6>$350.000</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="item">
+                            <!-- SEVEN -->
+                                <div class="card__image card__box">
+                            <a href="{% url 'main:blog_single' %}">
+                                <div class="card__image-header h-250">
+                                    <div class="ribbon text-capitalize bg-danger">{% trans 'featured' %}</div>
+                                    <img src="{% static 'images/f8.png' %}" alt="" class="img-fluid w100 img-transition">
+                                    <div class="info"> {% trans 'for sale' %}</div>
+                                </div>
+                            </a>
+                                <div class="card__image-body">
+                                    <span class="badge bg-logo2 info text-capitalize mb-2">{% trans 'house' %}</span>
+                                    <h6 class="text-capitalize">
+                                        {% trans 'Family Home For Sale' %}
+                                    </h6>
+
+                                    <p class="text-capitalize">
+                                        <i class="fa fa-map-marker"></i>
+                                        {% trans 'west flaminggo road, las vegas' %}
+                                    </p>
+                                    <ul class="list-inline card__content">
+                                        <li class="list-inline-item">
+
+                                            <span>
+                                                {% trans 'baths' %} <br>
+                                                <i class="fa fa-bath"></i> 2
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'beds' %} <br>
+                                                <i class="fa fa-bed"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'rooms' %} <br>
+                                                <i class="fa fa-inbox"></i> 3
+                                            </span>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <span>
+                                                {% trans 'area' %} <br>
+                                                <i class="fa fa-map"></i> 4300 sq ft
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card__image-footer">
+                                    <figure>
+                                        <img src="{% static 'images/p3.png' %}" alt="" class="img-fluid rounded-circle">
+                                    </figure>
+                                    <ul class="list-inline my-auto">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                tom wilson
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                    <ul class="list-inline my-auto ml-auto">
+                                        <li class="list-inline-item">
+
+                                            <h6>$350.000</h6>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- END FEATURED PROPERTIES -->
+
+
+
+    <!-- ABOUT -->
+    <section class="home__about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="title__leading">
+                        <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
+                        <h2 class="text-capitalize text-danger">{{WhyChooseUs}}</h2>
+                        <p>
+                            {{TheFirst}}
+                        </p>
+                        <p>
+                            {{TheFirst}}
+                        </p>
+                        <a href="about-us.html" class="btn btn-primary btn-outline-blue mt-3 text-capitalize"> {% trans 'read more' %}
+                            <i class="fa fa-angle-right ml-3 "></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__image">
+                        <div class="about__image-top">
+                            <div class="about__image-top-hover">
+                                <img src="{% static 'images/home-image-small.jpg' %}" alt="" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="about__image-bottom">
+                            <div class="about__image-bottom-hover">
+                                <img src="{% static 'images/home-image-small2.jpg' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <section class="projects__partner bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">{{our_partners}}</h2>
+                        <p class="text-center text-capitalize">{{BrandPartnersSuccessful}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="projects__partner-logo">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo6.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo7.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo8.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo1.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo5.png' %}" alt="" class="img-fluid">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TESTIMONIAL -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            {{whatpeoplesays}}
+                        </h2>
+                        <p class="text-center text-capitalize">{{peoplesaysabout}}</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="testimonial owl-carousel owl-theme">
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            {{Thankyouwalls}}
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p1.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            {{Thankyouwalls}}
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p2.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            {{Thankyouwalls}}
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p3.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            {{Thankyouwalls}}
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p4.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+                <!-- TESTIMONIAL -->
+                <div class="item testimonial__block">
+                    <div class="testimonial__block-card bg-reviews">
+                        <p>
+                            {{Thankyouwalls}}
+                        </p>
+                    </div>
+                    <div class="testimonial__block-users">
+                        <div class="testimonial__block-users-img">
+                            <img src="{% static 'images/p5.png' %}" alt="" class="img-fluid">
+                        </div>
+                        <div class="testimonial__block-users-name" style="color: #013565;">
+                            jhon doe <br>
+                            <span>owner, digital agency</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TESTIMONIAL -->
+
+            </div>
+        </div>
+    </section>
+    <!-- END TESTIMONIAL -->
+
+
+    <!-- BLOG -->
+    <section class="blog__home bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            {{lastestnews}}
+                        </h2>
+                        <p class="text-center text-capitalize">
+                            {{FindOfThe}}
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <!-- BLOG  -->
+                    <div class="card__image">
+                        <div class="card__image-header h-250">
+                            <img src="{% static 'images/news1.png' %}" alt="" class="img-fluid w100 img-transition">
+                            <div class="info"> {% trans 'event' %}</div>
+                        </div>
+                        <div class="card__image-body">
+                            <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019 </span> -->
+                            <h6 class="text-capitalize">
+                                <a href="/blog-single.html">{% trans 'Best Interior Oppertunity ' %}</a>
+                            </h6>
+                            <p class=" mb-0">
+                                {% blocktrans %}Real estate festival is one of the famous feval for explain to you how all this mistaolt deand praising pain wasnad I will give complete{% endblocktrans %}
+
+                            </p>
+
+
+                        </div>
+                        <div class="card__image-footer">
+                            <figure>
+                                <img src="{% static 'images/p2.png' %}" alt="" class="img-fluid rounded-circle">
+                            </figure>
+                            <ul class="list-inline my-auto">
+                                <li class="list-inline-item ">
+                                    <a href="#">
+                                        tom wilson
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                            <ul class="list-inline my-auto ml-auto">
+                                <li class="list-inline-item ">
+                                    <a href="/blog-single.html" class="btn btn-sm btn-primary bg-logo2"><small
+                                            class="text-white ">{% trans 'read more' %} <i
+                                                class="fa fa-angle-right ml-1"></i></small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END BLOG -->
+                </div>
+                <div class="col-md-4">
+                    <!-- BLOG  -->
+                    <div class="card__image">
+                        <div class="card__image-header h-250">
+                            <img src="{% static 'images/news2.png' %}" alt="" class="img-fluid w100 img-transition">
+                            <div class="info"> {% trans 'Top News' %}</div>
+                        </div>
+                        <div class="card__image-body">
+                            <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019 </span> -->
+                            <h6 class="text-capitalize">
+                                <a href="#">{% trans 'Tips & Trick buy real estate' %} </a>
+                            </h6>
+                            <p class=" mb-0">
+                                {% blocktrans %}Real estate festival is one of the famous feval for explain to you how all this mistaolt deand praising pain wasnad I will give complete{% endblocktrans %}
+
+                            </p>
+
+
+                        </div>
+                        <div class="card__image-footer">
+                            <figure>
+                                <img src="{% static 'images/p4.png' %}" alt="" class="img-fluid rounded-circle">
+                            </figure>
+                            <ul class="list-inline my-auto">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        tom wilson
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                            <ul class="list-inline my-auto ml-auto">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-sm btn-primary bg-logo2"><small class="text-white ">{% trans 'read more' %} <i
+                                                class="fa fa-angle-right ml-1"></i></small></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END BLOG -->
+                </div>
+                <div class="col-md-4">
+                    <!-- BLOG  -->
+                    <div class="card__image">
+                        <div class="card__image-header h-250">
+                            <img src="{% static 'images/news3.png' %}" alt="" class="img-fluid w100 img-transition">
+                            <div class="info"> {% trans 'event' %}</div>
+                        </div>
+                        <div class="card__image-body">
+                            <!-- <span class="badge badge-secondary p-1 text-capitalize mb-3">May 08, 2019 </span> -->
+                            <h6 class="text-capitalize">
+                                <a href="#">{% trans 'Our Must Popular Deluxe House' %} </a>
+                            </h6>
+                            <p class=" mb-0">
+                                {% blocktrans %} Real estate festival is one of the famous feval for explain to you how all this mistaolt deand praising pain wasnad I will give complete{% endblocktrans %}
+                            </p>
+                        </div>
+                        <div class="card__image-footer">
+                            <figure>
+                                <img src="{% static 'images/p6.png' %}" alt="" class="img-fluid rounded-circle">
+                            </figure>
+                            <ul class="list-inline  my-auto">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        tom wilson
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="list-inline  my-auto ml-auto">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-sm btn-primary bg-logo2"><small class="text-white">{% trans 'read more' %} <i
+                                                class="fa fa-angle-right ml-1"></i></small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END BLOG -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BLOG -->
+
+    <!-- CALL TO ACTION -->
+    <section class="bg-gradient py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h2 class="text-uppercase text-light">{{LookingToSell}}</h2>
+                    <p class="text-capitalize text-light">{{WeWillAssist}}
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="btn btn-light text-uppercase ">{{requestquote}}
+                        <i class="fa fa-angle-right ml-3 arrow-btn "></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END CALL TO ACTION -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <img src="{% static 'images/logo-black2.png' %}" alt="logo" style="width: 255px; padding: 20px 0;">
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

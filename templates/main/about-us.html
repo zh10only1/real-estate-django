@@ -1,0 +1,301 @@
+{% extends 'include/base.html' %}
+{% load static %}
+{% block body %}
+<div class="myHeaderBg bg-theme-overlay">
+    <section class="section__breadcrumb ">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="text-capitalize text-white">{{About_Us}}</h2>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">
+                            <a href="/" class="text-white">
+                                {{Home}}
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="about-us.html" class="text-white">
+                                {{About}}
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <div class="clearfix"></div>
+
+    <!-- ABOUT -->
+    <section class="home__about bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="title__leading">
+                        <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
+                        {% comment %} <h2 class="text-capitalize text-danger">{{why_choose_us}}</h2> {% endcomment %}
+                        <div style="white-space: pre-line;">
+                            {{About_text_1}}
+                            {{About_text_2}}
+                            {{About_text_3}}
+                            {{About_text_4}}
+                            {{About_text_5}}
+                            {{About_text_6}}
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__image">
+                        <div class="about__image-top">
+                            <div class="about__image-top-hover">
+                                <img src="{% static 'images/about2.png' %}" alt="" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="about__image-bottom">
+                            <div class="about__image-bottom-hover">
+                                <img src="{% static 'images/about1.png' %}" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+
+
+    <section class="projects__partner ">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">{{our_other}}</h2>
+                        <p class="text-center text-capitalize">{{brand_partners}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="projects__partner-logo">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo6.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo7.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo8.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo1.png' %}" alt="" class="img-fluid">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="{% static 'images/partner-logo5.png' %}" alt="" class="img-fluid">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR TEAM -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="title__head">
+                        <h2 class="text-center text-capitalize text-danger">
+                            {{our_Team}}
+                        </h2>
+                        <p class="text-center text-capitalize">{{see_our_top}}</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="wrap-agent">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img alt="team member" class="img-fluid w-100" src="{% static 'images/team1.jpg' %}">
+                            </div>
+                            <div class="team-hover">
+                                <div class="desk">
+                                    <h5>
+                                        {{hi_there}}
+                                    </h5>
+                                    <p>
+                                        {{i_am_senior}}
+                                    </p>
+                                    <a class="btn btn-primary btn-outline-blue" href="tel:+8801760318999">
+                                        {{Contact_Now}}
+                                    </a>
+                                </div>
+                                <ul class="list-inline s-link mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-twitter socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-pinterest socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-title">
+                                <h6>
+                                    Martin Smith
+                                </h6>
+                                <span>
+                                    {{Agent_Real_Estate}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap-agent">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img alt="team member" class="img-fluid w-100" src="{% static 'images/team2.jpg' %}">
+                            </div>
+                            <div class="team-hover">
+                                <div class="desk">
+                                    <h5>
+                                        {{hi_there}}
+                                    </h5>
+                                    <p>
+                                        {{i_am_senior}}
+                                    </p>
+                                    <a class="btn btn-primary btn-outline-blue" href="tel:+8801760318999">
+                                        {{Contact_Now}}
+                                    </a>
+                                </div>
+                                <ul class="list-inline s-link mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-twitter socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-pinterest socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-title">
+                                <h5>
+                                    Martin Smith
+                                </h5>
+                                <span>
+                                    {{Agent_Real_Estate}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="wrap-agent">
+                        <div class="team-member">
+                            <div class="team-img">
+                                <img alt="team member" class="img-fluid w-100" src="{% static 'images/team3.jpg' %}">
+                            </div>
+                            <div class="team-hover">
+                                <div class="desk">
+                                    <h5>
+                                        {{hi_there}}
+                                    </h5>
+                                    <p>
+                                        {{i_am_senior}}
+                                    </p>
+                                    <a class="btn btn-primary btn-outline-blue" href="tel:+8801760318999">
+                                        {{Contact_Now}}
+                                    </a>
+                                </div>
+                                <ul class="list-inline s-link mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-twitter socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">
+                                            <i class="fa fa-pinterest socialIcon">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-title">
+                                <h5>
+                                    Martin Smith
+                                </h5>
+                                <span>
+                                    {{Agent_Real_Estate}}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TEAM -->
+
+
+
+
+    <!-- CALL TO ACTION --
+    <section class="bg-gradient cta-v1 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-9">
+                    <h2 class="text-uppercase text-white">Looking To Sell Or Rent Your Property?</h2>
+                    <p class="text-capitalize text-white">We Will Assist You In The Best And Comfortable Property Services
+                        For You
+                    </p>
+
+                </div>
+                <div class="col-lg-3">
+                    <a href="#" class="btn btn-light text-uppercase ">request a quote
+                        <i class="fa fa-angle-right ml-3 arrow-btn "></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    !-- END CALL TO ACTION -->
+
+    <!-- Footer  -->
+{% endblock body %}

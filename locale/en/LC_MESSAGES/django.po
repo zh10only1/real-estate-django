@@ -1,0 +1,434 @@
+#: .\templates\include\base.html:110
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\include\base.html:114
+msgid "LISTINGS"
+msgstr "LISTINGS"
+
+#: .\templates\include\base.html:118
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\include\base.html:121
+msgid "contact"
+msgstr "contact"
+
+#: .\templates\include\base.html:123
+msgid "about"
+msgstr "about"
+
+#: .\templates\include\base.html:125
+msgid "Profile"
+msgstr "Profile"
+
+#: .\templates\include\base.html:134
+msgid "add listing"
+msgstr "add listing"
+
+#: .\templates\main\home.html:13 .\templates\main\home.html:25
+#: .\templates\main\home.html:45 .\templates\main\home.html:57
+#, fuzzy
+#| msgid "Sell Properties"
+msgid "walls property"
+msgstr "Sell Properties"
+
+#: .\templates\main\home.html:14 .\templates\main\home.html:58
+#: .\templates\main\home.html:70 .\templates\main\home.html:82
+msgid "family house"
+msgstr "family house"
+
+#: .\templates\main\home.html:26
+#, fuzzy
+#| msgid "family house"
+msgid "Small family house"
+msgstr "Small family house"
+
+#: .\templates\main\home.html:46
+#, fuzzy
+#| msgid "family house"
+msgid "Big family house"
+msgstr "Big family house"
+
+#: .\templates\main\home.html:69
+msgid "Sell Properties"
+msgstr "Sell Properties"
+
+#: .\templates\main\home.html:81
+msgid "For Sale"
+msgstr "For Sale"
+
+#: .\templates\main\home.html:309
+msgid "Our Services"
+msgstr "Our Services"
+
+#: .\templates\main\home.html:311
+msgid "Choose your best need in your city."
+msgstr "Choose your best need in your city."
+
+#: .\templates\main\home.html:323
+msgid "Consulting Services"
+msgstr "Consulting Services"
+
+#: .\templates\main\home.html:333
+#, fuzzy
+#| msgid "Property Attachments"
+msgid "Propery Management"
+msgstr "Property Attachments"
+
+#: .\templates\main\home.html:343
+msgid "Renting & Selling"
+msgstr "Renting & Selling"
+
+#: .\templates\main\home.html:359
+msgid "Based Properties"
+msgstr "Based Properties"
+
+#: .\templates\main\home.html:361
+msgid "handpicked exclusive properties by our team."
+msgstr "handpicked exclusive properties by our team."
+
+#: .\templates\main\home.html:376 .\templates\main\home.html:448
+#: .\templates\main\home.html:520 .\templates\main\home.html:591
+#: .\templates\main\home.html:663 .\templates\main\home.html:733
+#: .\templates\main\home.html:801 .\templates\main\home.html:873
+msgid "featured"
+msgstr "featured"
+
+#: .\templates\main\home.html:378 .\templates\main\home.html:450
+#: .\templates\main\home.html:522 .\templates\main\home.html:593
+#: .\templates\main\home.html:665 .\templates\main\home.html:735
+#: .\templates\main\home.html:803 .\templates\main\home.html:875
+msgid "for sale"
+msgstr "for sale"
+
+#: .\templates\main\home.html:382 .\templates\main\home.html:597
+#: .\templates\main\home.html:669 .\templates\main\home.html:738
+#: .\templates\main\home.html:807 .\templates\main\home.html:879
+msgid "house"
+msgstr "house"
+
+#: .\templates\main\home.html:384
+msgid "vila in coral gables"
+msgstr "vila in coral gables"
+
+#: .\templates\main\home.html:389 .\templates\main\home.html:461
+#: .\templates\main\home.html:533 .\templates\main\home.html:604
+#: .\templates\main\home.html:676 .\templates\main\home.html:745
+#: .\templates\main\home.html:814 .\templates\main\home.html:886
+msgid "west flaminggo road, las vegas"
+msgstr "west flaminggo road, las vegas"
+
+#: .\templates\main\home.html:395 .\templates\main\home.html:467
+#: .\templates\main\home.html:539 .\templates\main\home.html:609
+#: .\templates\main\home.html:682 .\templates\main\home.html:751
+#: .\templates\main\home.html:820 .\templates\main\home.html:892
+#: .\templates\main\listings.html:658 .\templates\main\listings.html:757
+msgid "baths"
+msgstr "baths"
+
+#: .\templates\main\home.html:401 .\templates\main\home.html:473
+#: .\templates\main\home.html:545 .\templates\main\home.html:615
+#: .\templates\main\home.html:688 .\templates\main\home.html:757
+#: .\templates\main\home.html:826 .\templates\main\home.html:898
+#: .\templates\main\listings.html:665 .\templates\main\listings.html:763
+msgid "beds"
+msgstr "beds"
+
+#: .\templates\main\home.html:407 .\templates\main\home.html:479
+#: .\templates\main\home.html:551 .\templates\main\home.html:621
+#: .\templates\main\home.html:694 .\templates\main\home.html:763
+#: .\templates\main\home.html:832 .\templates\main\home.html:904
+#: .\templates\main\listings.html:672 .\templates\main\listings.html:769
+msgid "rooms"
+msgstr "rooms"
+
+#: .\templates\main\home.html:413 .\templates\main\home.html:485
+#: .\templates\main\home.html:557 .\templates\main\home.html:627
+#: .\templates\main\home.html:700 .\templates\main\home.html:769
+#: .\templates\main\home.html:838 .\templates\main\home.html:910
+#: .\templates\main\listings.html:679 .\templates\main\listings.html:775
+msgid "area"
+msgstr "area"
+
+#: .\templates\main\home.html:454
+msgid "apartment"
+msgstr "apartment"
+
+#: .\templates\main\home.html:456
+msgid "Ample Apartment At Last Floor"
+msgstr "Ample Apartment At Last Floor"
+
+#: .\templates\main\home.html:526
+msgid "Condo"
+msgstr "Condo"
+
+#: .\templates\main\home.html:528
+msgid "Contemporary Apartment"
+msgstr "Contemporary Apartment"
+
+#: .\templates\main\home.html:599 .\templates\main\home.html:881
+msgid "Family Home For Sale"
+msgstr "Family Home For Sale"
+
+#: .\templates\main\home.html:740
+msgid "Luxury Villa With Pool"
+msgstr "Luxury Villa With Pool"
+
+#: .\templates\main\home.html:809
+msgid "The Citizen Apartment 5th Floor"
+msgstr "The Citizen Apartment 5th Floor"
+
+#: .\templates\main\home.html:960
+msgid ""
+"The first step in selling your property is to get a valuation from local "
+"experts. They will inspect your home and take into account its unique "
+"features, the area and market conditions before providing you with the most "
+"accurate valuation."
+msgstr ""
+
+#: .\templates\main\home.html:965 .\templates\main\home.html:1188
+#: .\templates\main\home.html:1230 .\templates\main\home.html:1268
+msgid "read more"
+msgstr "read more"
+
+#: .\templates\main\home.html:994
+msgid "our partners"
+msgstr "our partners"
+
+#: .\templates\main\home.html:995
+msgid "Brand Partners Successful Projects Trusted Many Clients Real Estate"
+msgstr "Brand Partners Successful Projects Trusted Many Clients Real Estate"
+
+#: .\templates\main\home.html:1033
+msgid "what people says"
+msgstr "what people says"
+
+#: .\templates\main\home.html:1035
+msgid "people says about walls property."
+msgstr "people says about walls property."
+
+#: .\templates\main\home.html:1045 .\templates\main\home.html:1063
+#: .\templates\main\home.html:1081 .\templates\main\home.html:1099
+#: .\templates\main\home.html:1117
+msgid ""
+"Thank you walls property help me, choice dream home We were impressed with "
+"the build quality, Plus they are competitively priced."
+msgstr ""
+"Thank you walls property help me, choice dream home We were impressed with "
+"the build quality, Plus they are competitively priced."
+
+#: .\templates\main\home.html:1145
+msgid "lastest news"
+msgstr "lastest news"
+
+#: .\templates\main\home.html:1147
+msgid "Find Of The Most Popular Real Estate Company All Around Indonesia."
+msgstr "Find Of The Most Popular Real Estate Company All Around Indonesia."
+
+#: .\templates\main\home.html:1158 .\templates\main\home.html:1244
+msgid "event"
+msgstr "event"
+
+#: .\templates\main\home.html:1163
+msgid "Best Interior Oppertunity "
+msgstr "Best Interior Oppertunity "
+
+#: .\templates\main\home.html:1166 .\templates\main\home.html:1209
+msgid ""
+"Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+msgstr ""
+"Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+
+#: .\templates\main\home.html:1201
+msgid "Top News"
+msgstr "Top News"
+
+#: .\templates\main\home.html:1206
+msgid "Tips & Trick buy real estate"
+msgstr "Tips & Trick buy real estate"
+
+#: .\templates\main\home.html:1249
+msgid "Our Must Popular Deluxe House"
+msgstr "Our Must Popular Deluxe House"
+
+#: .\templates\main\home.html:1252
+msgid ""
+" Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+msgstr ""
+" Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+
+#: .\templates\main\home.html:1286
+msgid "Looking To Sell Or Rent Your Property?"
+msgstr "Looking To Sell Or Rent Your Property?"
+
+#: .\templates\main\home.html:1287
+msgid ""
+"We Will Assist You In The Best And Comfortable Property Services For You"
+msgstr ""
+"We Will Assist You In The Best And Comfortable Property Services For You"
+
+#: .\templates\main\home.html:1291
+msgid "request a quote"
+msgstr "request a quote"
+
+#: .\templates\main\listings.html:562
+msgid "Sort by"
+msgstr "Sort by"
+
+#, fuzzy
+#~| msgid "For Sale"
+#~ msgid "Condo Sale!"
+#~ msgstr "For Sale"
+
+#, fuzzy
+#~| msgid "family house"
+#~ msgid "family Condo"
+#~ msgstr "family house"
+
+#~ msgid ""
+#~ "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, "
+#~ "assumenda!"
+#~ msgstr ""
+#~ "Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, "
+#~ "assumenda!"
+
+#~ msgid "Login"
+#~ msgstr "Login"
+
+#~ msgid "Register"
+#~ msgstr "Register"
+
+#~ msgid "property filter"
+#~ msgstr "property filter"
+
+#, fuzzy
+#~| msgid "property filter"
+#~ msgid "Property Status"
+#~ msgstr "property filter"
+
+#~ msgid "For Rent"
+#~ msgstr "For Rent"
+
+#, fuzzy
+#~| msgid "property filter"
+#~ msgid "Property Type"
+#~ msgstr "property filter"
+
+#~ msgid "Residential"
+#~ msgstr "Residential"
+
+#~ msgid "Commercial"
+#~ msgstr "Commercial"
+
+#~ msgid "Land"
+#~ msgstr "Land"
+
+#~ msgid "Luxury"
+#~ msgstr "Luxury"
+
+#~ msgid "Area From"
+#~ msgstr "Area From"
+
+#~ msgid "Locations"
+#~ msgstr "Locations"
+
+#~ msgid "United Kingdom"
+#~ msgstr "United Kingdom"
+
+#~ msgid "American Samoa"
+#~ msgstr "American Samoa"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgium"
+
+#~ msgid "Canada"
+#~ msgstr "Canada"
+
+#~ msgid "Delaware"
+#~ msgstr "Delaware"
+
+#~ msgid "Bedrooms"
+#~ msgstr "Bedrooms"
+
+#~ msgid "Bathrooms"
+#~ msgstr "Bathrooms"
+
+#~ msgid "Price range"
+#~ msgstr "Price range"
+
+#~ msgid "Air Conditioning"
+#~ msgstr "Air Conditioning"
+
+#~ msgid "Swiming Pool"
+#~ msgstr "Swiming Pool"
+
+#~ msgid "Central Heating"
+#~ msgstr "Central Heating"
+
+#~ msgid "Spa & Massage"
+#~ msgstr "Spa & Massage"
+
+#~ msgid "Pets Allow"
+#~ msgstr "Pets Allow"
+
+#~ msgid "Gym"
+#~ msgstr "Gym"
+
+#~ msgid "Alarm"
+#~ msgstr "Alarm"
+
+#~ msgid "Window Covering"
+#~ msgstr "Window Covering"
+
+#~ msgid "Free WiFi"
+#~ msgstr "Free WiFi"
+
+#~ msgid "Car Parking"
+#~ msgstr "Car Parking"
+
+#~ msgid "Categories Property"
+#~ msgstr "Categories Property"
+
+#~ msgid "apartement"
+#~ msgstr "apartement"
+
+#~ msgid "villa"
+#~ msgstr "villa"
+
+#~ msgid "modern villa"
+#~ msgstr "modern villa"
+
+#~ msgid "town house"
+#~ msgstr "town house"
+
+#~ msgid "office"
+#~ msgstr "office"
+
+#~ msgid "Property Attachments"
+#~ msgstr "Property Attachments"
+
+#~ msgid "Download"
+#~ msgstr "Download"
+
+#~ msgid "Low to High Price"
+#~ msgstr "Low to High Price"
+
+#~ msgid "High to Low Price"
+#~ msgstr "High to Low Price"
+
+#~ msgid "Rent Properties"
+#~ msgstr "Rent Properties"
+
+#~ msgid "sold out"
+#~ msgstr "sold out"
+
+#~ msgid "184 Lexington Avenue"
+#~ msgstr "184 Lexington Avenue"
+
+#~ msgid "Family Home for sale"
+#~ msgstr "Family Home for sale"

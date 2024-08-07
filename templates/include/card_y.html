@@ -1,0 +1,80 @@
+{% load static %}
+<div class="col-md-6 col-lg-6">
+    <div class="card__image card__box-v1">
+        <a href="{% url 'main:property_details' listing.id %}">
+            <div class="card__image-header h-250">
+                {% comment %} <div class="bg-mycolor ribbon text-capitalize">{% trans 'featured' %}</div> {% endcomment %}
+                <img src="{% if listing.photo_main %}{{listing.photo_main.url}}{% else %}{% static 'images/news1.png' %}{% endif %}" alt=""
+                    class="img-fluid w100 img-transition">
+                <div class="info" style="background-color: #db0000;"> {{listing.json_content.property_status}}
+                </div>
+            </div>
+        </a>
+        <div class="card__image-body" onclick="location.href='{% url 'main:property_details' listing.id %}'">
+            <span
+                class="badge badge-primary bg-mycolor bg-mycolor text-capitalize mb-2"> {{listing.json_content.property_type}}
+            </span>
+            <h6 class="text-capitalize">
+                <a href="{% url 'main:property_details' listing.id %}">{{listing.json_content.property_title}}</a>
+            </h6>
+
+            <p class="text-capitalize">
+                <i class="fa fa-map-marker"></i>
+                {{listing.json_content.address}}
+            </p>
+            <ul class="list-inline card__content">
+                <li class="list-inline-item">
+
+                    <span style="color: #db0000;">
+                        {{baths}} <br>
+                        <i class="fa fa-bath" style="color: #db0000;"></i> {{listing.json_content.bathrooms}}
+                    </span>
+                </li>
+                <li class="list-inline-item">
+                    <span style="color: #db0000;">
+                        {{beds}} <br>
+                        <i class="fa fa-bed" style="color: #db0000;"></i> {{listing.json_content.bedrooms}}
+                    </span>
+                </li>
+                <li class="list-inline-item">
+                    <span style="color: #db0000;">
+                        {{floors}} <br>
+                        <i class="fa fa-inbox" style="color: #db0000;"></i> {{listing.json_content.floors}}
+                    </span>
+                </li>
+                <li class="list-inline-item">
+                    <span style="color: #db0000;">
+                        {{area}} <br>
+                        <i class="fa fa-map" style="color: #db0000;"></i> {{listing.json_content.area}}
+                        sq ft
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="card__image-footer">
+            <figure>
+                <img src="{% if listing.realtor.profile_image %}{{listing.realtor.profile_image.url}}{% else %}{% static 'images/p2.png' %}{% endif %}" alt=""
+                    class="img-fluid rounded-circle">
+            </figure>
+            <ul class="list-inline my-auto">
+                <li class="list-inline-item ">
+                    <a href="#">
+                        {{listing.realtor.first_name}}
+                        {{listing.realtor.last_name}}
+                    </a>
+
+                </li>
+
+            </ul>
+            <ul class="list-inline my-auto ml-auto">
+                <li class="list-inline-item">
+
+                    <h6>$
+                        {{listing.json_content.property_price}}
+                    </h6>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>

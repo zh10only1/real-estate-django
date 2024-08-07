@@ -1,0 +1,571 @@
+{% extends 'include/base.html' %}
+{% load static %}
+{% block body %}
+        <!-- BREADCRUMB -->
+        <div class="myHeaderBg bg-theme-overlay">
+            <section class="section__breadcrumb ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2 class="text-capitalize text-white">{{Agents_Detail}}</h2>
+                            <ul class="list-inline ">
+                                <li class="list-inline-item">
+                                    <a href="/" class="text-white">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-white">
+                                        {{Agents_Detail}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- END BREADCRUMB -->
+    </header>
+
+    <div class="clearfix"></div>
+
+    <!-- LISTING LIST -->
+    <section class="profile__agents">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row no-gutters">
+                        <div class="col-lg-12 cards mt-0">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6">
+                                    <a href="#" class="profile__agency-logo">
+                                        <img src="{% if agent.company_logo %}{{agent.company_logo.url}}{% else %}{% static 'images/500x400.jpg' %}{% endif %}"
+                                        alt="" class="img-fluid">
+                                        <div class="total__property-agent">
+                                            {{listings.count}} {% if listings.count > 1 %}{{Listings}}{% else %}{{Listing}}{% endif %}
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-lg-6 my-auto">
+                                    <div class="profile__agency-info">
+                                        <h5 class="text-capitalize">
+                                            <a href="#" target="_blank">
+                                                {{agent.first_name}} {{agent.last_name}}
+                                            </a>
+                                        </h5>
+                                        <p class="text-capitalize mb-1">
+                                            {{agent.city}}
+                                        </p>
+
+                                        <ul class="list-unstyled mt-2">
+                                            <li><a href="#" class="text-capitalize"><span><i class="fa fa-building"></i>
+                                                        office :</span> 123 456
+                                                    789</a>
+                                            </li>
+                                            <li><a href="#" class="text-capitalize"><span><i class="fa fa-phone"></i>
+                                                        mobile :</span> 123 456
+                                                    789</a></li>
+                                            <li><a href="#" class="text-capitalize"><span><i class="fa fa-fax"></i> fax
+                                                        : </span> 342 655</a></li>
+                                            <li><a href="#" class="text-capitalize"><span><i class="fa fa-envelope"></i>
+                                                        email :</span>
+                                                    agents@property.com</a></li>
+                                        </ul>
+                                        <p class="mb-0 mt-3">
+                                            <button class="btn btn-social btn-social-o facebook mr-1">
+                                                <i class="fa fa-facebook-f"></i>
+                                            </button>
+                                            <button class="btn btn-social btn-social-o twitter mr-1">
+                                                <i class="fa fa-twitter"></i>
+                                            </button>
+
+                                            <button class="btn btn-social btn-social-o linkedin mr-1">
+                                                <i class="fa fa-linkedin"></i>
+                                            </button>
+                                            <button class="btn btn-social btn-social-o instagram mr-1">
+                                                <i class="fa fa-instagram"></i>
+                                            </button>
+
+                                            <button class="btn btn-social btn-social-o youtube mr-1">
+                                                <i class="fa fa-youtube"></i>
+                                            </button>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LOCATION -->
+                    <div class="single__detail-features tabs__custom">
+                        <h5 class="text-capitalize detail-heading ">{{Agency_Details}}</h5>
+                        <!-- FILTER VERTICAL -->
+                        <ul class="nav nav-pills myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active pills-tab-one" data-toggle="pill" href="#pills-tab-one"
+                                    role="tab" aria-controls="pills-tab-one" aria-selected="true">
+                                    {{Description}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pills-tab-two" data-toggle="pill" href="#pills-tab-two" role="tab"
+                                    aria-controls="pills-tab-two" aria-selected="false">
+                                    {{Listing}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pills-tab-three" data-toggle="pill" href="#pills-tab-three"
+                                    role="tab" aria-controls="pills-tab-three" aria-selected="false">
+                                    {{Agents}}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pills-tab-four" data-toggle="pill" href="#pills-tab-four" role="tab"
+                                    aria-controls="pills-tab-four" aria-selected="false">
+                                    Reviews</a>
+                            </li>
+
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="pills-tab-one" role="tabpanel"
+                                aria-labelledby="pills-tab-one">
+                                <div class="single__detail-desc">
+                                    <h5 class="text-capitalize detail-heading">Hi, nice to meet you</h5>
+                                    <div class="show__more">
+                                        {{agent.description}}
+                                        
+                                        <a href="javascript:void(0)" class="show__more-button bg-mybtn">{{readMore}}</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-tab-two" role="tabpanel"
+                                aria-labelledby="pills-tab-two">
+                                {% for listing in listings %}
+                                    <div class="row">
+                                        {% include "include/card_x.html" %}
+
+                                    </div>
+                                {% endfor %}
+                                
+                                <div class="clearfix"></div>
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-tab-three" role="tabpanel"
+                                aria-labelledby="pills-tab-three">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-12 cards">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <a href="#" class="profile__agents-avatar">
+                                                    <img src="{% static 'images/500x400.jpg' %}" alt="" class="img-fluid ">
+                                                    <div class="total__property-agent">20 listing</div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 my-auto">
+                                                <div class="profile__agents-info">
+                                                    <h5 class="text-capitalize">
+                                                        <a href="#" target="_blank">jhon doe</a>
+                                                    </h5>
+                                                    <p class="text-capitalize mb-1">property agent</p>
+
+                                                    <ul class="list-unstyled mt-2">
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-building"></i> office :</span> 123
+                                                                456
+                                                                789</a>
+                                                        </li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-phone"></i> mobile :</span> 123 456
+                                                                789</a></li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-fax"></i> fax : </span> 342 655</a>
+                                                        </li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-envelope"></i> email :</span>
+                                                                agents@property.com</a></li>
+                                                    </ul>
+                                                    <p class="mb-0 mt-3">
+                                                        <button class="btn btn-social btn-social-o facebook mr-1">
+                                                            <i class="fa fa-facebook-f"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o twitter mr-1">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o linkedin mr-1">
+                                                            <i class="fa fa-linkedin"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o instagram mr-1">
+                                                            <i class="fa fa-instagram"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o youtube mr-1">
+                                                            <i class="fa fa-youtube"></i>
+                                                        </button>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 cards">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <a href="#" class="profile__agents-avatar">
+                                                    <img src="{% static 'images/500x400.jpg' %}" alt="" class="img-fluid ">
+                                                    <div class="total__property-agent">20 listing</div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 my-auto">
+                                                <div class="profile__agents-info">
+                                                    <h5 class="text-capitalize">
+                                                        <a href="#" target="_blank">jhon doe</a>
+                                                    </h5>
+                                                    <p class="text-capitalize mb-1">property agent</p>
+
+                                                    <ul class="list-unstyled mt-2">
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-building"></i> office
+                                                                    :</span> 123 456
+                                                                789</a>
+                                                        </li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-phone"></i> mobile
+                                                                    :</span> 123 456
+                                                                789</a></li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-fax"></i> fax : </span>
+                                                                342 655</a></li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-envelope"></i> email
+                                                                    :</span>
+                                                                agents@property.com</a></li>
+                                                    </ul>
+                                                    <p class="mb-0 mt-3">
+                                                        <button class="btn btn-social btn-social-o facebook mr-1">
+                                                            <i class="fa fa-facebook-f"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o twitter mr-1">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o linkedin mr-1">
+                                                            <i class="fa fa-linkedin"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o instagram mr-1">
+                                                            <i class="fa fa-instagram"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o youtube mr-1">
+                                                            <i class="fa fa-youtube"></i>
+                                                        </button>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 cards">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <a href="#" class="profile__agents-avatar">
+                                                    <img src="{% static 'images/500x400.jpg' %}" alt="" class="img-fluid ">
+                                                    <div class="total__property-agent">20 listing</div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 my-auto">
+                                                <div class="profile__agents-info">
+                                                    <h5 class="text-capitalize">
+                                                        <a href="#" target="_blank">jhon doe</a>
+                                                    </h5>
+                                                    <p class="text-capitalize mb-1">property agent</p>
+
+                                                    <ul class="list-unstyled mt-2">
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-building"></i> office
+                                                                    :</span> 123 456
+                                                                789</a>
+                                                        </li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-phone"></i> mobile
+                                                                    :</span> 123 456
+                                                                789</a></li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-fax"></i> fax : </span>
+                                                                342 655</a></li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-envelope"></i> email
+                                                                    :</span>
+                                                                agents@property.com</a></li>
+                                                    </ul>
+                                                    <p class="mb-0 mt-3">
+                                                        <button class="btn btn-social btn-social-o facebook mr-1">
+                                                            <i class="fa fa-facebook-f"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o twitter mr-1">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o linkedin mr-1">
+                                                            <i class="fa fa-linkedin"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o instagram mr-1">
+                                                            <i class="fa fa-instagram"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o youtube mr-1">
+                                                            <i class="fa fa-youtube"></i>
+                                                        </button>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 cards">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-6">
+                                                <a href="#" class="profile__agents-avatar">
+                                                    <img src="{% static 'images/500x400.jpg' %}" alt="" class="img-fluid ">
+                                                    <div class="total__property-agent">20 listing</div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6 col-lg-6 my-auto">
+                                                <div class="profile__agents-info">
+                                                    <h5 class="text-capitalize">
+                                                        <a href="#" target="_blank">jhon doe</a>
+                                                    </h5>
+                                                    <p class="text-capitalize mb-1">property agent</p>
+
+                                                    <ul class="list-unstyled mt-2">
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-building"></i> office
+                                                                    :</span> 123 456
+                                                                789</a>
+                                                        </li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-phone"></i> mobile
+                                                                    :</span> 123 456
+                                                                789</a></li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-fax"></i> fax : </span>
+                                                                342 655</a></li>
+                                                        <li><a href="#" class="text-capitalize"><span><i
+                                                                        class="fa fa-envelope"></i> email
+                                                                    :</span>
+                                                                agents@property.com</a></li>
+                                                    </ul>
+                                                    <p class="mb-0 mt-3">
+                                                        <button class="btn btn-social btn-social-o facebook mr-1">
+                                                            <i class="fa fa-facebook-f"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o twitter mr-1">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o linkedin mr-1">
+                                                            <i class="fa fa-linkedin"></i>
+                                                        </button>
+                                                        <button class="btn btn-social btn-social-o instagram mr-1">
+                                                            <i class="fa fa-instagram"></i>
+                                                        </button>
+
+                                                        <button class="btn btn-social btn-social-o youtube mr-1">
+                                                            <i class="fa fa-youtube"></i>
+                                                        </button>
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-tab-four" role="tabpanel"
+                                aria-labelledby="pills-tab-four">
+
+                                <!-- RATE US  WRITE -->
+                                <div class="single__detail-features-review">
+                                    <div class="media mt-4">
+                                        <img src="{% static 'images/80x80.jpg' %}" alt="" class="img-fluid rounded-circle mr-3">
+                                        <div class="media-body">
+                                            <h6 class="mt-0">Jhon doe</h6>
+                                            <span class="mb-3">Mei 13, 2020</span>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </li>
+                                                <li class="list-inline-item">3/5</li>
+                                            </ul>
+                                            <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                Donec
+                                                lacinia congue felis in faucibus.</p>
+
+                                            <div class="media mt-4">
+                                                <a class="pr-3" href="#">
+                                                    <img src="{% static 'images/80x80.jpg' %}" alt="" class="img-fluid rounded-circle">
+                                                </a>
+                                                <div class="media-body">
+                                                    <h6 class="mt-0">Mark </h6>
+                                                    <span class="mb-3">Mei 13, 2020</span>
+                                                    <ul class="list-inline">
+                                                        <li class="list-inline-item">
+                                                            <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                            <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                            <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                            <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                            <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                        </li>
+                                                        <li class="list-inline-item">5/5</li>
+                                                    </ul>
+                                                    <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+                                                        scelerisque ante sollicitudin. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="media mt-4">
+                                        <img src="{% static 'images/80x80.jpg' %}" alt="" class="img-fluid rounded-circle mr-3">
+                                        <div class="media-body">
+                                            <h6 class="mt-0">Jhon Doe</h6>
+                                            <span class="mb-3">Mei 13, 2020</span>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                </li>
+                                                <li class="list-inline-item">5/5</li>
+                                            </ul>
+                                            <p> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                Donec
+                                                lacinia congue felis in faucibus.</p>
+
+
+                                        </div>
+                                    </div>
+                                    <!-- COMMENT -->
+                                    <!-- COMMENT -->
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="mb-2">Your rating for this listing:</p>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star selected" style="color: #013565;"></i>
+                                                    <i class="fa fa-star" style="color: #013565;"></i>
+                                                    <i class="fa fa-star" style="color: #013565;"></i>
+                                                </li>
+                                                <li class="list-inline-item">3/5</li>
+                                            </ul>
+                                            <div class="form-group">
+                                                <label>Your Name</label>
+                                                <input type="text" class="form-control" required="required">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>What's your Email?</label>
+                                                <input type="email" class="form-control" required="required">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Subject</label>
+                                                <input type="text" class="form-control" required="required">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Your message</label>
+                                                <textarea class="form-control" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-outline-blue float-right "> Submit review <i
+                                            class="fa fa-paper-plane ml-2"></i></button>
+                                    <!-- END COMMENT -->
+                                </div>
+
+                                <!-- END RATE US  WRITE -->
+                                <div class="clearfix"></div>
+                            </div>
+
+
+                        </div>
+                        <!-- END FILTER VERTICAL -->
+                    </div>
+                    <!-- END LOCATION -->
+                </div>
+                <div class="col-lg-4">
+                    <div class="sticky-top">
+                        <!-- FORM FILTER -->
+                        <div class="products__filter mb-30">
+                            <div class="products__filter__group">
+                                <div class="products__filter__header">
+                                    <h5 class="text-center text-capitalize text-mycolor">{{Contact_Form}}</h5>
+                                </div>
+                                <div class="products__filter__body">
+                                    <div class="form-group">
+                                        <label>{{Full_Name}}</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{Email_Optional}}</label>
+                                        <input type="email" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>{{Phone}}</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>{{Your_message}}</label>
+                                        <textarea class="form-control" rows="3"></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="products__filter__footer">
+                                    <div class="form-group mb-0">
+                                        <button class="btn btn-primary btn-outline-blue text-capitalize btn-block"> {{submit}} <i
+                                                class="fa fa-paper-plane ml-1"></i></button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- END FORM FILTER -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- END LISTING LIST -->
+
+
+    <!-- Footer  -->
+    {% endblock body %}

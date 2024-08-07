@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rethouse - Real Estate HTML Template">
+    <meta name="keywords" content="Real Estate, Property, Directory Listing, Marketing, Agency" />
+    <meta name="author" content="mardianto - retenvi.com">
+    <title>123 - KROATIEN</title>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link rel="manifest" href="site.webmanifest">
+    <!-- favicon.ico in the root directory -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+
+    <meta name="theme-color" content="#E41F0E">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet" type="text/css">
+    {% block style %}{% endblock style %}
+</head>
+
+<body>
+
+    <body>
+        {% if user.is_authenticated %}
+        {% if messages %}
+
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show mb-0" role="alert">
+            {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+        {% endfor %}
+        {% endif %}
+        {% endif %}
+ 
+        <div class="topbar bg-topnav d-none d-sm-block">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                        <div class="topbar-left">
+                            <div class="topbar-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="list-unstyled topbar-right">
+
+                            <ul class="topbar-link">
+                                {% if user.is_authenticated %}
+                                <li><a href="#">{{user.username}}</a></li>
+                                <li><a href="{% url 'account:logout' %}" title="">Logout</a></li>
+
+                                {% else %}
+                                <li><a href="{% url 'account:login' %}" title="">Login</a></li>
+                                <li><a href="{% url 'account:signup' %}" title="">Register</a></li>
+                                {% endif %}
+                                <li>
+                                    <select class="lang-drop" onchange="changelanguage(this.value);">
+                                        <option value="en" {% if language == 'en' %}selected{% endif %}>English</option>
+                                        <option value="ge" {% if language == 'ge' %}selected{% endif %}>German</option>
+                                        <option value="fr" {% if language == 'fr' %}selected{% endif %}>French</option>
+                                        <option value="gr" {% if language == 'gr' %}selected{% endif %}>Greek</option>
+                                        <option value="hr" {% if language == 'hr' %}selected{% endif %}>Croatian</option>
+                                        <option value="pl" {% if language == 'pl' %}selected{% endif %}>Polish</option>
+                                        <option value="cz" {% if language == 'cz' %}selected{% endif %}>Czech</option>
+                                        <option value="ru" {% if language == 'ru' %}selected{% endif %}>Russian</option>
+                                        <option value="sw" {% if language == 'sw' %}selected{% endif %}>Swedish</option>
+                                        <option value="no" {% if language == 'no' %}selected{% endif %}>Norway</option>
+                                        <option value="sl" {% if language == 'sl' %}selected{% endif %}>Slovak</option>
+                                        <option value="nl" {% if language == 'nl' %}selected{% endif %}>Dutch</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END NAVBAR TOP -->
+        <nav class="navbar navbar-nav navbar-hover navbar-expand-lg navbar-soft">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="{% static 'images/logo-black2.png' %}" alt="logo" class="img-fluid" style="width: 270px;">
+                </a>
+                <button class="navbar-toggler rightNav" type="button" data-toggle="collapse" data-target="#main_nav99">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav99">
+                    <ul class="navbar-nav  mx-auto">
+                        <li class="nav-item dropdown">
+                            {% comment %} <a class="nav-link active dropdown-toggle" href="/" data-toggle="dropdown"> {% trans 'Home' %} </a>
+                            <ul class="dropdown-menu dropdown-menu-left animate fade-up">
+                                <li><a class="dropdown-item" href="{% url 'account:login' %}">{% trans 'Login' %}</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="{% url 'account:signup' %}">{% trans 'Register' %}</a></li>
+                            </ul> {% endcomment %}
+                            <a class="nav-link active" href="/"> {{Home}} </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="{% url 'main:listing' %}"> {{Listings}} </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="{% url 'main:blog' %}"> {{Blog}} </a>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="{% url 'main:contact' %}"> {{Contact}}
+                            </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'main:about' %}"> {{About}} </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'main:profile' %}"> {{Profile}}
+                            </a></li>
+                    </ul>
+
+
+                    <!-- Search bar.// -->
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="{% url 'main:add_property' %}" class="btn btn-danger text-capitalize">
+                                <i class="fa fa-plus-circle mr-1"></i> {{Add_Listing}}</a>
+                        </li>
+                    </ul>
+
+                    <!-- Search content bar.// -->
+                    <div class="top-search navigation-shadow">
+                        <div class="container">
+                            <div class="input-group ">
+                                <form action="#">
+
+                                    <div class="row no-gutters mt-3">
+                                        <div class="col">
+                                            <input class="form-control border-secondary border-right-0 rounded-0"
+                                                type="search" value="" placeholder="Search " id="example-search-input4">
+                                        </div>
+                                        <div class="col-auto">
+                                            <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
+                                                href="/search-result.html">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Search content bar.// -->
+                </div> <!-- navbar-collapse.// -->
+            </div>
+        </nav>
+        {% block body %}
+        {% endblock body%}
+
+        {% include 'include/footer.html' %}
+
+        <!-- SCROLL TO TOP -->
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <!-- END SCROLL TO TOP -->
+        <script src="{% static 'js/index.bundle.js' %}"></script>
+        <script type="text/javascript">
+            //test for getting url value from attr
+            // var img1 = $('.test').attr("data-thumbnail");
+            // console.log(img1);
+
+            //test for iterating over child elements
+            var langArray = [];
+            $('.vodiapicker option').each(function () {
+                var img = $(this).attr("data-thumbnail");
+                var text = this.innerText;
+                var value = $(this).val();
+                var item = '<li><img src="' + img + '" alt="" value="' + value + '"/><span>' + text + '</span></li>';
+                langArray.push(item);
+            })
+
+            $('#a').html(langArray);
+
+            //Set the button value to the first el of the array
+            $('.btn-select').html(langArray[0]);
+            $('.btn-select').attr('value', 'en');
+
+            //change button stuff on click
+            $('#a li').click(function () {
+                var img = $(this).find('img').attr("src");
+                var value = $(this).find('img').attr('value');
+                var text = this.innerText;
+                var item = '<li><img src="' + img + '" alt="" /><span>' + text + '</span></li>';
+                $('.btn-select').html(item);
+                $('.btn-select').attr('value', value);
+                $(".b").toggle();
+                //console.log(value);
+            });
+
+            $(".btn-select").click(function () {
+                $(".b").toggle();
+            });
+
+            //check local storage for the lang
+            var sessionLang = localStorage.getItem('lang');
+            if (sessionLang) {
+                //find an item with value of sessionLang
+                var langIndex = langArray.indexOf(sessionLang);
+                $('.btn-select').html(langArray[langIndex]);
+                $('.btn-select').attr('value', sessionLang);
+            } else {
+                var langIndex = langArray.indexOf('ch');
+                console.log(langIndex);
+                $('.btn-select').html(langArray[langIndex]);
+                //$('.btn-select').attr('value', 'en');
+            }
+
+            function changelanguage(value) {
+                window.location.href = "/set-language/" + value + "/";
+            }
+
+        </script>
+        {% block js %}{% endblock js %}
+    </body>
+
+</html>

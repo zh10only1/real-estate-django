@@ -1,0 +1,463 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-25 23:11+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\templates\include\base.html:110
+msgid "Home"
+msgstr "Heim"
+
+#: .\templates\include\base.html:114
+msgid "LISTINGS"
+msgstr "ANGEBOTE"
+
+#: .\templates\include\base.html:118
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\include\base.html:121
+msgid "contact"
+msgstr "Kontakt"
+
+#: .\templates\include\base.html:123
+msgid "about"
+msgstr "um"
+
+#: .\templates\include\base.html:125
+msgid "Profile"
+msgstr "Profil"
+
+#: .\templates\include\base.html:134
+msgid "add listing"
+msgstr "Eintrag hinzufügen"
+
+#: .\templates\main\home.html:13 .\templates\main\home.html:25
+#: .\templates\main\home.html:45 .\templates\main\home.html:57
+#, fuzzy
+#| msgid "Sell Properties"
+msgid "walls property"
+msgstr "Immobilien verkaufen"
+
+#: .\templates\main\home.html:14 .\templates\main\home.html:58
+#: .\templates\main\home.html:70 .\templates\main\home.html:82
+msgid "family house"
+msgstr "Familienhaus"
+
+#: .\templates\main\home.html:26
+#, fuzzy
+#| msgid "family house"
+msgid "Small family house"
+msgstr "Familienhaus"
+
+#: .\templates\main\home.html:46
+#, fuzzy
+#| msgid "family house"
+msgid "Big family house"
+msgstr "Familienhaus"
+
+#: .\templates\main\home.html:69
+msgid "Sell Properties"
+msgstr "Immobilien verkaufen"
+
+#: .\templates\main\home.html:81
+msgid "For Sale"
+msgstr "Zu verkaufen"
+
+#: .\templates\main\home.html:309
+msgid "Our Services"
+msgstr "Unsere Dienstleistungen"
+
+#: .\templates\main\home.html:311
+msgid "Choose your best need in your city."
+msgstr "Wählen Sie den besten Bedarf in Ihrer Stadt."
+
+#: .\templates\main\home.html:323
+msgid "Consulting Services"
+msgstr "Beratungsleistungen"
+
+#: .\templates\main\home.html:333
+#, fuzzy
+#| msgid "Property Attachments"
+msgid "Propery Management"
+msgstr "Eigentumspfändungen"
+
+#: .\templates\main\home.html:343
+msgid "Renting & Selling"
+msgstr "Vermietung und Verkauf"
+
+#: .\templates\main\home.html:359
+msgid "Based Properties"
+msgstr "Basierend auf Eigenschaften"
+
+#: .\templates\main\home.html:361
+msgid "handpicked exclusive properties by our team."
+msgstr "handverlesene exklusive Immobilien von unserem Team."
+
+#: .\templates\main\home.html:376 .\templates\main\home.html:448
+#: .\templates\main\home.html:520 .\templates\main\home.html:591
+#: .\templates\main\home.html:663 .\templates\main\home.html:733
+#: .\templates\main\home.html:801 .\templates\main\home.html:873
+msgid "featured"
+msgstr "vorgestellt"
+
+#: .\templates\main\home.html:378 .\templates\main\home.html:450
+#: .\templates\main\home.html:522 .\templates\main\home.html:593
+#: .\templates\main\home.html:665 .\templates\main\home.html:735
+#: .\templates\main\home.html:803 .\templates\main\home.html:875
+msgid "for sale"
+msgstr "zu verkaufen"
+
+#: .\templates\main\home.html:382 .\templates\main\home.html:597
+#: .\templates\main\home.html:669 .\templates\main\home.html:738
+#: .\templates\main\home.html:807 .\templates\main\home.html:879
+msgid "house"
+msgstr "Haus"
+
+#: .\templates\main\home.html:384
+msgid "vila in coral gables"
+msgstr "Villa in Korallengiebeln"
+
+#: .\templates\main\home.html:389 .\templates\main\home.html:461
+#: .\templates\main\home.html:533 .\templates\main\home.html:604
+#: .\templates\main\home.html:676 .\templates\main\home.html:745
+#: .\templates\main\home.html:814 .\templates\main\home.html:886
+msgid "west flaminggo road, las vegas"
+msgstr "West Flamingo Road, Las Vegas"
+
+#: .\templates\main\home.html:395 .\templates\main\home.html:467
+#: .\templates\main\home.html:539 .\templates\main\home.html:609
+#: .\templates\main\home.html:682 .\templates\main\home.html:751
+#: .\templates\main\home.html:820 .\templates\main\home.html:892
+#: .\templates\main\listings.html:658 .\templates\main\listings.html:757
+msgid "baths"
+msgstr "Bad"
+
+#: .\templates\main\home.html:401 .\templates\main\home.html:473
+#: .\templates\main\home.html:545 .\templates\main\home.html:615
+#: .\templates\main\home.html:688 .\templates\main\home.html:757
+#: .\templates\main\home.html:826 .\templates\main\home.html:898
+#: .\templates\main\listings.html:665 .\templates\main\listings.html:763
+msgid "beds"
+msgstr "Betten"
+
+#: .\templates\main\home.html:407 .\templates\main\home.html:479
+#: .\templates\main\home.html:551 .\templates\main\home.html:621
+#: .\templates\main\home.html:694 .\templates\main\home.html:763
+#: .\templates\main\home.html:832 .\templates\main\home.html:904
+#: .\templates\main\listings.html:672 .\templates\main\listings.html:769
+msgid "rooms"
+msgstr "Räume"
+
+#: .\templates\main\home.html:413 .\templates\main\home.html:485
+#: .\templates\main\home.html:557 .\templates\main\home.html:627
+#: .\templates\main\home.html:700 .\templates\main\home.html:769
+#: .\templates\main\home.html:838 .\templates\main\home.html:910
+#: .\templates\main\listings.html:679 .\templates\main\listings.html:775
+msgid "area"
+msgstr "Bereich"
+
+#: .\templates\main\home.html:454
+#, fuzzy
+#| msgid "apartement"
+msgid "apartment"
+msgstr "Wohnung"
+
+#: .\templates\main\home.html:456
+msgid "Ample Apartment At Last Floor"
+msgstr "Geräumige Wohnung im letzten Stock"
+
+#: .\templates\main\home.html:526
+msgid "Condo"
+msgstr ""
+
+#: .\templates\main\home.html:528
+msgid "Contemporary Apartment"
+msgstr "Zeitgenössische Wohnung"
+
+#: .\templates\main\home.html:599 .\templates\main\home.html:881
+msgid "Family Home For Sale"
+msgstr "Einfamilienhaus zu verkaufen"
+
+#: .\templates\main\home.html:740
+msgid "Luxury Villa With Pool"
+msgstr "Luxusvilla mit Pool"
+
+#: .\templates\main\home.html:809
+msgid "The Citizen Apartment 5th Floor"
+msgstr "Die Bürgerwohnung im 5. Stock"
+
+#: .\templates\main\home.html:960
+msgid ""
+"The first step in selling your property is to get a valuation from local "
+"experts. They will inspect your home and take into account its unique "
+"features, the area and market conditions before providing you with the most "
+"accurate valuation."
+msgstr ""
+"Der erste Schritt beim Verkauf Ihrer Immobilie besteht darin, eine Schätzung "
+"von der örtlichen Behörde einzuholenExperten. Sie besichtigen Ihr Zuhause "
+"und berücksichtigen dessen EinzigartigkeitInformieren Sie sich über die "
+"Funktionen, die Region und die Marktbedingungen, bevor Sie das Beste daraus "
+"machengenaue Bewertung."
+
+#: .\templates\main\home.html:965 .\templates\main\home.html:1188
+#: .\templates\main\home.html:1230 .\templates\main\home.html:1268
+msgid "read more"
+msgstr "mehr lesen"
+
+#: .\templates\main\home.html:994
+msgid "our partners"
+msgstr "unsere Partner"
+
+#: .\templates\main\home.html:995
+msgid "Brand Partners Successful Projects Trusted Many Clients Real Estate"
+msgstr ""
+"Erfolgreiche Projekte von Markenpartnern vertrauten vielen Immobilienkunden"
+
+#: .\templates\main\home.html:1033
+msgid "what people says"
+msgstr "was die Leute sagen"
+
+#: .\templates\main\home.html:1035
+msgid "people says about walls property."
+msgstr "Die Leute sagen über Mauern Eigentum."
+
+#: .\templates\main\home.html:1045 .\templates\main\home.html:1063
+#: .\templates\main\home.html:1081 .\templates\main\home.html:1099
+#: .\templates\main\home.html:1117
+msgid ""
+"Thank you walls property help me, choice dream home We were impressed with "
+"the build quality, Plus they are competitively priced."
+msgstr ""
+"Vielen Dank, Walls Property hat mir geholfen, die Wahl eines Traumhauses zu "
+"treffen. Wir waren beeindrucktdie Verarbeitungsqualität, außerdem sind sie "
+"preislich konkurrenzfähig."
+
+#: .\templates\main\home.html:1145
+msgid "lastest news"
+msgstr "Kindernachrichten"
+
+#: .\templates\main\home.html:1147
+msgid "Find Of The Most Popular Real Estate Company All Around Indonesia."
+msgstr "Finden Sie das beliebteste Immobilienunternehmen in ganz Indonesien."
+
+#: .\templates\main\home.html:1158 .\templates\main\home.html:1244
+msgid "event"
+msgstr "Ereignis"
+
+#: .\templates\main\home.html:1163
+msgid "Best Interior Oppertunity "
+msgstr "Beste Gelegenheit für den Innenbereich"
+
+#: .\templates\main\home.html:1166 .\templates\main\home.html:1209
+msgid ""
+"Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+msgstr ""
+"Das Immobilienfestival ist eines der bekanntesten Feste, um Ihnen zu "
+"erklären, wie alles funktioniertDieser Fehler und der lobende Schmerz waren "
+"und ich werde ihn vollständig wiedergeben"
+
+#: .\templates\main\home.html:1201
+msgid "Top News"
+msgstr "Top-Nachrichten"
+
+#: .\templates\main\home.html:1206
+msgid "Tips & Trick buy real estate"
+msgstr "Tipps & Tricks zum Immobilienkauf"
+
+#: .\templates\main\home.html:1249
+msgid "Our Must Popular Deluxe House"
+msgstr "Unser beliebtestes Deluxe-Haus"
+
+#: .\templates\main\home.html:1252
+msgid ""
+" Real estate festival is one of the famous feval for explain to you how all "
+"this mistaolt deand praising pain wasnad I will give complete"
+msgstr ""
+"Das Immobilienfestival ist eines der bekanntesten Feste, um Ihnen zu "
+"erklären, wie alles funktioniertthis mistaolt deand praising pain wasnad I "
+"will give complete"
+
+#: .\templates\main\home.html:1286
+msgid "Looking To Sell Or Rent Your Property?"
+msgstr "Möchten Sie Ihre Immobilie verkaufen oder vermieten?"
+
+#: .\templates\main\home.html:1287
+msgid ""
+"We Will Assist You In The Best And Comfortable Property Services For You"
+msgstr ""
+"Wir unterstützen Sie mit den besten und komfortabelsten "
+"Immobiliendienstleistungen für Sie"
+
+#: .\templates\main\home.html:1291
+msgid "request a quote"
+msgstr "Fordern Sie ein Angebot an"
+
+#: .\templates\main\listings.html:562
+msgid "Sort by"
+msgstr "Sortiere nach"
+
+#, fuzzy
+#~| msgid "For Sale"
+#~ msgid "Condo Sale!"
+#~ msgstr "Zu verkaufen"
+
+#, fuzzy
+#~| msgid "family house"
+#~ msgid "family Condo"
+#~ msgstr "Familienhaus"
+
+#, fuzzy
+#~| msgid "Based Properties"
+#~ msgid "featured properties"
+#~ msgstr "Basierend auf Eigenschaften"
+
+#~ msgid "Login"
+#~ msgstr "Anmeldung"
+
+#~ msgid "Register"
+#~ msgstr "Registrieren"
+
+#~ msgid "property filter"
+#~ msgstr "Eigenschaftsfilter"
+
+#, fuzzy
+#~| msgid "property filter"
+#~ msgid "Property Status"
+#~ msgstr "Eigenschaftsfilter"
+
+#~ msgid "For Rent"
+#~ msgstr "Zu vermieten"
+
+#, fuzzy
+#~| msgid "property filter"
+#~ msgid "Property Type"
+#~ msgstr "Eigenschaftsfilter"
+
+#~ msgid "Residential"
+#~ msgstr "Wohnen"
+
+#~ msgid "Commercial"
+#~ msgstr "Kommerziell"
+
+#~ msgid "Land"
+#~ msgstr "Land"
+
+#~ msgid "Luxury"
+#~ msgstr "Luxus"
+
+#~ msgid "Area From"
+#~ msgstr "Fläche ab"
+
+#~ msgid "Locations"
+#~ msgstr "Standorte"
+
+#~ msgid "United Kingdom"
+#~ msgstr "Großbritannien"
+
+#~ msgid "American Samoa"
+#~ msgstr "Amerikanischen Samoa-Inseln"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgien"
+
+#~ msgid "Canada"
+#~ msgstr "Kanada"
+
+#~ msgid "Delaware"
+#~ msgstr "Delaware"
+
+#~ msgid "Bedrooms"
+#~ msgstr "Schlafzimmer"
+
+#~ msgid "Bathrooms"
+#~ msgstr "Badezimmer"
+
+#~ msgid "Price range"
+#~ msgstr "Preisklasse"
+
+#~ msgid "Air Conditioning"
+#~ msgstr "Klimaanlage"
+
+#~ msgid "Swiming Pool"
+#~ msgstr "Schwimmbad"
+
+#~ msgid "Central Heating"
+#~ msgstr "Zentralheizung"
+
+#~ msgid "Spa & Massage"
+#~ msgstr "Spa & Massage"
+
+#~ msgid "Pets Allow"
+#~ msgstr "Haustiere erlaubt"
+
+#~ msgid "Gym"
+#~ msgstr "Fitnessstudio"
+
+#~ msgid "Alarm"
+#~ msgstr "Alarm"
+
+#~ msgid "Window Covering"
+#~ msgstr "Fensterabdeckung"
+
+#~ msgid "Free WiFi"
+#~ msgstr "Gratis Wifi"
+
+#~ msgid "Car Parking"
+#~ msgstr "Parkplatz"
+
+#~ msgid "Categories Property"
+#~ msgstr "Kategorien Immobilien"
+
+#~ msgid "apartement"
+#~ msgstr "Wohnung"
+
+#~ msgid "villa"
+#~ msgstr "Villa"
+
+#~ msgid "modern villa"
+#~ msgstr "moderne Villa"
+
+#~ msgid "town house"
+#~ msgstr "Stadthaus"
+
+#~ msgid "office"
+#~ msgstr "Büro"
+
+#~ msgid "Property Attachments"
+#~ msgstr "Eigentumspfändungen"
+
+#~ msgid "Download"
+#~ msgstr "Herunterladen"
+
+#~ msgid "Low to High Price"
+#~ msgstr "Niedriger bis hoher Preis"
+
+#~ msgid "High to Low Price"
+#~ msgstr "Hoher bis niedriger Preis"
+
+#~ msgid "Rent Properties"
+#~ msgstr "Immobilien vermieten"
+
+#~ msgid "sold out"
+#~ msgstr "ausverkauft"
+
+#~ msgid "184 Lexington Avenue"
+#~ msgstr "184 Lexington Avenue"
+
+#~ msgid "Family Home for sale"
+#~ msgstr "Einfamilienhaus zu verkaufen"

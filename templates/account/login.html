@@ -1,0 +1,95 @@
+{% extends 'include/base.html' %}
+{% load static %}
+{% block body %}
+<!-- BREADCRUMB -->
+<div class="bg-theme-overlay" style="background-image: url('{% static 'images/login1.jpg' %}');">
+    <section class="section__breadcrumb ">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="text-capitalize text-white">{{SignIn}}</h2>
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">
+                            <a href="/" class="text-white">
+                                {{Home}}
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="{% url 'account:login' %}" class="text-white">
+                                {{SignIn}}
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- END BREADCRUMB -->
+</header>
+
+<div class="clearfix"></div>
+
+<!-- LISTING LIST -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Form Login -->
+                <div class="card mx-auto" style="max-width: 380px;">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">{{SignIn}}</h4>
+                        <form action="{% url 'account:login' %}" method="post">
+                            {% csrf_token %}
+                            <a href="#" class="btn btn-facebook btn-block mb-2 text-white"> <i
+                                    class="fa fa-facebook"></i> &nbsp; Sign
+                                in
+                                with
+                                Facebook</a>
+                            <a href="#" class="btn btn-primary btn-block mb-4"
+                                style="background-color: rgba(1, 53, 101, 0.9);"> <i class="fa fa-google"></i> &nbsp;
+                                Sign in with
+                                Google</a>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Username" type="text" name="username">
+                            </div> <!-- form-group// -->
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" type="password" name="password">
+                            </div> <!-- form-group// -->
+
+                            <div class="form-group">
+                                <a href="{% url 'account:forget_password' %}" class="float-right text-danger">{{Forgotpassword}}</a>
+                                <label class="float-left custom-control custom-checkbox"> <input type="checkbox"
+                                        class="custom-control-input" checked="">
+                                    <span class="custom-control-label"> {{Remember}} </span>
+                                </label>
+                            </div> <!-- form-group form-check .// -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary bg-mybtn btn-block"> {{SignIn}} </button>
+                                {% if messages %}
+
+                                {% for message in messages %}
+                                <div class="alert alert-{{ message.tags }} alert-dismissible fade show mb-0 mt-4"
+                                    role="alert">
+                                    {{ message }}
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                {% endfor %}
+                                {% endif %}
+                            </div> <!-- form-group// -->
+                        </form>
+
+                    </div> <!-- card-body.// -->
+                </div> <!-- card .// -->
+
+                <p class="text-center mt-4">{{ Dont_Have_Account }} <a href="{% url 'account:signup' %}">{{ Sign_Up }}</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END LISTING LIST -->
+{% endblock body %}
