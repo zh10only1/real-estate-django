@@ -66,11 +66,11 @@
                             <ul class="topbar-link">
                                 {% if user.is_authenticated %}
                                 <li><a href="#">{{user.username}}</a></li>
-                                <li><a href="{% url 'account:logout' %}" title="">Logout</a></li>
+                                <li><a href="{% url 'account:logout' %}" title="">Abmelden</a></li>
 
                                 {% else %}
-                                <li><a href="{% url 'account:login' %}" title="">Login</a></li>
-                                <li><a href="{% url 'account:signup' %}" title="">Register</a></li>
+                                <li><a href="{% url 'account:login' %}" title="">Anmelden</a></li>
+                                <li><a href="{% url 'account:signup' %}" title="">Registrieren</a></li>
                                 {% endif %}
                                 <li>
                                     <select class="lang-drop" onchange="changelanguage(this.value);">
