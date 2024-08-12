@@ -83,7 +83,7 @@ msgid "Our Services"
 msgstr "Nos services"
 
 msgid "We for you"
-msgstr "Wir fur Sie"
+msgstr "Wir für Sie"
 
 #: .\templates\main\home.html:311
 msgid "Choose your best need in your city."
@@ -102,6 +102,9 @@ msgstr "Jetzt gratis registrieren"
 msgid "Propery Management"
 msgstr "Pièces jointes de propriété"
 
+msgid "Personal advice"
+msgstr "Persönliche Beratung"
+
 #: .\templates\main\home.html:343
 msgid "Renting & Selling"
 msgstr "Location et vente"
@@ -109,6 +112,10 @@ msgstr "Location et vente"
 #: .\templates\main\home.html:359
 msgid "Based Properties"
 msgstr "Propriétés basées"
+
+msgid "Your personal selection"
+msgstr "Ihre persönliche Auswahl"
+
 
 #: .\templates\main\home.html:361
 msgid "handpicked exclusive properties by our team."

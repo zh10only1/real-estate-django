@@ -63,7 +63,7 @@ msgid "Our Services"
 msgstr "Our Services"
 
 msgid "We for you"
-msgstr "Wir fur Sie"
+msgstr "We are here for you"
 
 #: .\templates\main\home.html:311
 msgid "Choose your best need in your city."
@@ -74,13 +74,16 @@ msgid "Consulting Services"
 msgstr "Consulting Services"
 
 msgid "Register now for free"
-msgstr "Jetzt gratis registrieren"
+msgstr "Register now for free"
 
 #: .\templates\main\home.html:333
 #, fuzzy
 #| msgid "Property Attachments"
 msgid "Propery Management"
 msgstr "Property Attachments"
+
+msgid "Personal advice"
+msgstr "Personal advice"
 
 #: .\templates\main\home.html:343
 msgid "Renting & Selling"
@@ -89,6 +92,9 @@ msgstr "Renting & Selling"
 #: .\templates\main\home.html:359
 msgid "Based Properties"
 msgstr "Based Properties"
+
+msgid "Your personal selection"
+msgstr "Your personal selection"
 
 #: .\templates\main\home.html:361
 msgid "handpicked exclusive properties by our team."

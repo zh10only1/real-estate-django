@@ -82,7 +82,7 @@ msgid "Our Services"
 msgstr "Οι Υπηρεσίες μας"
 
 msgid "We for you"
-msgstr "Wir fur Sie"
+msgstr "Wir für Sie"
 
 #: .\templates\main\home.html:311
 msgid "Choose your best need in your city."
@@ -101,6 +101,9 @@ msgstr "Jetzt gratis registrieren"
 msgid "Propery Management"
 msgstr "Προσαρτήματα ιδιοκτησίας"
 
+msgid "Personal advice"
+msgstr "Persönliche Beratung"
+
 #: .\templates\main\home.html:343
 msgid "Renting & Selling"
 msgstr "Ενοικίαση και πώληση"
@@ -108,6 +111,9 @@ msgstr "Ενοικίαση και πώληση"
 #: .\templates\main\home.html:359
 msgid "Based Properties"
 msgstr "Βασισμένες ιδιότητες"
+
+msgid "Your personal selection"
+msgstr "Ihre persönliche Auswahl"
 
 #: .\templates\main\home.html:361
 msgid "handpicked exclusive properties by our team."
