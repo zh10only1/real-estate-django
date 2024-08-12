@@ -92,6 +92,9 @@ msgstr "Wählen Sie den besten Bedarf in Ihrer Stadt."
 msgid "Consulting Services"
 msgstr "Beratungsleistungen"
 
+msgid "Register now for free"
+msgstr "Jetzt gratis registrieren"
+
 #: .\templates\main\home.html:333
 #, fuzzy
 #| msgid "Property Attachments"

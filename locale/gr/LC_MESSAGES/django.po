@@ -92,6 +92,9 @@ msgstr "Επιλέξτε την καλύτερη ανάγκη σας στην π
 msgid "Consulting Services"
 msgstr "Συμβουλευτικές υπηρεσίες"
 
+msgid "Register now for free"
+msgstr "Jetzt gratis registrieren"
+
 #: .\templates\main\home.html:333
 #, fuzzy
 #| msgid "Property Attachments"
