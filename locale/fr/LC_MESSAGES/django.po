@@ -82,6 +82,9 @@ msgstr "À vendre"
 msgid "Our Services"
 msgstr "Nos services"
 
+msgid "We for you"
+msgstr "Wir fur Sie"
+
 #: .\templates\main\home.html:311
 msgid "Choose your best need in your city."
 msgstr "Choisissez votre meilleur besoin dans votre ville."

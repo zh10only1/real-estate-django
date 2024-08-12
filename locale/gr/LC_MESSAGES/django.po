@@ -81,6 +81,9 @@ msgstr "Προς πώληση"
 msgid "Our Services"
 msgstr "Οι Υπηρεσίες μας"
 
+msgid "We for you"
+msgstr "Wir fur Sie"
+
 #: .\templates\main\home.html:311
 msgid "Choose your best need in your city."
 msgstr "Επιλέξτε την καλύτερη ανάγκη σας στην πόλη σας."
