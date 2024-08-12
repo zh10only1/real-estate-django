@@ -275,6 +275,12 @@ msgstr "événement"
 msgid "Best Interior Oppertunity "
 msgstr "Meilleure opportunité intérieure"
 
+msgid "News title 1"
+msgstr "Entdecken Sie Ihr Traumobjekt im bezaubernden europäischen Land, Kroatien"
+
+msgid "News body 1"
+msgstr "123-Kroatien.eu, das ultimative Portal mit einem großen Überblick kroatischer Immobilien. Von Grundstücken, Apartments, Häusern und Villen bis hin zu Neubauten – hier finden Sie alles, was Ihr Herz begehrt. Kroatien bietet nicht nur atemberaubende Landschaften, sondern auch eine reiche Geschichte und unzählige Möglichkeiten für Ihren Lebensstil. Durchstöbern Sie unser Angebot und lassen Sie sich von der Vielfalt und Schönheit Kroatiens inspirieren."
+
 #: .\templates\main\home.html:1166 .\templates\main\home.html:1209
 msgid ""
 "Real estate festival is one of the famous feval for explain to you how all "
@@ -292,9 +298,21 @@ msgstr "Actualité à la Une"
 msgid "Tips & Trick buy real estate"
 msgstr "Trucs et astuces pour acheter un bien immobilier"
 
+msgid "News title 2"
+msgstr "Das Tor zu Ihrer Wunschimmobilie in Kroatien"
+
+msgid "News body 2"
+msgstr "Die Neueröffnung von 123-Kroatien.eu verspricht eine revolutionäre Veränderung auf dem Immobilienmarkt Kroatiens. Als eine der führenden Destinationen in Europa zieht Kroatien mit seinen atemberaubenden Landschaften, dem gesunden Klima und der friedlichen Idylle immer mehr Menschen an, die ihren Lebensmittelpunkt hierher verlagern möchten."
+
 #: .\templates\main\home.html:1249
 msgid "Our Must Popular Deluxe House"
 msgstr "Notre maison de luxe incontournable"
+
+msgid "News title 3"
+msgstr "Kroatien als Lebensmittelpunkt"
+
+msgid "News body 3"
+msgstr "Eine Oase für Lebensqualität und Naturschönheit Kroatien erfreut sich nicht nur als beliebtes Urlaubsziel großer Beliebtheit, sondern wird auch zunehmend als attraktiver Lebensmittelpunkt für Menschen aus aller Welt angesehen. Mit einer Fülle positiver Aspekte lockt dieses mediterrane Land Jahr für Jahr eine wachsende Anzahl von Einwanderern an, die hier ein neues Zuhause suchen."
 
 #: .\templates\main\home.html:1252
 msgid ""

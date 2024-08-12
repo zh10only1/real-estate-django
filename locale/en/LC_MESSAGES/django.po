@@ -246,6 +246,12 @@ msgstr "event"
 msgid "Best Interior Oppertunity "
 msgstr "Best Interior Oppertunity "
 
+msgid "News title 1"
+msgstr "Discover your dream property in the charming European country, Croatia"
+
+msgid "News body 1"
+msgstr "123-Kroatien.eu, the ultimate portal with a comprehensive overview of Croatian real estate. From plots, apartments, houses, and villas to new constructions here you'll find everything your heart desires. Croatia offers not only breathtaking landscapes but also a rich history and countless opportunities for your lifestyle. Browse our offerings and let yourself be inspired by the diversity and beauty of Croatia."
+
 #: .\templates\main\home.html:1166 .\templates\main\home.html:1209
 msgid ""
 "Real estate festival is one of the famous feval for explain to you how all "
@@ -258,13 +264,27 @@ msgstr ""
 msgid "Top News"
 msgstr "Top News"
 
+
+
 #: .\templates\main\home.html:1206
 msgid "Tips & Trick buy real estate"
 msgstr "Tips & Trick buy real estate"
 
+msgid "News title 2"
+msgstr "The gateway to your desired property in Croatia"
+
+msgid "News body 2"
+msgstr "The relaunch of 123-Kroatien.eu promises a revolutionary change in the Croatian real estate market. As one of the leading destinations in Europe, Croatia attracts more and more people who want to relocate their main residence here, with its breathtaking landscapes, healthy climate, and peaceful idyll."
+
 #: .\templates\main\home.html:1249
 msgid "Our Must Popular Deluxe House"
 msgstr "Our Must Popular Deluxe House"
+
+msgid "News title 3"
+msgstr "Croatia as your central living location"
+
+msgid "News body 3"
+msgstr "An oasis for quality of life and natural beauty, Croatia is not only a popular vacation destination but is also increasingly seen as an attractive place to live for people from around the world. With a wealth of positive aspects, this Mediterranean country attracts a growing number of immigrants each year who are looking for a new home here."
 
 #: .\templates\main\home.html:1252
 msgid ""
