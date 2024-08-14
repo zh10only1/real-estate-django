@@ -1,39 +1,173 @@
-{% extends 'include/base.html' %}
-{% load static %}
-{% block body %}
+{% extends 'include/base.html' %} {% load static %} {% block body %}
 <div class="myHeaderBg bg-theme-overlay">
-    <section class="section__breadcrumb ">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2 class="text-capitalize text-white">{{About_Us}}</h2>
-                    <ul class="list-inline ">
-                        <li class="list-inline-item">
-                            <a href="/" class="text-white">
-                                {{Home}}
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="about-us.html" class="text-white">
-                                {{About}}
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+  <section class="section__breadcrumb">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 text-center">
+          {% comment %}
+          <h2 class="text-capitalize text-white">{{About_Us}}</h2>
+          {% endcomment %}
+          <ul class="list-inline">
+            {% comment %}
+            <li class="list-inline-item">
+              <a href="/" class="text-white"> {{Home}} </a>
+            </li>
+            {% endcomment %}
+            <li class="list-inline-item">
+              <a
+                style="font-weight: bold; font-size: 2rem"
+                href="about-us.html"
+                class="text-white"
+              >
+                {{About}}
+              </a>
+            </li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </div>
-    <div class="clearfix"></div>
+<div class="clearfix"></div>
 
-    <!-- ABOUT -->
+<div class="container mt-5">
+  <h5>
+    <span style="font-weight: normal"
+      >Vertrauen und Sicherheit für Ihr Sorgenfreies Immobilienerlebnis!</span
+    >
+  </h5>
+  <p>
+    Bei 123-Kroatien.eu legen wir größten Wert auf Vertrauen und Sicherheit,
+    wenn es um Ihre Traumimmobilie geht. Daher bieten wir ausschließlich
+    verifizierten Immobilienmaklern und Bauunternehmen in Kroatien eine
+    Plattform, um sicherzustellen, dass Ihre Immobilienerfahrung transparent,
+    professionell und sorgenfrei verläuft.
+  </p>
+
+  <h5>
+    <span style="font-weight: normal"
+      >Warum verifizierte Immobilienmakler und Bauunternehmen?</span
+    >
+  </h5>
+  <ol>
+    <li>
+      Professionelle Expertise: Unsere verifizierten Immobilienmakler verfügen
+      über umfassende Erfahrung und Fachkenntnisse im kroatischen
+      Immobilienmarkt. Sie stehen für Professionalität und Fachkompetenz.
+    </li>
+    <li>
+      Integrität und Zuverlässigkeit: Die Zusammenarbeit mit verifizierten
+      Maklern gewährleistet Integrität und Zuverlässigkeit. Sie können darauf
+      vertrauen, dass die angebotenen Immobilien korrekt präsentiert und
+      beschrieben werden.
+    </li>
+    <li>
+      Transparente Kommunikation: Verifizierte Makler auf 123-Kroatien.eu setzen
+      auf transparente Kommunikation. Sie stehen Ihnen bei Fragen zur Verfügung,
+      geben klare Informationen und unterstützen Sie bei jedem Schritt Ihres
+      Immobilienerlebnisses.
+    </li>
+    <li>
+      Verifizierte Maklerpartnerschaften: Jeder Makler, der auf 123-Kroatien.eu
+      präsent ist, durchläuft einen sorgfältigen Verifizierungsprozess. Dies
+      gewährleistet, dass nur seriöse und qualifizierte Fachleute auf unserer
+      Plattform vertreten sind.
+    </li>
+    <li>
+      Datenschutz und Vertraulichkeit: Wir schützen Ihre Daten und gewährleisten
+      höchste Vertraulichkeit. Unsere Sicherheitsrichtlinien entsprechen den
+      höchsten Standards, um Ihre persönlichen Informationen zu sichern.
+    </li>
+  </ol>
+
+  <h5>
+    <span style="font-weight: normal">Sorgenfreie Immobilienerfahrung:</span>
+  </h5>
+  <p>
+    Bei 123-Kroatien.eu steht Ihre Sorgenfreiheit an erster Stelle. Vertrauen
+    Sie darauf, dass Sie mit verifizierten Immobilienmaklern zusammenarbeiten,
+    die Ihre Interessen schützen und Ihnen ein positives Immobilienerlebnis
+    bieten.
+  </p>
+
+  <h5>
+    <span style="font-weight: normal">Ihr vertrauenswürdiger Partner:</span>
+  </h5>
+  <p>
+    123-Kroatien.eu ist stolz darauf, Ihnen eine Plattform zu bieten, die auf
+    Vertrauen, Sicherheit und Qualität basiert. Verlassen Sie sich darauf, dass
+    unsere verifizierten Immobilienmakler Ihnen den besten Service bieten,
+    während Sie die Suche nach Ihrer Traumimmobilie in Kroatien genießen.
+  </p>
+
+  <h5>
+    <span style="font-weight: normal"
+      >Ihre mediterrane Oase wartet auf Sie:</span
+    >
+  </h5>
+  <p>
+    Als führende Immobilienplattform ist es unsere Mission, Ihnen den Schlüssel
+    zu einer sorgenfreien und vorteilhaften Immobilienerfahrung in Kroatien zu
+    bieten. Lassen Sie sich von der Faszination des kroatischen Lebensstils
+    inspirieren und entdecken Sie die zahlreichen Vorteile, die der Besitz einer
+    Immobilie in diesem bezaubernden Land mit sich bringt. Investieren Sie heute
+    in die Zukunft – Ihr Traum von einer Immobilie in Kroatien ist nur einen
+    Klick entfernt!
+  </p>
+
+  <p>
+    Ihre Traumimmobilie wartet auf Sie – Starten Sie Ihre Suche auf
+    123-Kroatien.eu und erleben Sie den Zauber Kroatiens in Ihrem eigenen
+    Zuhause!
+  </p>
+
+  <video class="w-100" controls="" loop="" autoplay="">
+    <source src="{% static '/images/kroatien.mp4' %}" type="video/mp4" />
+  </video>
+</div>
+
+<!-- CALL TO ACTION -->
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">123-KROATIEN.EU</h2>
+        <p class="text-capitalize text-light">
+          Ihr Spezialistenteam Für Immobilien In Kroatien Mit Umfassender
+          Expertise Und Fachwissen.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT --
     <section class="home__about bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="title__leading">
-                        <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
+                        <h6 class="text-uppercase">trusted By thousands</h6> 
                         {% comment %} <h2 class="text-capitalize text-danger">{{why_choose_us}}</h2> {% endcomment %}
                         <div style="white-space: pre-line;">
                             {{About_text_1}}
@@ -66,45 +200,65 @@
     </section>
     <!-- END ABOUT -->
 
-
-
-    <section class="projects__partner ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-7">
-                    <div class="title__head">
-                        <h2 class="text-center text-capitalize text-danger">{{our_other}}</h2>
-                        <p class="text-center text-capitalize">{{brand_partners}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="projects__partner-logo">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item">
-                                <img src="{% static 'images/partner-logo6.png' %}" alt="" class="img-fluid">
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="{% static 'images/partner-logo7.png' %}" alt="" class="img-fluid">
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="{% static 'images/partner-logo8.png' %}" alt="" class="img-fluid">
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="{% static 'images/partner-logo1.png' %}" alt="" class="img-fluid">
-                            </li>
-                            <li class="list-inline-item">
-                                <img src="{% static 'images/partner-logo5.png' %}" alt="" class="img-fluid">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+{% comment %}
+<section class="projects__partner">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <div class="title__head">
+          <h2 class="text-center text-capitalize text-danger">{{our_other}}</h2>
+          <p class="text-center text-capitalize">{{brand_partners}}</p>
         </div>
-    </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="projects__partner-logo">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo6.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo7.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo8.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo1.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo5.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endcomment %}
 
-    <!-- OUR TEAM -->
+<!-- OUR TEAM --
     <section class="bg-light">
         <div class="container">
             <div class="row">
@@ -274,10 +428,7 @@
     </section>
     <!-- END TEAM -->
 
-
-
-
-    <!-- CALL TO ACTION --
+<!-- CALL TO ACTION --
     <section class="bg-gradient cta-v1 py-5">
         <div class="container">
             <div class="row align-items-center">
@@ -297,5 +448,5 @@
     </section>
     !-- END CALL TO ACTION -->
 
-    <!-- Footer  -->
+<!-- Footer  -->
 {% endblock body %}
