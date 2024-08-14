@@ -1,3 +1,4 @@
 django_env/
 .idea/
 env/
+media/
