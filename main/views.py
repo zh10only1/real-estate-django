@@ -5,8 +5,10 @@ from django.contrib import messages
 from django.utils import translation
 from django.http import HttpResponseRedirect
 from accounts.models import Agent
-import json
 from pages.models import Translation
+from django.core.mail import send_mail
+from django.http import JsonResponse
+import json
 # Create your views here.
 
 @login_required(login_url='account:login')
@@ -315,6 +317,46 @@ def delete_property(request, id):
     messages.success(request, "Property delete sucsessfully")
     return redirect('main:profile')
 
+@login_required(login_url='main:login_required')
+def send_email(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            # Prepare the email
+            subject = 'Contact Form Submission'
+            message = f"""
+            Salutation: {data.get('salutation')}
+            Company: {data.get('company')}
+            First Name: {data.get('first_name')}
+            Last Name: {data.get('last_name')}
+            Street: {data.get('street')}
+            ZIP: {data.get('zip')}
+            City: {data.get('city')}
+            Phone: {data.get('phone')}
+            Fax: {data.get('fax')}
+            Mobile: {data.get('mobile')}
+            Email: {data.get('email')}
+            Homepage: {data.get('homepage')}
+            Message: {data.get('message')}
+            """
+
+            send_mail(
+                subject,
+                message,
+                'service.mahamudh472@gmail.com',  
+                ['expendables891@gmail.com'],
+                fail_silently=False,
+            )
+
+            return JsonResponse({'status': 'success'})
+        except json.JSONDecodeError:
+            return JsonResponse({'status': 'error', 'message': 'Invalid JSON format'})
+        
+        except Exception as e:
+            return JsonResponse({'status': 'error', 'message': str(e)})
+    
+    return JsonResponse({'status': 'error', 'message': 'Invalid request method'})
+
 
 # temporary
 def loginRequired(request):
@@ -325,3 +367,4 @@ def set_language_from_url(request, user_language):
     request.session['site_language'] = user_language
     translation.activate(user_language)
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+

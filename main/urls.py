@@ -16,6 +16,7 @@ urlpatterns = [
     path('delete-property/<int:id>/', views.delete_property, name='delete_property'),
     path('property-details/<int:id>/', views.single_details, name='property_details'),
     path('blog/single/', views.blog_single, name="blog_single"),
+    path('send-email/', views.send_email, name='send_email'),
     
     # temporary
     path('login-required/', views.loginRequired, name='login_required'),

@@ -1,164 +1,362 @@
-{% extends 'include/base.html' %}
-{% load static %}
-{% block body %}
+{% extends 'include/base.html' %} {% load static %} {% block body %}
 <div class="myHeaderBg bg-theme-overlay">
-    <section class="section__breadcrumb ">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2 class="text-capitalize text-white">{{Contact_Us}}</h2>
-                    <ul class="list-inline ">
-                        <li class="list-inline-item">
-                            <a href="index.html" class="text-white">
-                                {{Home}}
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="about-us.html" class="text-white">
-                                {{Contact_Us}}
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <section class="section__breadcrumb">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="text-capitalize text-white">{{Contact_Us}}</h2>
+          {% comment %}
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="index.html" class="text-white"> {{Home}} </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="about-us.html" class="text-white"> {{Contact_Us}} </a>
+            </li>
+          </ul>
+          {% endcomment %}
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </div>
-    <div class="clearfix"></div>
+<div class="clearfix"></div>
 
-    <!-- Form contact -->
-    <section class="wrap__contact-form">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <h5 class="text-danger">{{Contact_Us}}</h5>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group form-group-name">
-                                <label>{{Your_name}} <span class="required"></span></label>
-                                <input type="text" class="form-control" name="name" required="">
-
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-name">
-                                <label>{{Your_email}} <span class="required"></span></label>
-                                <input type="email" class="form-control" name="email" required="">
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group form-group-name">
-                                <label>{{website}} <span class="required"></span></label>
-                                <input type="text" class="form-control" name="website" required="">
-
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-name">
-                                <label>{{Subject}} <span class="required"></span></label>
-                                <input type="text" class="form-control" name="subject" required="">
-
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label>{{Your_message}} </label>
-                                <textarea class="form-control" rows="9" name="message"></textarea>
-                            </div>
-                            <div class="form-group mb-0">
-                                <button type="submit" class="btn btn-primary btn-outline-blue btn-contact">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="wrap__contact-open-hours">
-                        <h5 class="text-capitalize text-danger">{{open_hours}}</h5>
-                        <ul class="list-unstyled">
-                            <li class="d-flex align-items-center justify-content-between"><span>Monday - Friday</span>
-                                <span>09 AM - 19 PM</span></li>
-                            <li class="d-flex align-items-center justify-content-between"><span>Saturday</span> <span>09
-                                    AM - 14 PM</span></li>
-                            <li class="d-flex align-items-center justify-content-between"><span>Sunday</span>
-                                <span>Closed</span></li>
-                        </ul>
-                    </div>
-                    <h5 class="text-danger">{{Info_location}}</h5>
-                    <div class="wrap__contact-form-office">
-                        <ul class="list-unstyled">
-                            <li>
-                                <span>
-                                    <i class="fa fa-home"></i>
-                                </span>
-
-                                PO Box 16122 Collins Street West Victoria
-                                8007 Australia
-
-
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="fa fa-phone"></i>
-                                    <a href="tel:">(+12) 34567 890 123</a>
-                                </span>
-
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="fa fa-envelope"></i>
-                                    <a href="mailto:">mail@example.com</a>
-                                </span>
-
-                            </li>
-                            <li>
-                                <span>
-                                    <i class="fa fa-globe"></i>
-                                    <a href="#" target="_blank"> www.yourdomain.com</a>
-                                </span>
-                            </li>
-                        </ul>
-
-                        <div class="social__media">
-                            <h5 class="text-danger">{{find_us}}</h5>
-                            <ul class="list-inline">
-
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn btn-social rounded text-white facebook">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn btn-social rounded text-white twitter">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn btn-social rounded text-white whatsapp">
-                                        <i class="fa fa-whatsapp"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn btn-social rounded text-white telegram">
-                                        <i class="fa fa-telegram"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#" class="btn btn-social rounded text-white linkedin">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+<!-- Form contact -->
+<section class="wrap__contact-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h5 class="text-danger">Kontakt</h5>
+        <p>
+          Vielen Dank für Ihr Interesse an unserer Immobilienplattform. Bitte
+          nutzen Sie das folgende Kontaktformular, um uns Ihre Anfragen,
+          Anliegen oder Feedback mitzuteilen. Wir stehen Ihnen gerne zur
+          Verfügung und werden uns bemühen, Ihre Anfrage so schnell wie möglich
+          zu bearbeiten. Bitte füllen Sie alle mit einem Stern (*)
+          gekennzeichneten Felder aus, damit wir Ihnen bestmöglich weiterhelfen
+          können.
+        </p>
+        <p>Bitte geben Sie Ihre Kontaktdaten ein</p>
+        <form id="contactForm">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="anrede">Anrede <span class="required">*</span></label><br />
+                <select id="anrede" name="salutation" class="form-control" required>
+                  <option value="" disabled selected>Bitte wählen</option>
+                  <option value="Herr">Herr</option>
+                  <option value="Frau">Frau</option>
+                  <option value="Diverse">Diverse</option>
+                </select><br /><br />
+              </div>
             </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="company">Firma <span class=""></span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="company"
+                  name="company"
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="first_name">Vorname <span class="required"></span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="first_name"
+                  name="first_name"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="last_name">Nachname <span class="required"></span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="last_name"
+                  name="last_name"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="street">Straße <span class="required"></span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="street"
+                  name="street"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="zip_code">PLZ <span class="required"></span></label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="zip_code"
+                  name="zip_code"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="city">Ort <span class="required"></span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  name="city"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="phone">Telefon <span class="required"></span></label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="fax">Fax <span class="required"></span></label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="fax"
+                  name="fax"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="mobile">Mobil <span class="required"></span></label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="mobile"
+                  name="mobile"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="email">E-Mail Adresse <span class="required"></span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-6">
+              <div class="form-group form-group-name">
+                <label for="homepage">Homepage <span class="required"></span></label>
+                <input
+                  type="url"
+                  class="form-control"
+                  id="homepage"
+                  name="homepage"
+                />
+              </div>
+            </div>
+        
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="message">Mitteilungen</label>
+                <textarea
+                  class="form-control"
+                  rows="9"
+                  id="message"
+                  name="message"
+                ></textarea>
+              </div>
+            </div>
+        
+            <div class="col-md-12">
+              <div class="form-group form-group-checkbox">
+                <input
+                  type="checkbox"
+                  id="datenschutz"
+                  name="datenschutz"
+                  required
+                />
+                <label for="datenschutz">
+                  Bitte bestätigen Sie unsere
+                  <a href="https://glamlunaire.com/agb.html" style="text-decoration: underline">AGB</a>
+                  und die Bestimmungen zum
+                  <a href="https://glamlunaire.com/datenschutz.html" style="text-decoration: underline">Datenschutz</a>.
+                  <span class="required">*</span>
+                </label>
+              </div>
+        
+              <div class="form-group mb-0">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-contact"
+                  style="border-radius: 0px; color: white; background-color: #003167; padding: 10px 90px;"
+                >
+                  Absenden
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        
+      </div>
+
+      <!-- End Form contact  -->
+
+      <div class="col-md-4">
+        <div class="wrap__contact-open-hours">
+          <h5 class="text-capitalize text-danger" style="color: #003167">
+            Öffnungszeiten
+          </h5>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center justify-content-between">
+              <span>Montag - Freitag</span>
+              <span>09 AM - 19 PM</span>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <span>Samstag</span> <span>09 AM - 14 PM</span>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <span>Sonntag</span>
+              <span>Geschlossen</span>
+            </li>
+          </ul>
         </div>
-    </section>
-    <!-- End Form contact  -->
+        <!-- <h5 class="text-danger">Info kasten</h5> -->
+        <div class="wrap__contact-form-office">
+          <ul class="list-unstyled">
+            <li>
+              <span>
+                <i class="fa fa-home"></i>
+              </span>
 
+              Südstr.116 -53175 Bonn
+            </li>
+            <li>
+              <span>
+                <i class="fa fa-phone"></i>
+                <a href="tel:">+49 228 619 679 90</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <i class="fa fa-envelope"></i>
+                <a href="mailto:">office@123-kroatien.eu</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <i class="fa fa-globe"></i>
+                <a href="#" target="_blank"> www.123-kroatien.eu</a>
+              </span>
+            </li>
+          </ul>
 
-    <!-- Footer  -->
-    {% endblock body %}
+          <div class="social__media">
+            <h5 class="text-danger">So finden Sie uns.</h5>
+            <ul class="list-inline">
+              <a href="https://facebook.com" target="_blank"
+                ><img
+                  src="https://glamlunaire.com/images/facebook_icon.png"
+                  alt="Facebook"
+                  style="width: 40px; height: 40px; margin: 0"
+              /></a>
+              <a href="https://whatsapp.com" target="_blank"
+                ><img
+                  src="https://glamlunaire.com/images/whatsapp_icon.png"
+                  alt="WhatsApp"
+                  style="width: 40px; height: 40px; margin: 0"
+              /></a>
+              <a href="https://instagram.com" target="_blank"
+                ><img
+                  src="https://glamlunaire.com/images/instagram_icon.png"
+                  alt="Instagram"
+                  style="width: 40px; height: 40px; margin: 0"
+              /></a>
+              <a href="https://tiktok.com" target="_blank"
+                ><img
+                  src="https://glamlunaire.com/images/tiktok_icon.png"
+                  alt="TikTok"
+                  style="width: 40px; height: 40px; margin: 0"
+              /></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">VERTRAUEN SIE AUF UNSERE SORGFÄLTIG AUSGEWÄHLTEN PARTNER.</h2>
+        <p class="text-capitalize text-light">
+          123-Kroatien.Eu Bietet Ihnen Geprüfte Partnerschaften Für Ihre Immobilienbedürfnisse In Kroatien.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Footer  -->
+{% endblock body %}
