@@ -1,0 +1,110 @@
+{% extends 'include/base.html' %}
+{% load static %}
+{% block body %}
+
+<div class="myHeaderBg bg-theme-overlay">
+    <section class="section__breadcrumb">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 text-center">
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <h5>
+                    Nutzen Sie die Gelegenheit und präsentieren Sie als Immobilienagentur Ihre Immobilien Angebote
+                    jetzt kostenlos auf <a href="https://123-kroatien.eu"
+                        target="_blank"><u>123-Kroatien.eu</u></a>!
+                </h5>
+
+                <p>123-Kroatien.eu begrüßt Sie herzlich auf unserer Plattform, der führenden Adresse für die
+                    kostenlose und international ausgerichtete Vermarktung von Immobilien in Kroatien. Unser Ziel
+                    ist es, den Immobilienmarkt seriös und transparent abzubilden, indem wir Ihnen eine kostenfreie
+                    Plattform bieten, auf der Sie sich international präsentieren können.</p>
+
+                <h5>Unsere kostenlosen Dienstleistungen:</h5>
+                <ol>
+                    <li>Optimale Online-Präsentation: Wir wissen um die Bedeutung des ersten Eindrucks. Deshalb
+                        setzen wir auf professionelle Fotografie, ansprechende Beschreibungen und innovative
+                        Technologien, um Ihr Immobilienportfolio bestmöglich zu präsentieren. Potenzielle Käufer und
+                        Mieter sollen von Anfang an begeistert sein.</li>
+                    <li>SEO-Optimierung für Maximale Sichtbarkeit: Dank unserer Suchmaschinenoptimierung (SEO)
+                        erscheinen Ihre Immobilien bei relevanten Suchanfragen prominent. So erreichen Sie eine
+                        breite Zielgruppe von internationalen Interessenten, die aktiv nach Immobilien in Kroatien
+                        suchen.</li>
+                    <li>Individuelle Profilerstellung: Jede Immobilienagentur ist einzigartig. Wir betonen die
+                        Besonderheiten Ihrer Agentur durch individuelle Profilseiten, die potenzielle Kunden
+                        beeindrucken. Heben Sie sich von der Konkurrenz ab und präsentieren Sie Ihr Unternehmen in
+                        einem professionellen Licht.</li>
+                    <li>Schnelle und effiziente Inhaltsübertragung: Dank unserer benutzerfreundlichen Schnittstelle
+                        können alle Inhalte schnell und effizient eingepflegt werden. Somit sind Ihre Projekte oft
+                        innerhalb von Minuten weltweit erreichbar, was die Reichweite und den Abverkauf positiv
+                        beeinflusst.</li>
+                    <li>Optimale Übersetzung in neun Sprachen: Wir bieten eine optimale Übersetzung Ihrer Inhalte in
+                        neun Sprachen an, was den Abverkauf der Objekte positiv befeuert und Ihre Reichweite auf dem
+                        internationalen Markt erweitert.</li>
+                </ol>
+
+                <h5>Jetzt Kostenfrei Registrieren:</h5>
+                <p>Registrieren Sie sich jetzt völlig kostenfrei auf <strong>123-Kroatien.eu</strong> und
+                    präsentieren Sie Ihr Unternehmen exklusiv. Nutzen Sie spielend einfach die Möglichkeit, Ihre
+                    Angebote hochzuladen, inklusive Ihres Firmenlogos, Ihrer Adresse und sämtlicher Kontaktdaten.
+                    Zusätzlich bieten wir die Option, ein persönliches Profilbild des Ansprechpartners hinzuzufügen.
+                    Wir glauben an eine transparente und kostenfreie Immobilienvermarktung. Machen Sie mit und
+                    zeigen Sie sich international von Ihrer besten Seite auf <strong>123-Kroatien.eu</strong>. Ihr
+                    Erfolg ist unser Antrieb!</p>
+
+                <a href="https://glamlunaire.com/immobilen-Agentur-Bauunternehmen-Anmeldung.html"
+                    style="text-decoration: none;">
+                    <button type="submit"
+                        style="border-radius: 0px; color: white; background-color: #003167;padding: 10px 90px;">Registrieren</button>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gradient py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-9">
+          <h2 class="text-uppercase text-light">STARTEN SIE MIT ZUVERSICHT</h2>
+          <p class="text-capitalize text-light">
+            123-Kroatien.Eu Ist Ihr Verlässlicher Partner Für Immobilien In Kroatien.
+          </p>
+        </div>
+        {% comment %}
+        <div class="col-lg-3">
+          <a href="#" class="btn btn-light text-uppercase"
+            >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+          ></a>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+  </section>
+  <!-- END CALL TO ACTION -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img
+          src="{% static 'images/logo-black2.png' %}"
+          alt="logo"
+          style="width: 255px; padding: 20px 0"
+        />
+      </div>
+    </div>
+  </div>
+{% endblock body %}
