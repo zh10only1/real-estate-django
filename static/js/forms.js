@@ -1,14 +1,70 @@
 document.addEventListener('DOMContentLoaded', function () {
+    handleRegistrationFormCheckboxes()
     handleContactForm();
     handleRegistrationForm();
 });
 
+function handleRegistrationFormCheckboxes() {
+    const realtorCheckbox = document.getElementById('realtor');
+    const constructionCheckbox = document.getElementById('construction');
+
+    if (!realtorCheckbox || !constructionCheckbox) {
+        return;
+    }
+
+    // Function to handle checkbox change
+    realtorCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            constructionCheckbox.checked = false; // Uncheck the other checkbox
+        }
+    });
+
+    constructionCheckbox.addEventListener('change', function () {
+        if (this.checked) {
+            realtorCheckbox.checked = false; // Uncheck the other checkbox
+        }
+    });
+}
+
+function isOneCheckboxChecked() {
+    const realtorCheckbox = document.getElementById('realtor');
+    const constructionCheckbox = document.getElementById('construction');
+
+    if (!realtorCheckbox || !constructionCheckbox) {
+        return false;
+    }
+    return realtorCheckbox.checked || constructionCheckbox.checked;
+}
+
+function changeCheckboxValue() {
+    const realtorCheckbox = document.getElementById('realtor');
+    const constructionCheckbox = document.getElementById('construction');
+
+    if (realtorCheckbox.checked) {
+        realtorCheckbox.value = 'true';
+        constructionCheckbox.value = 'false'; // Set unchecked checkbox to 'false'
+    } else if (constructionCheckbox.checked) {
+        constructionCheckbox.value = 'true';
+        realtorCheckbox.value = 'false'; // Set unchecked checkbox to 'false'
+    }
+}
+
 function handleRegistrationForm() {
     const form = document.getElementById('registrationForm');
-    const fileInput = document.getElementById('business_license');
+
+    if (!form) {
+        return;
+    }
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
+        if (!isOneCheckboxChecked()) {
+            alert('Please select one of the checkboxes (Immobilienmakler or Bauunternehmen).');
+            return;
+        }
+
+        changeCheckboxValue()
+        const fileInput = document.getElementById('business_license');
         const file = fileInput.files[0];
 
         if (file && file.type !== 'application/pdf') {
@@ -25,26 +81,30 @@ function handleRegistrationForm() {
             },
             body: formData
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                alert('Form submitted successfully!');
-                form.reset(); // Clear the form fields
-            } else {
-                alert('Error submitting form: ' + data.message);
-                form.reset();
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('An error occurred. Please try again later.');
-        });
-
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert('Form submitted successfully!');
+                    form.reset(); // Clear the form fields
+                } else {
+                    alert('Error submitting form. Please try again later.');
+                    form.reset();
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+            });
     });
 }
 
 function handleContactForm() {
     const form = document.getElementById('contactForm');
+
+    if (!form) {
+        return;
+    }
+
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the default form submission
 
@@ -67,10 +127,10 @@ function handleContactForm() {
             .then(response => response.json())
             .then(data => {
                 if (data.status === 'success') {
-                    console.log('Email sent successfully');
+                    alert('Form submitted successfully');
                 }
                 else {
-                    console.error('Error sending email:', data.message);
+                    alert('Error submitting form. Please try again later.');
                 }
                 form.reset();
             })

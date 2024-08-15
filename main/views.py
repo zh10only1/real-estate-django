@@ -8,7 +8,12 @@ from accounts.models import Agent
 from pages.models import Translation
 from django.core.mail import send_mail
 from django.http import JsonResponse
+from django.core.files.storage import default_storage
+from django.core.files.base import ContentFile
+from django.core.mail import EmailMessage
 import json
+import os
+
 # Create your views here.
 
 @login_required(login_url='account:login')
@@ -336,6 +341,81 @@ def building_contractor(request):
 @login_required(login_url='main:login_required')
 def realestate_contractor_registration(request):
     return render(request, 'main/realestate-contractor-registration.html')
+
+@login_required(login_url='main:login_required')
+def send_registration_email(request):
+    if request.method == 'POST':
+        try:
+            # Get form data
+            firstname = request.POST.get('firstname')
+            postcode = request.POST.get('postcode')
+            street = request.POST.get('street')
+            housenumber = request.POST.get('housenumber')
+            ort = request.POST.get('ort')
+            telephone = request.POST.get('telephone')
+            mobile = request.POST.get('mobile')
+            email = request.POST.get('email')
+            realtor = request.POST.get('realtor')
+            construction = request.POST.get('construction')
+            office = request.POST.get('office')
+            oib = request.POST.get('oib')
+            website = request.POST.get('website')
+            contact_firstname = request.POST.get('contact_firstname')
+            contact_lastname = request.POST.get('contact_lastname')
+            contact_telephone = request.POST.get('contact_telephone')
+            contact_mobile = request.POST.get('contact_mobile')
+            contact_email = request.POST.get('contact_email')
+            
+            # Handle file upload
+            business_license = request.FILES.get('business_license')
+            if business_license:
+                # Save the uploaded file
+                file_name = default_storage.save(business_license.name, ContentFile(business_license.read()))
+                file_path = default_storage.path(file_name)
+            else:
+                file_path = None
+
+            # Create the email
+            email_subject = 'New Registration Form Submission'
+            email_body = f"""
+                Firmenname: {firstname}
+                Postleitzahl: {postcode}
+                Straße: {street}
+                Hausnummer: {housenumber}
+                Ort: {ort}
+                Telefonnummer: {telephone}
+                Mobilnummer: {mobile}
+                E-Mail Adresse: {email}
+                Immobilienmakler: {realtor}
+                Bauunternehmen: {construction}
+                Büroadresse: {office}
+                OIB Nummer: {oib}
+                Webadresse: {website}
+                Ansprechpartner Vorname: {contact_firstname}
+                Ansprechpartner Nachname: {contact_lastname}
+                Ansprechpartner Telefonnummer: {contact_telephone}
+                Ansprechpartner Mobilnummer: {contact_mobile}
+                Ansprechpartner E-Mail Adresse: {contact_email}
+            """
+
+            email = EmailMessage(
+                subject=email_subject,
+                body=email_body,
+                from_email='service.mahamudh472@gmail.com',
+                to=['expendables891@gmail.com'],  # Add the recipient email(s) here
+            )
+
+            if file_path:
+                email.attach_file(file_path)
+                os.remove(file_path)  # Clean up the file after attaching it
+
+            email.send()
+
+            return JsonResponse({'status': 'success', 'message': 'Form submitted successfully!'})
+        except Exception as e:
+            return JsonResponse({'status': 'error', 'message': str(e)})
+
+    return JsonResponse({'status': 'error', 'message': 'Invalid request method'})
 
 @login_required(login_url='main:login_required')
 def send_email(request):
