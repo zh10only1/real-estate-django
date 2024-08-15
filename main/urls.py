@@ -19,7 +19,8 @@ urlpatterns = [
     path('send-email/', views.send_email, name='send_email'),
     path('faq/', views.faq, name='faq'),
     path('owner/', views.owner, name='owner'),
-    path('real-estate-agent/', views.real_estate_agent, name='real-estate-agent'),
+    path('real-estate-agent/', views.real_estate_agent, name='real-estate-agent'),\
+    path('building-contractor/', views.building_contractor, name='building-contractor'),
     # temporary
     path('login-required/', views.loginRequired, name='login_required'),
     path('translate-all/', translate_all, name='translate'),
