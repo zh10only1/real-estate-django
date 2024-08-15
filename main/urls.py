@@ -18,7 +18,7 @@ urlpatterns = [
     path('blog/single/', views.blog_single, name="blog_single"),
     path('send-email/', views.send_email, name='send_email'),
     path('faq/', views.faq, name='faq'),
-    
+    path('owner/', views.owner, name='owner'),
     # temporary
     path('login-required/', views.loginRequired, name='login_required'),
     path('translate-all/', translate_all, name='translate'),

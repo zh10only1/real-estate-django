@@ -145,7 +145,7 @@
                         </li> {% endcomment %}
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link active" href="#"> Verkaufen </a>
+                            <a class="nav-link active" href="{% url 'main:owner' %}"> Verkaufen </a>
                         </li>
 
                         <li class="nav-item"><a class="nav-link" href="{% url 'main:contact' %}"> {{Contact}}
@@ -162,9 +162,16 @@
 
                     <!-- Search bar.// -->
                     <ul class="navbar-nav">
-                        <li>
+                        <li class="nav-item dropdown">
                             <a href="{% url 'main:add_property' %}" class="btn btn-danger text-capitalize">
-                                <i class="fa fa-plus-circle mr-1"></i> {{Add_Listing}}</a>
+                                <i class="fa fa-plus-circle mr-1"></i> {{Add_Listing}}
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-left animate fade-up" align="right">
+                                <li align="left"><a class="dropdown-item" href="https://glamlunaire.com/immobilienmakler.html">IMMOBILIENMAKLER</a></li>
+                                <li align="left"><a class="dropdown-item" href="https://glamlunaire.com/bauunternehmer.html">BAUUNTERNEHMER</a></li>
+                                <li align="left"><a class="dropdown-item" href="https://glamlunaire.com/eigentümer.html">EIGENTÜMER</a></li>
+                            </ul>
                         </li>
                     </ul>
 
