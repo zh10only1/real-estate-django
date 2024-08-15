@@ -57,6 +57,10 @@
   background-image: url("../images/contact-headerBg.jpg");
 }
 
+.faqHeaderBg {
+  background-image: url("../images/about.jpg");
+}
+
 .nav-item .bgColor.active {
   background-color: #013565;
 }

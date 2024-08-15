@@ -1,814 +1,1269 @@
 {% extends 'include/base.html' %} {% load static %} {% block body %}
 
-<section class="bg-white">
+<div class="faqHeaderBg bg-theme-overlay">
+  <section class="section__breadcrumb">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-12">
-                <div class="title__leading">
-                    <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
-                    <h2 class="text-capitalize text-danger">FAQ</h2>
-                    <p>
-                        Häufig gestellte Fragen (FAQ)
-                    <details open>
-                        <summary>Wer ist 123-Kroatien.eu:</summary>
-                        <div class="faq__content" style="color: #003167;">
-                            <p>123-Kroatien.eu ist das Ergebnis eines langjährigen kroatischen Netzwerks, das in den
-                                frühen 2000er Jahren von Immobilienexperte Jörg Allmannsberger gegründet wurde. Mit
-                                einer Zulassung als Immobilienmakler nach Paragraf 34C seit 1994 in der
-                                Immobilienbranche, darunter als Mitgründer und Geschäftsführer der Rheinland
-                                Immobilien GmbH sowie als Direktor einer kroatischen Immobilien d.o.o., verfügt
-                                Allmannsberger über ein umfangreiches Fachwissen.</p>
-
-                            <p>Ursprünglich aus dem Bereich Medien- und Digitalmarketing kommend, war Allmannsberger
-                                einer der ersten Pioniere im Medien- und Mobilfunkmarkt bereits vor dem Jahr 2000.
-                                Er agierte als Aufsichtsratsvorsitzender einer deutschen Aktiengesellschaft mit
-                                Schwerpunkt Digitalisierung/Internet und beriet über viele Jahre hinweg renommierte
-                                Unternehmen wie BIRKENSTOCK und AIRBERLIN sowie zahlreiche deutsche Prominente aus
-                                der Kunst- und Schauspielbranche in Sachen Digitalmarketing.</p>
-
-                            <p>Mit seinem globalen Fachwissen widmet sich Allmannsberger dem kroatischen
-                                Immobilienmarkt und schuf über Jahre hinweg die Plattform 123-Kroatien.eu. Er
-                                verfügt über ein umfangreiches Netzwerk an Rechtsanwälten, Notaren,
-                                Immobilienagenturen, Bauunternehmern und vereidigten Gerichtsdolmetschern in
-                                Kroatien.</p>
-
-                            <p>Neben 123-Kroatien.eu engagiert sich Jörg Allmannsberger auch in der Förderung
-                                interessanter Themen rund um das beliebte Land Kroatien, das mittlerweile zu den
-                                Top-Destinationen der Welt gehört. Sein Ziel ist es, Immobiliensuchenden eine auf
-                                das Land Kroatien spezialisierte und vertrauenswürdige Plattform sowie umfassende
-                                Unterstützung bei ihren Immobilieninvestitionen in Kroatien zu bieten
-                            </p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Vorteile bietet die Nutzung von 123-Kroatien.eu für Immobiliensuchende in
-                            Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Die Nutzung von 123-Kroatien.eu bietet Immobiliensuchenden in Kroatien eine Reihe von
-                                klaren und transparenten Vorteilen:</p>
-
-                            <p>Umfangreiche Immobilienauswahl: 123-Kroatien.eu präsentiert eine breite Palette von
-                                Immobilienangeboten in ganz Kroatien, darunter Apartments, Villen, Ferienhäuser,
-                                Neubauten und Projekte, Grundstücke sowie Landhäuser und Gewerbeimmobilien. Diese
-                                Vielfalt ermöglicht es den Interessenten, die für sie passende Immobilie zu finden.
-                            </p>
-
-                            <p>Transparente Informationen: Alle Immobilienangebote auf 123-Kroatien.eu sind mit
-                                detaillierten Informationen versehen, einschließlich Beschreibungen, Fotos,
-                                Grundrissen, Preisen und Standortdetails. Diese Transparenz ermöglicht es den
-                                Interessenten, fundierte Entscheidungen zu treffen und die Immobilien im Voraus zu
-                                bewerten.</p>
-
-                            <p>Benutzerfreundliche Suche: Das Immobilienportal von 123-Kroatien.eu bietet eine
-                                benutzerfreundliche Suchfunktion, mit der Immobiliensuchende ihre Suche nach
-                                individuellen Kriterien anpassen können, wie zum Beispiel Standort, Immobilientyp,
-                                Preis, Größe und Ausstattung. Dadurch wird die gezielte Suche nach passenden
-                                Immobilien erleichtert.</p>
-
-                            <p>Professionelle Beratung: 123-Kroatien.eu stellt sicher, dass die Immobilienagenturen
-                                und Bauunternehmen, die auf dem Portal vertreten sind und professionelle Beratung
-                                und Unterstützung für Immobiliensuchende bieten. Die jeweiligen Expertenteams der
-                                Anbieter stehen den Kunden während des gesamten Immobilienkaufprozesses zur
-                                Verfügung.</p>
-
-                            <p>Verifizierte Anbieter: Die Agenturen und Bauunternehmen, die mit 123-Kroatien.eu
-                                zusammenarbeiten, werden vorab verifiziert, um die Qualität und Zuverlässigkeit
-                                ihrer Dienstleistungen zu gewährleisten. Dies gibt den Immobiliensuchenden
-                                zusätzliche Sicherheit und Vertrauen in die Angebote auf der Plattform.</p>
-
-                            <p>Klare Provisionsstrukturen: Die Provisionsstrukturen für die Nutzung von
-                                123-Kroatien.eu sind klar und transparent. Immobiliensuchende können die Kosten im
-                                Voraus verstehen und planen, ohne versteckte Gebühren oder unerwartete Kosten.</p>
-
-                            <p>Insgesamt bietet 123-Kroatien.eu eine zuverlässige Plattform für Immobiliensuchende
-                                in Kroatien, die klare Informationen, eine breite Auswahl und professionelle
-                                Unterstützung suchen.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>
-                            Wie funktioniert die Suche nach Immobilien auf 123-Kroatien.eu?</summary>
-                        <div class="faq__content">
-                            <p>Die Suche ist einfach! Geben Sie Ihre Präferenzen in unsere Suchfunktion ein, um
-                                passende Immobilien in Kroatien zu finden. Filtern Sie nach Region, Immobilientyp
-                                und weiteren Kriterien.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Kann ich direkt mit den Immobilienmaklern in Kroatien kommunizieren?</summary>
-                        <div class="faq__content">
-                            <p>Ja, auf 123-Kroatien.eu können Sie direkt mit erfahrenen Immobilienmaklern in
-                                Kroatien in Kontakt treten. Nutzen Sie unsere Plattform, um Ihre Fragen zu stellen
-                                und Besichtigungen zu vereinbaren.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Welche Arten von Immobilien findet man auf 123-Kroatien.eu?</summary>
-                        <div class="faq__content">
-                            <p>Sie finden eine breite Palette von Immobilien, darunter luxuriöse Villen, charmante
-                                Altstadthäuser, Neubauprojekte und idyllische Ferienhäuser sowie Grundstücke an der
-                                kroatischen Adriaküste.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Wie kann ich meine Immobilie auf 123-Kroatien.eu präsentieren?</summary>
-                        <div class="faq__content">
-
-                            <p>Wenn Sie Ihre Immobilie auf unserer Plattform präsentieren möchten, dann nutzen Sie
-                                bitte als ersten Schritt unser Verkaufen Formular. Wir helfen Ihnen gerne dabei,
-                                Ihre Immobilie optimal zu präsentieren.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>
-                            Bietet 123-Kroatien.eu auch Unterstützung bei rechtlichen Angelegenheiten?
-                        </summary>
-                        <div class="faq__content">
-                            <p>123-Kroatien.eu bietet keine rechtliche Beratung an. Wir empfehlen, sich bei
-                                rechtlichen Fragen an einen erfahrenen Anwalt in Kroatien zu wenden, unterstützen
-                                Sie aber gerne bei der Auswahl.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Warum eine Immobilie in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Klare Kommunikation: Die Partner auf 123-Kroatien.eu sind darauf ausgerichtet, klar
-                                und effektiv in Deutsch oder anderen relevanten Sprachen zu kommunizieren.</p>
-                            <h6>Ihr Schlüssel zu Werterhalt, Rendite und Lebensqualität!</h6>
-                            <p>In der malerischen Kulisse Kroatiens verbindet sich mediterrane Schönheit mit
-                                modernem Lebensstil. Der Besitz einer Immobilie in diesem idyllischen Land bietet
-                                unvergleichliche Vorteile für Investoren, Vermieter und Genießer.</p>
-                            <h6>Wertzuwachs:</h6>
-                            <p>Kroatien erlebt einen kontinuierlichen Anstieg der Immobilienwerte, besonders in
-                                gefragten Küstengebieten und auf den bezaubernden Inseln.</p>
-                            <h6>Vermietungsmöglichkeiten:</h6>
-                            <p>Die florierende Tourismusbranche in Kroatien bietet eine erstklassige Gelegenheit zur
-                                Vermietung Ihrer Immobilie.</p>
-                            <h6>Günstige Seniorenresidenzen:</h6>
-                            <p>Kroatien wird immer mehr zum beliebten Ziel für Senioren, die ihre goldenen Jahre in
-                                einer entspannten Umgebung verbringen möchten.</p>
-                            <h6>Investorenprojekte:</h6>
-                            <p>Der kroatische Immobilienmarkt bietet eine Vielzahl von Möglichkeiten für Investoren,
-                                sei es Neubauprojekte, Renovierungen oder die Entwicklung von Ferienwohnungen.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Warum verifizierte Immobilienmakler?</summary>
-                        <div class="faq__content">
-                            <h6>Professionelle Expertise:</h6>
-                            <p>Unsere verifizierten Immobilienmakler verfügen über umfassende Erfahrung und
-                                Fachkenntnisse im kroatischen Immobilienmarkt.</p>
-
-                            <h6>Integrität und Zuverlässigkeit:</h6>
-                            <p>Die Zusammenarbeit mit verifizierten Maklern gewährleistet Integrität und
-                                Zuverlässigkeit.</p>
-
-                            <h6>Transparente Kommunikation:</h6>
-                            <p>Verifizierte Makler setzen auf transparente Kommunikation und stehen Ihnen bei Fragen
-                                zur Verfügung.</p>
-
-                            <h6>Verifizierte Maklerpartnerschaften:</h6>
-                            <p>Jeder Immobilienmakler und Bauunternehmer auf 123-Kroatien.eu durchläuft einen
-                                sorgfältigen Verifizierungsprozess.</p>
-                            <h6>Bei 123-Kroatien.eu steht Ihre Sorgenfreiheit an erster Stelle.</h6>
-                            <p>Vertrauen Sie darauf, dass Sie mit verifizierten Immobilienmaklern zusammenarbeiten,
-                                die Ihre Interessen schützen.</p>
-
-                            <h6>Makler und Bauunternehmer:</h6>
-                            <p>Vertrauen und Sicherheit bei 123-Kroatien.eu – Verifizierte Immobilienmakler und
-                                Bauunternehmen für ein sorgenfreies Immobilienerlebnis!</p>
-                            <p>Bei 123-Kroatien.eu arbeiten wir ausschließlich mit verifizierten Immobilienmaklern
-                                und Bauunternehmen zusammen, die deutschsprachig oder mehrsprachig agieren. Dies
-                                gewährleistet eine reibungslose Kommunikation und ein tiefes Verständnis für Ihre
-                                Bedürfnisse.</p>
-
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Warum deutschsprachige oder mehrsprachige Partner?</summary>
-                        <div class="faq__content">
-
-                            <p>Klare Kommunikation,die Partner auf 123-Kroatien.eu sind darauf ausgerichtet, klar
-                                und effektiv in Deutsch oder anderen relevanten Sprachen zu kommunizieren.</p>
-                            <p>Durch die mehrsprachige Ausrichtung wird ein tiefes kulturelles Verständnis
-                                gewährleistet.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Arten von Immobilien sind in Kroatien verfügbar?</summary>
-                        <div class="faq__content">
-                            <p>In Kroatien sind eine Vielzahl von Immobilien verfügbar, darunter Apartments, Villen,
-                                Ferienhäuser, Neubauten und Projekte, Landhäuser und Grundstücke.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie funktioniert der Immobilienkaufprozess in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Der Immobilienkaufprozess in Kroatien umfasst die Auswahl einer Immobilie, die
-                                Unterzeichnung eines Vorvertrags, die Durchführung von Due Diligence-Prüfungen, die
-                                Unterzeichnung des Hauptkaufvertrags, die Zahlung des Kaufpreises und die
-                                Registrierung des Eigentums im Grundbuch.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Welche rechtlichen Anforderungen gelten beim Kauf einer Immobilie in Kroatien?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Beim Kauf einer Immobilie in Kroatien müssen Sie sicherstellen, dass alle rechtlichen
-                                Anforderungen erfüllt sind, einschließlich der Überprüfung der Eigentumsurkunden,
-                                der Klärung von Eigentumsrechten, der Erfüllung von Steuerpflichten und der
-                                Einhaltung von Baugenehmigungen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Benötige ich eine kroatische Steuernummer, um eine Immobilie in Kroatien zu kaufen?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Ja, als ausländischer Käufer benötigen Sie eine kroatische Steuernummer (OIB), um
-                                eine Immobilie in Kroatien zu kaufen. Diese erhalten Sie durch das kroatische
-                                Finanzamt nach Beantragung. Aktuell erhalten Sie unkompliziert und meistens noch am
-                                gleichen Tag Ihre persönliche OIB Nummer.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Dokumente werden für den Kauf einer Immobilie in Kroatien benötigt?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Zu den benötigten Dokumenten gehören unter anderem ein gültiger Reisepass oder
-                                Personalausweis, eine kroatische Steuernummer (OIB), der Vorvertrag oder
-                                Kaufvertrag, Eigentumsurkunden, Baugenehmigungen und Nachweise über die Begleichung
-                                aller Steuern und Gebühren.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es Einschränkungen für Ausländer beim Kauf von Immobilien in Kroatien?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Ausländer können in Kroatien grundsätzlich Immobilien kaufen, es gibt jedoch
-                                bestimmte Einschränkungen für den Erwerb von landwirtschaftlichen Flächen und
-                                Immobilien in Küstennähe, die vor dem Kauf geprüft werden müssen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie finde ich einen vertrauenswürdigen Immobilienmakler in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Ein vertrauenswürdiger Immobilienmakler kann durch Recherche im Internet,
-                                Empfehlungen von Freunden oder Kollegen, sowie durch Überprüfung von Lizenzen und
-                                Mitgliedschaften in professionellen Immobilienverbänden gefunden werden.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Regionen in Kroatien sind bei Immobilienkäufern besonders beliebt?</summary>
-                        <div class="faq__content">
-                            <p>Beliebte Regionen für Immobilienkäufer in Kroatien sind die Küstenstädte wie
-                                Dubrovnik, Split und Rovinj, sowie die Inseln Hvar, Brac und Korcula. Auch das
-                                Landesinnere mit Städten wie Zagreb und historischen Dörfern erfreut sich großer
-                                Beliebtheit.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Welche Art von Immobilie kann ich als Ausländer in Kroatien kaufen?</summary>
-                        <div class="faq__content">
-                            <p>Ausländer können in Kroatien grundsätzlich jede Art von Immobilie kaufen,
-                                einschließlich Wohnungen, Häuser, Gewerbeimmobilien und Land. Es gibt jedoch einige
-                                Einschränkungen für den Kauf von landwirtschaftlichen Flächen und Immobilien in
-                                Küstennähe.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es Besonderheiten beim Kauf von Immobilien in Küstennähe?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Kauf von Immobilien in Küstennähe unterliegt besonderen Regelungen und
-                                Einschränkungen, um die Umwelt und den Küstenschutz zu gewährleisten. Dies kann die
-                                Art der zulässigen Bebauung, den Erwerb von Küstenland und den Zugang zu Stränden
-                                betreffen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie hoch sind die durchschnittlichen Immobilienpreise in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Die durchschnittlichen Immobilienpreise in Kroatien variieren je nach Region und
-                                Immobilientyp. Im Allgemeinen sind die Preise an der Küste und in touristischen
-                                Gebieten höher als im Landesinneren. Wohnung und Hauspreise beginnen ab etwa 1500
-                                Euro pro Quadratmeter.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Kann ich eine Immobilie in Kroatien mieten, bevor ich sie kaufe?</summary>
-                        <div class="faq__content">
-                            <p>Ja, viele Immobilien in Kroatien können vor dem Kauf gemietet werden, um einen
-                                besseren Einblick in die Lage und die Lebensqualität zu erhalten. Dies kann eine
-                                gute Möglichkeit sein, die Immobilie und die Umgebung vor einem endgültigen Kauf zu
-                                testen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Art von Versicherungen benötige ich für eine Immobilie in Kroatien?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Für eine Immobilie in Kroatien sind verschiedene Versicherungen empfehlenswert,
-                                darunter eine Gebäudeversicherung, Haftpflichtversicherung, Inhaltsversicherung,
-                                sowie eine Versicherung gegen Naturkatastrophen wie Erdbeben und Überschwemmungen.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es Besonderheiten beim Kauf von Ferienimmobilien in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Der Kauf von Ferienimmobilien in Kroatien kann besondere Anforderungen wie den Zugang
-                                zu touristischen Infrastrukturen, die Vermietungslizenz, und die Einhaltung von
-                                Baunormen und Standards für Ferienvermietungen umfassen.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Wie kann ich die Bonität eines kroatischen Entwicklers oder Verkäufers prüfen?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Die Bonität eines kroatischen Entwicklers oder Verkäufers kann durch die Überprüfung
-                                von Referenzen, bisherigen Projekten und durch Einsichtnahme in seine finanzielle
-                                Situation und Geschäftshistorie beurteilt werden. Professionelle Beratung kann auch
-                                hilfreich sein.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Steuern und Gebühren fallen beim Kauf einer Immobilie in Kroatien an?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Beim Kauf einer Immobilie in Kroatien fallen verschiedene Steuern und Gebühren an,
-                                darunter die Grunderwerbsteuer, Notar- und Grundbuchgebühren sowie die
-                                Maklerprovision. Diese variieren je nach Wert der Immobilie und Region.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es staatliche Förderprogramme für den Kauf von Immobilien in Kroatien?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Ja, die kroatische Regierung bietet verschiedene Förderprogramme und Anreize für den
-                                Kauf von Immobilien, darunter Zuschüsse, Steuervergünstigungen und Kredite für
-                                bestimmte Zielgruppen und Regionen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie ist die Infrastruktur in den verschiedenen Regionen Kroatiens?</summary>
-                        <div class="faq__content">
-                            <p>Die Infrastruktur in den verschiedenen Regionen Kroatiens variiert, wobei die
-                                Küstenregionen und größeren Städte oft über eine gute Verkehrs-, Energie- und
-                                Kommunikationsinfrastruktur verfügen, während ländliche Gebiete möglicherweise
-                                weniger gut erschlossen sind.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es besondere Vorschriften für den Bau von Immobilien in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Bau von Immobilien in Kroatien unterliegt verschiedenen Vorschriften,
-                                Baunormen und Standards, die je nach Region und Art des Bauprojekts variieren
-                                können. Diese umfassen unter anderem Baugenehmigungen, Umweltschutzauflagen und
-                                Sicherheitsstandards.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Faktoren beeinflussen den Immobilienmarkt in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Der Immobilienmarkt in Kroatien wird von verschiedenen Faktoren beeinflusst, darunter
-                                die wirtschaftliche Entwicklung, demografische Trends, Tourismus, politische
-                                Stabilität, Zinsniveau sowie Angebot und Nachfrage nach Immobilien.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Wie sicher ist es, eine Immobilie in Kroatien zu kaufen?</summary>
-                        <div class="faq__content">
-                            <p>Der Immobilienkauf in Kroatien ist in der Regel sicher, insbesondere wenn Sie
-                                professionelle Beratung in Anspruch nehmen, alle rechtlichen Anforderungen erfüllen
-                                und die Bonität des Verkäufers prüfen. Es ist wichtig, sich gründlich über die
-                                Immobilie und den Kaufprozess zu informieren.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es bestimmte Bauvorschriften in Küstennähe?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Bau von Immobilien in Küstennähe unterliegt besonderen Bauvorschriften und
-                                Genehmigungen, um die Umwelt zu schützen und die landschaftliche Schönheit zu
-                                erhalten. Diese können Einschränkungen zur Bauhöhe, Abstandsregelungen und
-                                Umweltauflagen umfassen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Art von Rendite kann ich von einer Immobilieninvestition in Kroatien
-                            erwarten?</summary>
-                        <div class="faq__content">
-                            <p>Die Rendite einer Immobilieninvestition in Kroatien hängt von verschiedenen Faktoren
-                                ab, darunter die Lage, Art der Immobilie, Nachfrage auf dem Mietmarkt sowie die
-                                Entwicklung des Tourismus- und Wirtschaftssektors. Eine professionelle Beratung kann
-                                bei der Bewertung der Rendite helfen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie hoch sind die laufenden Unterhaltskosten für eine Immobilie in Kroatien?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Die laufenden Unterhaltskosten für eine Immobilie in Kroatien hängen von
-                                verschiedenen Faktoren ab, darunter die Größe der Immobilie, Lage, Art der Immobilie
-                                und die gewünschten Dienstleistungen wie Sicherheit, Reinigung und Wartung.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Annehmlichkeiten sind in den verschiedenen Regionen Kroatiens verfügbar?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Die verfügbaren Annehmlichkeiten in den verschiedenen Regionen Kroatiens variieren,
-                                wobei Städte und touristische Gebiete oft über eine Vielzahl von Dienstleistungen
-                                und Einrichtungen wie Einkaufszentren, Restaurants, Schulen, Krankenhäuser und
-                                Freizeiteinrichtungen verfügen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es spezielle Immobilienprogramme für Rentner in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Ja, Kroatien bietet spezielle Immobilienprogramme und Anreize für Rentner und
-                                ausländische Investoren, darunter Steuervergünstigungen, Aufenthaltsgenehmigungen
-                                und spezielle Wohnprogramme für Senioren.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Kann ich eine Immobilie in Kroatien mit Kryptowährung kaufen?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Kauf einer Immobilie in Kroatien mit Kryptowährung ist möglich, allerdings
-                                müssen Sie sicherstellen, dass der Verkäufer dies akzeptiert und die rechtlichen
-                                Anforderungen erfüllt sind. Eine professionelle Beratung kann bei diesem Prozess
-                                hilfreich sein.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Welche Art von Immobilien ist für langfristige Vermietungen am besten geeignet?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Für langfristige Vermietungen sind in Kroatien verschiedene Immobilientypen geeignet,
-                                darunter Apartments, Wohnhäuser und Gewerbeimmobilien in Städten und touristischen
-                                Gebieten mit einer stabilen Nachfrage nach Mietobjekten.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie ist das Bildungssystem in den verschiedenen Regionen Kroatiens?</summary>
-                        <div class="faq__content">
-                            <p>Das Bildungssystem in Kroatien ist gut entwickelt und umfasst öffentliche und private
-                                Schulen, Universitäten und Fachhochschulen, die eine breite Palette von
-                                Bildungsprogrammen und Möglichkeiten anbieten.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Möglichkeiten habe ich, wenn ich eine Immobilie in Kroatien als Investition
-                            kaufen möchte?</summary>
-                        <div class="faq__content">
-                            <p>Wenn Sie eine Immobilie in Kroatien als Investition kaufen möchten, stehen Ihnen
-                                verschiedene Optionen zur Verfügung, darunter der Kauf von Ferienimmobilien zur
-                                Vermietung, Gewerbeimmobilien für Geschäftszwecke und langfristige Investitionen in
-                                Wohnimmobilien.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es besondere Umweltschutzauflagen für Immobilien in Naturschutzgebieten?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Ja, Immobilien in Naturschutzgebieten unterliegen besonderen Umweltschutzauflagen und
-                                Beschränkungen, um die natürliche Umgebung und die Tierwelt zu schützen. Dies kann
-                                Einschränkungen zur Bebauung, Abstandsregelungen und Auflagen zum Naturschutz
-                                umfassen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie ist die medizinische Versorgung in den verschiedenen Regionen Kroatiens?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Die medizinische Versorgung in Kroatien ist gut entwickelt und umfasst staatliche und
-                                private Krankenhäuser, Kliniken und Gesundheitszentren, die eine breite Palette von
-                                Gesundheitsdienstleistungen und medizinischer Versorgung anbieten.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Kann ich eine Hypothek für den Kauf einer Immobilie in Kroatien bekommen?</summary>
-                        <div class="faq__content">
-                            <p>Ja, als ausländischer Käufer können Sie in Kroatien eine Hypothek für den Kauf einer
-                                Immobilie erhalten. Die Konditionen und Anforderungen können je nach Bank und
-                                individueller Situation variieren.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Rechte und Pflichten habe ich als Immobilienbesitzer in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Als Immobilienbesitzer in Kroatien haben Sie verschiedene Rechte und Pflichten,
-                                darunter das Recht auf Eigentum und Nutzung der Immobilie, die Pflicht zur Zahlung
-                                von Steuern und Gebühren sowie die Einhaltung von Bauvorschriften und
-                                Umweltauflagen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie ist die Verkehrsanbindung in den verschiedenen Regionen Kroatiens?</summary>
-                        <div class="faq__content">
-                            <p>Die Verkehrsanbindung in den verschiedenen Regionen Kroatiens ist gut entwickelt und
-                                umfasst Autobahnen, Schnellstraßen, Eisenbahnen, Flughäfen und Fährverbindungen, die
-                                eine gute Erreichbarkeit innerhalb des Landes und ins Ausland gewährleisten.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Gibt es besondere Regelungen für den Verkauf von Immobilien in historischen
-                            Stadtzentren?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Verkauf von Immobilien in historischen Stadtzentren unterliegt besonderen
-                                Regelungen und Baugenehmigungen, um den Erhalt des kulturellen Erbes und des
-                                architektonischen Erbes zu gewährleisten. Dies kann Restriktionen zur Renovierung
-                                und Modernisierung umfassen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Möglichkeiten gibt es für die Vermietung meiner Immobilie in Kroatien?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Es gibt verschiedene Möglichkeiten, Ihre Immobilie in Kroatien zu vermieten, darunter
-                                langfristige Vermietungen, Ferienvermietungen über Plattformen wie Airbnb oder
-                                Booking.com, sowie die Zusammenarbeit mit lokalen Immobilienverwaltungsunternehmen.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Kann ich eine Immobilie in Kroatien als Ausländer erben?</summary>
-                        <div class="faq__content">
-                            <p>Ja, Ausländer können in Kroatien Immobilien erben, allerdings unterliegt dies
-                                bestimmten rechtlichen Anforderungen und Verfahren, die im kroatischen Erbrecht
-                                festgelegt sind.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Art von Immobilien ist in Kroatien für den Tourismus am besten geeignet?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Immobilien, die für den Tourismus in Kroatien am besten geeignet sind, umfassen
-                                Ferienwohnungen, Villen, Hotels und Gewerbeimmobilien in Küstenregionen, Städten und
-                                touristischen Hotspots mit einer hohen Nachfrage nach Unterkünften.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie ist das Telekommunikationsnetz in den verschiedenen Regionen Kroatiens?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Das Telekommunikationsnetz in den verschiedenen Regionen Kroatiens ist gut entwickelt
-                                und umfasst Mobilfunknetze, Breitbandinternet, Festnetztelefonie sowie eine gute
-                                Abdeckung mit Wi-Fi-Hotspots in städtischen Gebieten und touristischen Zentren.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Arten von Freizeitaktivitäten sind in den verschiedenen Regionen Kroatiens
-                            verfügbar?</summary>
-                        <div class="faq__content">
-                            <p>In Kroatien stehen eine Vielzahl von Freizeitaktivitäten zur Verfügung, darunter
-                                Wassersportarten wie Segeln, Tauchen und Windsurfen, Wandern und Radfahren in den
-                                Nationalparks und Naturgebieten sowie kulturelle Aktivitäten wie Festivals und
-                                kulturelle Veranstaltungen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es besondere Vorschriften für den Bau von Swimmingpools in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Bau von Swimmingpools in Kroatien unterliegt bestimmten Vorschriften und
-                                Baugenehmigungen, die je nach Region und Art des Pools variieren können. Diese
-                                können Sicherheitsstandards, Abstandsregelungen und Umweltauflagen umfassen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie ist das Klima in den verschiedenen Regionen Kroatiens?</summary>
-                        <div class="faq__content">
-                            <p>Das Klima in den verschiedenen Regionen Kroatiens variiert, wobei an der Adriaküste
-                                ein mediterranes Klima mit warmen, trockenen Sommern und milden Wintern herrscht,
-                                während im Landesinneren kontinentale Klimabedingungen mit heißen Sommern und kalten
-                                Wintern vorherrschen.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Kann ich eine Immobilie in Kroatien ohne persönliche Besichtigung kaufen?</summary>
-                        <div class="faq__content">
-                            <p>Ja, es ist möglich, eine Immobilie in Kroatien ohne persönliche Besichtigung zu
-                                kaufen, allerdings ist es ratsam, sich professionelle Hilfe zu holen und eine
-                                gründliche Due-Diligence-Prüfung durchzuführen, um sicherzustellen, dass alle
-                                rechtlichen Anforderungen erfüllt sind.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es besondere Vorschriften für den Kauf von Land in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Kauf von Land in Kroatien unterliegt bestimmten Vorschriften und
-                                Einschränkungen, insbesondere wenn es sich um landwirtschaftliche Flächen oder
-                                Grundstücke in Naturschutzgebieten handelt. Eine sorgfältige Prüfung der rechtlichen
-                                Situation ist daher ratsam.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie hoch sind die Nebenkosten für den Kauf einer Immobilie in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Die Nebenkosten beim Kauf einer Immobilie in Kroatien variieren je nach Immobilientyp
-                                und Region. In der Regel können Sie mit zusätzlichen Kosten von etwa 5-6% des
-                                Kaufpreises rechnen. Diese Nebenkosten umfassen unter anderem die Grunderwerbsteuer,
-                                Notar- und Grundbuchgebühren sowie die Maklerprovision.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Welche Möglichkeiten habe ich, meine Immobilie in Kroatien zu verwalten, wenn ich
-                            nicht vor Ort bin?</summary>
-                        <div class="faq__content">
-                            <p>Wenn Sie Ihre Immobilie in Kroatien nicht persönlich verwalten können, gibt es
-                                verschiedene professionelle Property-Management-Unternehmen, die Ihnen dabei helfen
-                                können. Diese Unternehmen bieten Dienstleistungen wie die Vermietung Ihrer
-                                Immobilie, Instandhaltung, Reinigungsdienste und die Abwicklung von Zahlungen an.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es besondere Vorschriften für den Bau von Ferienhäusern in Kroatien?</summary>
-                        <div class="faq__content">
-                            <p>Ja, der Bau von Ferienhäusern in Kroatien unterliegt besonderen Vorschriften und
-                                Baugenehmigungen, die je nach Standort und Art des Hauses variieren können. Diese
-                                können Restriktionen zur Größe, Bauweise und Nutzung des Hauses umfassen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Wie ist die Qualität des Trinkwassers in den verschiedenen Regionen Kroatiens?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Die Qualität des Trinkwassers in Kroatien ist im Allgemeinen sehr gut. Die meisten
-                                Städte und touristischen Gebiete verfügen über eine zuverlässige Wasserversorgung,
-                                die streng kontrolliert wird. Es wird empfohlen, sich über lokale Trinkwasserquellen
-                                zu informieren, besonders wenn Sie sich in abgelegenen Gebieten aufhalten.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es besondere Bestimmungen für den Kauf von Immobilien in Inselgebieten?
-                        </summary>
-                        <div class="faq__content">
-                            <p>Ja, der Kauf von Immobilien in Inselgebieten unterliegt oft besonderen Regelungen und
-                                Genehmigungen. Diese können Restriktionen zum Schutz der Umwelt und des kulturellen
-                                Erbes umfassen. Es ist ratsam, sich vor dem Kauf einer Immobilie auf einer
-                                kroatischen Insel über die geltenden Vorschriften zu informieren und professionelle
-                                Beratung in Anspruch zu nehmen.</p>
-                        </div>
-                    </details>
-
-                    <details>
-                        <summary>Gibt es besondere Vorschriften für erdbebensicheres Bauen in Kroatien, insbesondere
-                            in Dalmatien?</summary>
-                        <div class="faq__content">
-                            <p>Ja, aufgrund der geologischen Lage Kroatiens, insbesondere in Dalmatien, gibt es
-                                spezielle Vorschriften für erdbebensicheres Bauen. Diese Vorschriften umfassen die
-                                Verwendung von robusten Baumaterialien, wie zum Beispiel Stahlbeton, um die
-                                strukturelle Integrität von Gebäuden zu gewährleisten. Darüber hinaus sind spezielle
-                                Verstärkungsmaßnahmen, wie beispielsweise die Verwendung von Stahlstützen und
-                                -trägern, sowie die Implementierung von Erdbebensicherungssystemen wie
-                                Fundamentdämpfern und Querstreben, erforderlich, um Gebäude widerstandsfähiger gegen
-                                Erdbeben zu machen.</p>
-                        </div>
-                    </details>
-                    <details>
-                        <summary>Sind die Kosten für erdbebensicheres Bauen in Kroatien im Vergleich zu Deutschland
-                            günstiger?</summary>
-                        <div class="faq__content">
-                            <p>Ja, obwohl es spezielle Vorschriften für erdbebensicheres Bauen in Kroatien gibt,
-                                sind die Kosten im Vergleich zu Deutschland oft günstiger. Dies liegt zum Teil an
-                                den niedrigeren Arbeitskosten und Baukosten in Kroatien im Vergleich zu Deutschland.
-                                Darüber hinaus sind die Anforderungen an die Gebäudesicherheit in Kroatien in der
-                                Regel weniger streng als in Deutschland, was zu geringeren Kosten für die Umsetzung
-                                entsprechender Maßnahmen führen kann. Dennoch ist es wichtig, sicherzustellen, dass
-                                alle erforderlichen Sicherheitsstandards eingehalten werden, um die Sicherheit von
-                                Gebäuden und Bewohnern zu gewährleisten. Alle Bauunternehmen unterliegen den EU
-                                Richtlinien und Vorschriften.</p>
-                        </div>
-                    </details>
-
-                </div>
-            </div>
-
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 text-center">
+          {% comment %}
+          <h2 class="text-capitalize text-white">{{About_Us}}</h2>
+          {% endcomment %}
+          <ul class="list-inline">
+            {% comment %}
+            <li class="list-inline-item">
+              <a href="/" class="text-white"> {{Home}} </a>
+            </li>
+            {% endcomment %}
+            <li class="list-inline-item">
+              <a
+                style="font-weight: bold; font-size: 2rem"
+                href="about-us.html"
+                class="text-white"
+              >
+                F.A.Q
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
+  </section>
+</div>
+
+<section class="bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="title__leading">
+          <!-- <h6 class="text-uppercase">trusted By thousands</h6> -->
+          <h2 class="text-capitalize text-danger">FAQ</h2>
+          <p>
+            Häufig gestellte Fragen (FAQ)
+            <details open>
+              <summary>Wer ist 123-Kroatien.eu:</summary>
+              <div class="faq__content" style="color: #003167">
+                <p>
+                  123-Kroatien.eu ist das Ergebnis eines langjährigen
+                  kroatischen Netzwerks, das in den frühen 2000er Jahren von
+                  Immobilienexperte Jörg Allmannsberger gegründet wurde. Mit
+                  einer Zulassung als Immobilienmakler nach Paragraf 34C seit
+                  1994 in der Immobilienbranche, darunter als Mitgründer und
+                  Geschäftsführer der Rheinland Immobilien GmbH sowie als
+                  Direktor einer kroatischen Immobilien d.o.o., verfügt
+                  Allmannsberger über ein umfangreiches Fachwissen.
+                </p>
+
+                <p>
+                  Ursprünglich aus dem Bereich Medien- und Digitalmarketing
+                  kommend, war Allmannsberger einer der ersten Pioniere im
+                  Medien- und Mobilfunkmarkt bereits vor dem Jahr 2000. Er
+                  agierte als Aufsichtsratsvorsitzender einer deutschen
+                  Aktiengesellschaft mit Schwerpunkt Digitalisierung/Internet
+                  und beriet über viele Jahre hinweg renommierte Unternehmen wie
+                  BIRKENSTOCK und AIRBERLIN sowie zahlreiche deutsche Prominente
+                  aus der Kunst- und Schauspielbranche in Sachen
+                  Digitalmarketing.
+                </p>
+
+                <p>
+                  Mit seinem globalen Fachwissen widmet sich Allmannsberger dem
+                  kroatischen Immobilienmarkt und schuf über Jahre hinweg die
+                  Plattform 123-Kroatien.eu. Er verfügt über ein umfangreiches
+                  Netzwerk an Rechtsanwälten, Notaren, Immobilienagenturen,
+                  Bauunternehmern und vereidigten Gerichtsdolmetschern in
+                  Kroatien.
+                </p>
+
+                <p>
+                  Neben 123-Kroatien.eu engagiert sich Jörg Allmannsberger auch
+                  in der Förderung interessanter Themen rund um das beliebte
+                  Land Kroatien, das mittlerweile zu den Top-Destinationen der
+                  Welt gehört. Sein Ziel ist es, Immobiliensuchenden eine auf
+                  das Land Kroatien spezialisierte und vertrauenswürdige
+                  Plattform sowie umfassende Unterstützung bei ihren
+                  Immobilieninvestitionen in Kroatien zu bieten
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Vorteile bietet die Nutzung von 123-Kroatien.eu für
+                Immobiliensuchende in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Nutzung von 123-Kroatien.eu bietet Immobiliensuchenden in
+                  Kroatien eine Reihe von klaren und transparenten Vorteilen:
+                </p>
+
+                <p>
+                  Umfangreiche Immobilienauswahl: 123-Kroatien.eu präsentiert
+                  eine breite Palette von Immobilienangeboten in ganz Kroatien,
+                  darunter Apartments, Villen, Ferienhäuser, Neubauten und
+                  Projekte, Grundstücke sowie Landhäuser und Gewerbeimmobilien.
+                  Diese Vielfalt ermöglicht es den Interessenten, die für sie
+                  passende Immobilie zu finden.
+                </p>
+
+                <p>
+                  Transparente Informationen: Alle Immobilienangebote auf
+                  123-Kroatien.eu sind mit detaillierten Informationen versehen,
+                  einschließlich Beschreibungen, Fotos, Grundrissen, Preisen und
+                  Standortdetails. Diese Transparenz ermöglicht es den
+                  Interessenten, fundierte Entscheidungen zu treffen und die
+                  Immobilien im Voraus zu bewerten.
+                </p>
+
+                <p>
+                  Benutzerfreundliche Suche: Das Immobilienportal von
+                  123-Kroatien.eu bietet eine benutzerfreundliche Suchfunktion,
+                  mit der Immobiliensuchende ihre Suche nach individuellen
+                  Kriterien anpassen können, wie zum Beispiel Standort,
+                  Immobilientyp, Preis, Größe und Ausstattung. Dadurch wird die
+                  gezielte Suche nach passenden Immobilien erleichtert.
+                </p>
+
+                <p>
+                  Professionelle Beratung: 123-Kroatien.eu stellt sicher, dass
+                  die Immobilienagenturen und Bauunternehmen, die auf dem Portal
+                  vertreten sind und professionelle Beratung und Unterstützung
+                  für Immobiliensuchende bieten. Die jeweiligen Expertenteams
+                  der Anbieter stehen den Kunden während des gesamten
+                  Immobilienkaufprozesses zur Verfügung.
+                </p>
+
+                <p>
+                  Verifizierte Anbieter: Die Agenturen und Bauunternehmen, die
+                  mit 123-Kroatien.eu zusammenarbeiten, werden vorab
+                  verifiziert, um die Qualität und Zuverlässigkeit ihrer
+                  Dienstleistungen zu gewährleisten. Dies gibt den
+                  Immobiliensuchenden zusätzliche Sicherheit und Vertrauen in
+                  die Angebote auf der Plattform.
+                </p>
+
+                <p>
+                  Klare Provisionsstrukturen: Die Provisionsstrukturen für die
+                  Nutzung von 123-Kroatien.eu sind klar und transparent.
+                  Immobiliensuchende können die Kosten im Voraus verstehen und
+                  planen, ohne versteckte Gebühren oder unerwartete Kosten.
+                </p>
+
+                <p>
+                  Insgesamt bietet 123-Kroatien.eu eine zuverlässige Plattform
+                  für Immobiliensuchende in Kroatien, die klare Informationen,
+                  eine breite Auswahl und professionelle Unterstützung suchen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie funktioniert die Suche nach Immobilien auf 123-Kroatien.eu?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Suche ist einfach! Geben Sie Ihre Präferenzen in unsere
+                  Suchfunktion ein, um passende Immobilien in Kroatien zu
+                  finden. Filtern Sie nach Region, Immobilientyp und weiteren
+                  Kriterien.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Kann ich direkt mit den Immobilienmaklern in Kroatien
+                kommunizieren?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, auf 123-Kroatien.eu können Sie direkt mit erfahrenen
+                  Immobilienmaklern in Kroatien in Kontakt treten. Nutzen Sie
+                  unsere Plattform, um Ihre Fragen zu stellen und Besichtigungen
+                  zu vereinbaren.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Welche Arten von Immobilien findet man auf 123-Kroatien.eu?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Sie finden eine breite Palette von Immobilien, darunter
+                  luxuriöse Villen, charmante Altstadthäuser, Neubauprojekte und
+                  idyllische Ferienhäuser sowie Grundstücke an der kroatischen
+                  Adriaküste.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Wie kann ich meine Immobilie auf 123-Kroatien.eu präsentieren?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Wenn Sie Ihre Immobilie auf unserer Plattform präsentieren
+                  möchten, dann nutzen Sie bitte als ersten Schritt unser
+                  Verkaufen Formular. Wir helfen Ihnen gerne dabei, Ihre
+                  Immobilie optimal zu präsentieren.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Bietet 123-Kroatien.eu auch Unterstützung bei rechtlichen
+                Angelegenheiten?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  123-Kroatien.eu bietet keine rechtliche Beratung an. Wir
+                  empfehlen, sich bei rechtlichen Fragen an einen erfahrenen
+                  Anwalt in Kroatien zu wenden, unterstützen Sie aber gerne bei
+                  der Auswahl.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Warum eine Immobilie in Kroatien?</summary>
+              <div class="faq__content">
+                <p>
+                  Klare Kommunikation: Die Partner auf 123-Kroatien.eu sind
+                  darauf ausgerichtet, klar und effektiv in Deutsch oder anderen
+                  relevanten Sprachen zu kommunizieren.
+                </p>
+                <h6>
+                  Ihr Schlüssel zu Werterhalt, Rendite und Lebensqualität!
+                </h6>
+                <p>
+                  In der malerischen Kulisse Kroatiens verbindet sich
+                  mediterrane Schönheit mit modernem Lebensstil. Der Besitz
+                  einer Immobilie in diesem idyllischen Land bietet
+                  unvergleichliche Vorteile für Investoren, Vermieter und
+                  Genießer.
+                </p>
+                <h6>Wertzuwachs:</h6>
+                <p>
+                  Kroatien erlebt einen kontinuierlichen Anstieg der
+                  Immobilienwerte, besonders in gefragten Küstengebieten und auf
+                  den bezaubernden Inseln.
+                </p>
+                <h6>Vermietungsmöglichkeiten:</h6>
+                <p>
+                  Die florierende Tourismusbranche in Kroatien bietet eine
+                  erstklassige Gelegenheit zur Vermietung Ihrer Immobilie.
+                </p>
+                <h6>Günstige Seniorenresidenzen:</h6>
+                <p>
+                  Kroatien wird immer mehr zum beliebten Ziel für Senioren, die
+                  ihre goldenen Jahre in einer entspannten Umgebung verbringen
+                  möchten.
+                </p>
+                <h6>Investorenprojekte:</h6>
+                <p>
+                  Der kroatische Immobilienmarkt bietet eine Vielzahl von
+                  Möglichkeiten für Investoren, sei es Neubauprojekte,
+                  Renovierungen oder die Entwicklung von Ferienwohnungen.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Warum verifizierte Immobilienmakler?</summary>
+              <div class="faq__content">
+                <h6>Professionelle Expertise:</h6>
+                <p>
+                  Unsere verifizierten Immobilienmakler verfügen über umfassende
+                  Erfahrung und Fachkenntnisse im kroatischen Immobilienmarkt.
+                </p>
+
+                <h6>Integrität und Zuverlässigkeit:</h6>
+                <p>
+                  Die Zusammenarbeit mit verifizierten Maklern gewährleistet
+                  Integrität und Zuverlässigkeit.
+                </p>
+
+                <h6>Transparente Kommunikation:</h6>
+                <p>
+                  Verifizierte Makler setzen auf transparente Kommunikation und
+                  stehen Ihnen bei Fragen zur Verfügung.
+                </p>
+
+                <h6>Verifizierte Maklerpartnerschaften:</h6>
+                <p>
+                  Jeder Immobilienmakler und Bauunternehmer auf 123-Kroatien.eu
+                  durchläuft einen sorgfältigen Verifizierungsprozess.
+                </p>
+                <h6>
+                  Bei 123-Kroatien.eu steht Ihre Sorgenfreiheit an erster
+                  Stelle.
+                </h6>
+                <p>
+                  Vertrauen Sie darauf, dass Sie mit verifizierten
+                  Immobilienmaklern zusammenarbeiten, die Ihre Interessen
+                  schützen.
+                </p>
+
+                <h6>Makler und Bauunternehmer:</h6>
+                <p>
+                  Vertrauen und Sicherheit bei 123-Kroatien.eu – Verifizierte
+                  Immobilienmakler und Bauunternehmen für ein sorgenfreies
+                  Immobilienerlebnis!
+                </p>
+                <p>
+                  Bei 123-Kroatien.eu arbeiten wir ausschließlich mit
+                  verifizierten Immobilienmaklern und Bauunternehmen zusammen,
+                  die deutschsprachig oder mehrsprachig agieren. Dies
+                  gewährleistet eine reibungslose Kommunikation und ein tiefes
+                  Verständnis für Ihre Bedürfnisse.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Warum deutschsprachige oder mehrsprachige Partner?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Klare Kommunikation,die Partner auf 123-Kroatien.eu sind
+                  darauf ausgerichtet, klar und effektiv in Deutsch oder anderen
+                  relevanten Sprachen zu kommunizieren.
+                </p>
+                <p>
+                  Durch die mehrsprachige Ausrichtung wird ein tiefes
+                  kulturelles Verständnis gewährleistet.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Arten von Immobilien sind in Kroatien verfügbar?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  In Kroatien sind eine Vielzahl von Immobilien verfügbar,
+                  darunter Apartments, Villen, Ferienhäuser, Neubauten und
+                  Projekte, Landhäuser und Grundstücke.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie funktioniert der Immobilienkaufprozess in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Der Immobilienkaufprozess in Kroatien umfasst die Auswahl
+                  einer Immobilie, die Unterzeichnung eines Vorvertrags, die
+                  Durchführung von Due Diligence-Prüfungen, die Unterzeichnung
+                  des Hauptkaufvertrags, die Zahlung des Kaufpreises und die
+                  Registrierung des Eigentums im Grundbuch.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Welche rechtlichen Anforderungen gelten beim Kauf einer
+                Immobilie in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Beim Kauf einer Immobilie in Kroatien müssen Sie
+                  sicherstellen, dass alle rechtlichen Anforderungen erfüllt
+                  sind, einschließlich der Überprüfung der Eigentumsurkunden,
+                  der Klärung von Eigentumsrechten, der Erfüllung von
+                  Steuerpflichten und der Einhaltung von Baugenehmigungen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Benötige ich eine kroatische Steuernummer, um eine Immobilie in
+                Kroatien zu kaufen?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, als ausländischer Käufer benötigen Sie eine kroatische
+                  Steuernummer (OIB), um eine Immobilie in Kroatien zu kaufen.
+                  Diese erhalten Sie durch das kroatische Finanzamt nach
+                  Beantragung. Aktuell erhalten Sie unkompliziert und meistens
+                  noch am gleichen Tag Ihre persönliche OIB Nummer.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Dokumente werden für den Kauf einer Immobilie in Kroatien
+                benötigt?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Zu den benötigten Dokumenten gehören unter anderem ein
+                  gültiger Reisepass oder Personalausweis, eine kroatische
+                  Steuernummer (OIB), der Vorvertrag oder Kaufvertrag,
+                  Eigentumsurkunden, Baugenehmigungen und Nachweise über die
+                  Begleichung aller Steuern und Gebühren.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es Einschränkungen für Ausländer beim Kauf von Immobilien
+                in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ausländer können in Kroatien grundsätzlich Immobilien kaufen,
+                  es gibt jedoch bestimmte Einschränkungen für den Erwerb von
+                  landwirtschaftlichen Flächen und Immobilien in Küstennähe, die
+                  vor dem Kauf geprüft werden müssen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie finde ich einen vertrauenswürdigen Immobilienmakler in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ein vertrauenswürdiger Immobilienmakler kann durch Recherche
+                  im Internet, Empfehlungen von Freunden oder Kollegen, sowie
+                  durch Überprüfung von Lizenzen und Mitgliedschaften in
+                  professionellen Immobilienverbänden gefunden werden.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Regionen in Kroatien sind bei Immobilienkäufern besonders
+                beliebt?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Beliebte Regionen für Immobilienkäufer in Kroatien sind die
+                  Küstenstädte wie Dubrovnik, Split und Rovinj, sowie die Inseln
+                  Hvar, Brac und Korcula. Auch das Landesinnere mit Städten wie
+                  Zagreb und historischen Dörfern erfreut sich großer
+                  Beliebtheit.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Welche Art von Immobilie kann ich als Ausländer in Kroatien
+                kaufen?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ausländer können in Kroatien grundsätzlich jede Art von
+                  Immobilie kaufen, einschließlich Wohnungen, Häuser,
+                  Gewerbeimmobilien und Land. Es gibt jedoch einige
+                  Einschränkungen für den Kauf von landwirtschaftlichen Flächen
+                  und Immobilien in Küstennähe.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es Besonderheiten beim Kauf von Immobilien in Küstennähe?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Kauf von Immobilien in Küstennähe unterliegt
+                  besonderen Regelungen und Einschränkungen, um die Umwelt und
+                  den Küstenschutz zu gewährleisten. Dies kann die Art der
+                  zulässigen Bebauung, den Erwerb von Küstenland und den Zugang
+                  zu Stränden betreffen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie hoch sind die durchschnittlichen Immobilienpreise in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die durchschnittlichen Immobilienpreise in Kroatien variieren
+                  je nach Region und Immobilientyp. Im Allgemeinen sind die
+                  Preise an der Küste und in touristischen Gebieten höher als im
+                  Landesinneren. Wohnung und Hauspreise beginnen ab etwa 1500
+                  Euro pro Quadratmeter.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Kann ich eine Immobilie in Kroatien mieten, bevor ich sie kaufe?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, viele Immobilien in Kroatien können vor dem Kauf gemietet
+                  werden, um einen besseren Einblick in die Lage und die
+                  Lebensqualität zu erhalten. Dies kann eine gute Möglichkeit
+                  sein, die Immobilie und die Umgebung vor einem endgültigen
+                  Kauf zu testen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Art von Versicherungen benötige ich für eine Immobilie in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Für eine Immobilie in Kroatien sind verschiedene
+                  Versicherungen empfehlenswert, darunter eine
+                  Gebäudeversicherung, Haftpflichtversicherung,
+                  Inhaltsversicherung, sowie eine Versicherung gegen
+                  Naturkatastrophen wie Erdbeben und Überschwemmungen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es Besonderheiten beim Kauf von Ferienimmobilien in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Der Kauf von Ferienimmobilien in Kroatien kann besondere
+                  Anforderungen wie den Zugang zu touristischen Infrastrukturen,
+                  die Vermietungslizenz, und die Einhaltung von Baunormen und
+                  Standards für Ferienvermietungen umfassen.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Wie kann ich die Bonität eines kroatischen Entwicklers oder
+                Verkäufers prüfen?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Bonität eines kroatischen Entwicklers oder Verkäufers kann
+                  durch die Überprüfung von Referenzen, bisherigen Projekten und
+                  durch Einsichtnahme in seine finanzielle Situation und
+                  Geschäftshistorie beurteilt werden. Professionelle Beratung
+                  kann auch hilfreich sein.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Steuern und Gebühren fallen beim Kauf einer Immobilie in
+                Kroatien an?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Beim Kauf einer Immobilie in Kroatien fallen verschiedene
+                  Steuern und Gebühren an, darunter die Grunderwerbsteuer,
+                  Notar- und Grundbuchgebühren sowie die Maklerprovision. Diese
+                  variieren je nach Wert der Immobilie und Region.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es staatliche Förderprogramme für den Kauf von Immobilien
+                in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, die kroatische Regierung bietet verschiedene
+                  Förderprogramme und Anreize für den Kauf von Immobilien,
+                  darunter Zuschüsse, Steuervergünstigungen und Kredite für
+                  bestimmte Zielgruppen und Regionen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie ist die Infrastruktur in den verschiedenen Regionen
+                Kroatiens?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Infrastruktur in den verschiedenen Regionen Kroatiens
+                  variiert, wobei die Küstenregionen und größeren Städte oft
+                  über eine gute Verkehrs-, Energie- und
+                  Kommunikationsinfrastruktur verfügen, während ländliche
+                  Gebiete möglicherweise weniger gut erschlossen sind.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es besondere Vorschriften für den Bau von Immobilien in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Bau von Immobilien in Kroatien unterliegt
+                  verschiedenen Vorschriften, Baunormen und Standards, die je
+                  nach Region und Art des Bauprojekts variieren können. Diese
+                  umfassen unter anderem Baugenehmigungen, Umweltschutzauflagen
+                  und Sicherheitsstandards.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Faktoren beeinflussen den Immobilienmarkt in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Der Immobilienmarkt in Kroatien wird von verschiedenen
+                  Faktoren beeinflusst, darunter die wirtschaftliche
+                  Entwicklung, demografische Trends, Tourismus, politische
+                  Stabilität, Zinsniveau sowie Angebot und Nachfrage nach
+                  Immobilien.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Wie sicher ist es, eine Immobilie in Kroatien zu kaufen?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Der Immobilienkauf in Kroatien ist in der Regel sicher,
+                  insbesondere wenn Sie professionelle Beratung in Anspruch
+                  nehmen, alle rechtlichen Anforderungen erfüllen und die
+                  Bonität des Verkäufers prüfen. Es ist wichtig, sich gründlich
+                  über die Immobilie und den Kaufprozess zu informieren.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es bestimmte Bauvorschriften in Küstennähe?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Bau von Immobilien in Küstennähe unterliegt besonderen
+                  Bauvorschriften und Genehmigungen, um die Umwelt zu schützen
+                  und die landschaftliche Schönheit zu erhalten. Diese können
+                  Einschränkungen zur Bauhöhe, Abstandsregelungen und
+                  Umweltauflagen umfassen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Art von Rendite kann ich von einer Immobilieninvestition
+                in Kroatien erwarten?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Rendite einer Immobilieninvestition in Kroatien hängt von
+                  verschiedenen Faktoren ab, darunter die Lage, Art der
+                  Immobilie, Nachfrage auf dem Mietmarkt sowie die Entwicklung
+                  des Tourismus- und Wirtschaftssektors. Eine professionelle
+                  Beratung kann bei der Bewertung der Rendite helfen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie hoch sind die laufenden Unterhaltskosten für eine Immobilie
+                in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die laufenden Unterhaltskosten für eine Immobilie in Kroatien
+                  hängen von verschiedenen Faktoren ab, darunter die Größe der
+                  Immobilie, Lage, Art der Immobilie und die gewünschten
+                  Dienstleistungen wie Sicherheit, Reinigung und Wartung.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Annehmlichkeiten sind in den verschiedenen Regionen
+                Kroatiens verfügbar?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die verfügbaren Annehmlichkeiten in den verschiedenen Regionen
+                  Kroatiens variieren, wobei Städte und touristische Gebiete oft
+                  über eine Vielzahl von Dienstleistungen und Einrichtungen wie
+                  Einkaufszentren, Restaurants, Schulen, Krankenhäuser und
+                  Freizeiteinrichtungen verfügen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es spezielle Immobilienprogramme für Rentner in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, Kroatien bietet spezielle Immobilienprogramme und Anreize
+                  für Rentner und ausländische Investoren, darunter
+                  Steuervergünstigungen, Aufenthaltsgenehmigungen und spezielle
+                  Wohnprogramme für Senioren.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Kann ich eine Immobilie in Kroatien mit Kryptowährung kaufen?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Kauf einer Immobilie in Kroatien mit Kryptowährung ist
+                  möglich, allerdings müssen Sie sicherstellen, dass der
+                  Verkäufer dies akzeptiert und die rechtlichen Anforderungen
+                  erfüllt sind. Eine professionelle Beratung kann bei diesem
+                  Prozess hilfreich sein.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Welche Art von Immobilien ist für langfristige Vermietungen am
+                besten geeignet?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Für langfristige Vermietungen sind in Kroatien verschiedene
+                  Immobilientypen geeignet, darunter Apartments, Wohnhäuser und
+                  Gewerbeimmobilien in Städten und touristischen Gebieten mit
+                  einer stabilen Nachfrage nach Mietobjekten.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie ist das Bildungssystem in den verschiedenen Regionen
+                Kroatiens?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Das Bildungssystem in Kroatien ist gut entwickelt und umfasst
+                  öffentliche und private Schulen, Universitäten und
+                  Fachhochschulen, die eine breite Palette von
+                  Bildungsprogrammen und Möglichkeiten anbieten.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Möglichkeiten habe ich, wenn ich eine Immobilie in
+                Kroatien als Investition kaufen möchte?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Wenn Sie eine Immobilie in Kroatien als Investition kaufen
+                  möchten, stehen Ihnen verschiedene Optionen zur Verfügung,
+                  darunter der Kauf von Ferienimmobilien zur Vermietung,
+                  Gewerbeimmobilien für Geschäftszwecke und langfristige
+                  Investitionen in Wohnimmobilien.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es besondere Umweltschutzauflagen für Immobilien in
+                Naturschutzgebieten?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, Immobilien in Naturschutzgebieten unterliegen besonderen
+                  Umweltschutzauflagen und Beschränkungen, um die natürliche
+                  Umgebung und die Tierwelt zu schützen. Dies kann
+                  Einschränkungen zur Bebauung, Abstandsregelungen und Auflagen
+                  zum Naturschutz umfassen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie ist die medizinische Versorgung in den verschiedenen
+                Regionen Kroatiens?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die medizinische Versorgung in Kroatien ist gut entwickelt und
+                  umfasst staatliche und private Krankenhäuser, Kliniken und
+                  Gesundheitszentren, die eine breite Palette von
+                  Gesundheitsdienstleistungen und medizinischer Versorgung
+                  anbieten.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Kann ich eine Hypothek für den Kauf einer Immobilie in Kroatien
+                bekommen?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, als ausländischer Käufer können Sie in Kroatien eine
+                  Hypothek für den Kauf einer Immobilie erhalten. Die
+                  Konditionen und Anforderungen können je nach Bank und
+                  individueller Situation variieren.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Rechte und Pflichten habe ich als Immobilienbesitzer in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Als Immobilienbesitzer in Kroatien haben Sie verschiedene
+                  Rechte und Pflichten, darunter das Recht auf Eigentum und
+                  Nutzung der Immobilie, die Pflicht zur Zahlung von Steuern und
+                  Gebühren sowie die Einhaltung von Bauvorschriften und
+                  Umweltauflagen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie ist die Verkehrsanbindung in den verschiedenen Regionen
+                Kroatiens?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Verkehrsanbindung in den verschiedenen Regionen Kroatiens
+                  ist gut entwickelt und umfasst Autobahnen, Schnellstraßen,
+                  Eisenbahnen, Flughäfen und Fährverbindungen, die eine gute
+                  Erreichbarkeit innerhalb des Landes und ins Ausland
+                  gewährleisten.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Gibt es besondere Regelungen für den Verkauf von Immobilien in
+                historischen Stadtzentren?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Verkauf von Immobilien in historischen Stadtzentren
+                  unterliegt besonderen Regelungen und Baugenehmigungen, um den
+                  Erhalt des kulturellen Erbes und des architektonischen Erbes
+                  zu gewährleisten. Dies kann Restriktionen zur Renovierung und
+                  Modernisierung umfassen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Möglichkeiten gibt es für die Vermietung meiner Immobilie
+                in Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Es gibt verschiedene Möglichkeiten, Ihre Immobilie in Kroatien
+                  zu vermieten, darunter langfristige Vermietungen,
+                  Ferienvermietungen über Plattformen wie Airbnb oder
+                  Booking.com, sowie die Zusammenarbeit mit lokalen
+                  Immobilienverwaltungsunternehmen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Kann ich eine Immobilie in Kroatien als Ausländer erben?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, Ausländer können in Kroatien Immobilien erben, allerdings
+                  unterliegt dies bestimmten rechtlichen Anforderungen und
+                  Verfahren, die im kroatischen Erbrecht festgelegt sind.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Art von Immobilien ist in Kroatien für den Tourismus am
+                besten geeignet?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Immobilien, die für den Tourismus in Kroatien am besten
+                  geeignet sind, umfassen Ferienwohnungen, Villen, Hotels und
+                  Gewerbeimmobilien in Küstenregionen, Städten und touristischen
+                  Hotspots mit einer hohen Nachfrage nach Unterkünften.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie ist das Telekommunikationsnetz in den verschiedenen Regionen
+                Kroatiens?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Das Telekommunikationsnetz in den verschiedenen Regionen
+                  Kroatiens ist gut entwickelt und umfasst Mobilfunknetze,
+                  Breitbandinternet, Festnetztelefonie sowie eine gute Abdeckung
+                  mit Wi-Fi-Hotspots in städtischen Gebieten und touristischen
+                  Zentren.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Arten von Freizeitaktivitäten sind in den verschiedenen
+                Regionen Kroatiens verfügbar?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  In Kroatien stehen eine Vielzahl von Freizeitaktivitäten zur
+                  Verfügung, darunter Wassersportarten wie Segeln, Tauchen und
+                  Windsurfen, Wandern und Radfahren in den Nationalparks und
+                  Naturgebieten sowie kulturelle Aktivitäten wie Festivals und
+                  kulturelle Veranstaltungen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es besondere Vorschriften für den Bau von Swimmingpools in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Bau von Swimmingpools in Kroatien unterliegt
+                  bestimmten Vorschriften und Baugenehmigungen, die je nach
+                  Region und Art des Pools variieren können. Diese können
+                  Sicherheitsstandards, Abstandsregelungen und Umweltauflagen
+                  umfassen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie ist das Klima in den verschiedenen Regionen Kroatiens?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Das Klima in den verschiedenen Regionen Kroatiens variiert,
+                  wobei an der Adriaküste ein mediterranes Klima mit warmen,
+                  trockenen Sommern und milden Wintern herrscht, während im
+                  Landesinneren kontinentale Klimabedingungen mit heißen Sommern
+                  und kalten Wintern vorherrschen.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Kann ich eine Immobilie in Kroatien ohne persönliche
+                Besichtigung kaufen?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, es ist möglich, eine Immobilie in Kroatien ohne
+                  persönliche Besichtigung zu kaufen, allerdings ist es ratsam,
+                  sich professionelle Hilfe zu holen und eine gründliche
+                  Due-Diligence-Prüfung durchzuführen, um sicherzustellen, dass
+                  alle rechtlichen Anforderungen erfüllt sind.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es besondere Vorschriften für den Kauf von Land in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Kauf von Land in Kroatien unterliegt bestimmten
+                  Vorschriften und Einschränkungen, insbesondere wenn es sich um
+                  landwirtschaftliche Flächen oder Grundstücke in
+                  Naturschutzgebieten handelt. Eine sorgfältige Prüfung der
+                  rechtlichen Situation ist daher ratsam.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie hoch sind die Nebenkosten für den Kauf einer Immobilie in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Nebenkosten beim Kauf einer Immobilie in Kroatien
+                  variieren je nach Immobilientyp und Region. In der Regel
+                  können Sie mit zusätzlichen Kosten von etwa 5-6% des
+                  Kaufpreises rechnen. Diese Nebenkosten umfassen unter anderem
+                  die Grunderwerbsteuer, Notar- und Grundbuchgebühren sowie die
+                  Maklerprovision.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Welche Möglichkeiten habe ich, meine Immobilie in Kroatien zu
+                verwalten, wenn ich nicht vor Ort bin?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Wenn Sie Ihre Immobilie in Kroatien nicht persönlich verwalten
+                  können, gibt es verschiedene professionelle
+                  Property-Management-Unternehmen, die Ihnen dabei helfen
+                  können. Diese Unternehmen bieten Dienstleistungen wie die
+                  Vermietung Ihrer Immobilie, Instandhaltung, Reinigungsdienste
+                  und die Abwicklung von Zahlungen an.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es besondere Vorschriften für den Bau von Ferienhäusern in
+                Kroatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Bau von Ferienhäusern in Kroatien unterliegt
+                  besonderen Vorschriften und Baugenehmigungen, die je nach
+                  Standort und Art des Hauses variieren können. Diese können
+                  Restriktionen zur Größe, Bauweise und Nutzung des Hauses
+                  umfassen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Wie ist die Qualität des Trinkwassers in den verschiedenen
+                Regionen Kroatiens?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Die Qualität des Trinkwassers in Kroatien ist im Allgemeinen
+                  sehr gut. Die meisten Städte und touristischen Gebiete
+                  verfügen über eine zuverlässige Wasserversorgung, die streng
+                  kontrolliert wird. Es wird empfohlen, sich über lokale
+                  Trinkwasserquellen zu informieren, besonders wenn Sie sich in
+                  abgelegenen Gebieten aufhalten.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es besondere Bestimmungen für den Kauf von Immobilien in
+                Inselgebieten?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, der Kauf von Immobilien in Inselgebieten unterliegt oft
+                  besonderen Regelungen und Genehmigungen. Diese können
+                  Restriktionen zum Schutz der Umwelt und des kulturellen Erbes
+                  umfassen. Es ist ratsam, sich vor dem Kauf einer Immobilie auf
+                  einer kroatischen Insel über die geltenden Vorschriften zu
+                  informieren und professionelle Beratung in Anspruch zu nehmen.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                Gibt es besondere Vorschriften für erdbebensicheres Bauen in
+                Kroatien, insbesondere in Dalmatien?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, aufgrund der geologischen Lage Kroatiens, insbesondere in
+                  Dalmatien, gibt es spezielle Vorschriften für erdbebensicheres
+                  Bauen. Diese Vorschriften umfassen die Verwendung von robusten
+                  Baumaterialien, wie zum Beispiel Stahlbeton, um die
+                  strukturelle Integrität von Gebäuden zu gewährleisten. Darüber
+                  hinaus sind spezielle Verstärkungsmaßnahmen, wie
+                  beispielsweise die Verwendung von Stahlstützen und -trägern,
+                  sowie die Implementierung von Erdbebensicherungssystemen wie
+                  Fundamentdämpfern und Querstreben, erforderlich, um Gebäude
+                  widerstandsfähiger gegen Erdbeben zu machen.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Sind die Kosten für erdbebensicheres Bauen in Kroatien im
+                Vergleich zu Deutschland günstiger?
+              </summary>
+              <div class="faq__content">
+                <p>
+                  Ja, obwohl es spezielle Vorschriften für erdbebensicheres
+                  Bauen in Kroatien gibt, sind die Kosten im Vergleich zu
+                  Deutschland oft günstiger. Dies liegt zum Teil an den
+                  niedrigeren Arbeitskosten und Baukosten in Kroatien im
+                  Vergleich zu Deutschland. Darüber hinaus sind die
+                  Anforderungen an die Gebäudesicherheit in Kroatien in der
+                  Regel weniger streng als in Deutschland, was zu geringeren
+                  Kosten für die Umsetzung entsprechender Maßnahmen führen kann.
+                  Dennoch ist es wichtig, sicherzustellen, dass alle
+                  erforderlichen Sicherheitsstandards eingehalten werden, um die
+                  Sicherheit von Gebäuden und Bewohnern zu gewährleisten. Alle
+                  Bauunternehmen unterliegen den EU Richtlinien und
+                  Vorschriften.
+                </p>
+              </div>
+            </details>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-
 <section class="projects__partner bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6">
-                <div class="title__head">
-                    <h2 class="text-center text-capitalize text-danger">{{our_partners}}</h2>
-                    {% comment %} <p class="text-center text-capitalize">{{BrandPartnersSuccessful}}</p> {% endcomment %}
-                </div>
-            </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="title__head">
+          <h2 class="text-center text-capitalize text-danger">
+            {{our_partners}}
+          </h2>
+          {% comment %}
+          <p class="text-center text-capitalize">{{BrandPartnersSuccessful}}</p>
+          {% endcomment %}
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="projects__partner-logo">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                            <img src="{% static 'images/anlage-logo-domus.png' %}" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="{% static 'images/anlage-logo-hausbau-kroatien.png' %}" alt="" class="img-fluid">
-                        </li>
-                        {% comment %} <li class="list-inline-item">
-                            <img src="{% static 'images/partner-logo6.png' %}" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="{% static 'images/partner-logo7.png' %}" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="{% static 'images/partner-logo8.png' %}" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="{% static 'images/partner-logo1.png' %}" alt="" class="img-fluid">
-                        </li>
-                        <li class="list-inline-item">
-                            <img src="{% static 'images/partner-logo5.png' %}" alt="" class="img-fluid">
-                        </li> {% endcomment %}
-                    </ul>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="projects__partner-logo">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/anlage-logo-domus.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/anlage-logo-hausbau-kroatien.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            {% comment %}
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo6.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo7.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo8.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo1.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            <li class="list-inline-item">
+              <img
+                src="{% static 'images/partner-logo5.png' %}"
+                alt=""
+                class="img-fluid"
+              />
+            </li>
+            {% endcomment %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- CALL TO ACTION -->
 <section class="bg-gradient py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-9">
-          <h2 class="text-uppercase text-light">
-            123-KROATIEN.EU
-          </h2>
-          <p class="text-capitalize text-light">
-            Ihr Wegweiser Durch Kroatiens Immobilienmarkt Mit Einem Team Von Erfahrenen Fachleuten.
-          </p>
-        </div>
-        {% comment %}
-        <div class="col-lg-3">
-          <a href="#" class="btn btn-light text-uppercase"
-            >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
-          ></a>
-        </div>
-        {% endcomment %}
-      </div>
-    </div>
-  </section>
-  <!-- END CALL TO ACTION -->
-  
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <img
-          src="{% static 'images/logo-black2.png' %}"
-          alt="logo"
-          style="width: 255px; padding: 20px 0"
-        />
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">123-KROATIEN.EU</h2>
+        <p class="text-capitalize text-light">
+          Ihr Wegweiser Durch Kroatiens Immobilienmarkt Mit Einem Team Von
+          Erfahrenen Fachleuten.
+        </p>
       </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
     </div>
   </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
 {% endblock body %}
