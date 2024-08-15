@@ -1,0 +1,178 @@
+{% extends 'include/base.html' %} {% load static %} {% block body %}
+<div class="myHeaderBg bg-theme-overlay">
+    <section class="section__breadcrumb">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 text-center">
+                    <ul class="list-inline ">
+                        <li class="list-inline-item">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+
+                <h5>Registrieren Sie sich jetzt und präsentieren Sie Ihr Unternehmen exklusiv auf 123-Kroatien.eu:
+                </h5>
+
+
+                <form action="#" method="post">
+                    <div>
+
+                    </div>
+                    <div>
+                        <label for="firstname">Firmenname:</label><br>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div>
+                        <label for="postcode">Postleitzahl:</label><br>
+                        <input type="text" id="postcode" name="postcode">
+                    </div>
+                    <div>
+                        <label for="street">Straße:</label><br>
+                        <input type="text" id="street" name="street">
+                    </div>
+                    <div>
+                        <label for="housenumber">Hausnummer:</label><br>
+                        <input type="text" id="housenumber" name="housenumber">
+                    </div>
+                    <div>
+                        <label for="ort">Ort:</label><br>
+                        <input type="text" id="street" name="ort">
+                    </div>
+                    <div>
+                        <label for="telephone">Telefonnummer:</label><br>
+                        <input type="tel" id="telephone" name="telephone">
+                    </div>
+                    <div>
+                        <label for="mobile">Mobilnummer:</label><br>
+                        <input type="tel" id="mobile" name="mobile">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail Adresse:</label><br>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <br>
+                    <h5>Angaben zur Immobilienagentur / Bauunternehmung:</h5>
+                    <br>
+                    <div>
+                        <input type="checkbox" id="realtor" name="realtor" value="realtor">
+                        <label for="realtor">Immobilienmakler</label>
+                        <input type="checkbox" id="construction" name="construction" value="construction">
+                        <label for="construction">Bauunternehmen</label>
+                    </div>
+                    <div>
+                        <label for="office">Büroadresse:</label><br>
+                        <input type="text" id="office" name="office">
+                    </div>
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <!-- Other form fields -->
+
+                        <div>
+                            <label for="oib">OIB Nummer:</label><br>
+                            <input type="text" id="oib" name="oib">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="business_license">Gewerbeanmeldung (als PDF hochladen):</label><br>
+                            <input type="file" id="business_license" name="business_license">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="radio" id="contact_male" name="contact_gender" value="male">
+                            <label for="contact_male">Herr</label>
+                            <input type="radio" id="contact_female" name="contact_gender" value="female">
+                            <label for="contact_female">Frau</label>
+                        </div>
+
+                        <div>
+                            <label for="contact_firstname">Vorname des Ansprechpartners:</label><br>
+                            <input type="text" id="contact_firstname" name="contact_firstname">
+                        </div>
+                        <div>
+                            <label for="contact_lastname">Nachname des Ansprechpartners:</label><br>
+                            <input type="text" id="contact_lastname" name="contact_lastname">
+                        </div>
+                        <div>
+                            <label for="contact_telephone">Telefonnummer des Ansprechpartners:</label><br>
+                            <input type="tel" id="contact_telephone" name="contact_telephone">
+                        </div>
+                        <div>
+                            <label for="contact_mobile">Mobilnummer des Ansprechpartners:</label><br>
+                            <input type="tel" id="contact_mobile" name="contact_mobile">
+                        </div>
+                        <div>
+                            <label for="contact_email">E-Mail Adresse des Ansprechpartners:</label><br>
+                            <input type="email" id="contact_email" name="contact_email">
+                        </div>
+                        <div>
+                            <label for="website">Webadresse: www.</label><br>
+                            <input type="url" id="website" name="website">
+                        </div>
+                    </form>
+                    <br>
+
+                    <div>
+                        <label for="privacy">Datenschutz und Sicherheit:</label><br>
+                        <input type="checkbox" id="privacy" name="privacy" value="privacy">
+                        <label for="privacy">Ich stimme zu, dass meine persönlichen Daten gemäß den
+                            Datenschutzbestimmungen von 123-kroatien.eu verarbeitet werden dürfen.</label>
+                    </div>
+                    <br>
+
+                    <button type="submit"
+                        style="border-radius: 0px; color: white; background-color: #003167;padding: 10px 90px;">Registrieren
+                        Sie Ihr Unternehmen</button>
+                    </a>
+                </form>
+                <br>
+                <br>
+                <p>Nach erfolgreicher Registrierung setzen wir uns umgehend mit Ihnen in Verbindung, um die weiteren
+                    Schritte zu besprechen und Ihre Präsenz auf 123-Kroatien.eu zu maximieren. Verpassen Sie nicht
+                    die Chance, Ihr Immobilienportfolio effektiv zu präsentieren und potenzielle Kunden zu
+                    beeindrucken!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">WIR GARANTIEREN IHNEN HÖCHSTE VERTRAULICHKEIT UND TRANSPARENZ.</h2>
+        <p class="text-capitalize text-light">
+            Gerne Informieren Wir Sie Diskret Über Den Aktuellen Wert Ihrer Immobilie Und Unterstützen Sie Bei Der Suche Nach Einem Passenden Käufer.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
+{% endblock body %}

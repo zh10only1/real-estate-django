@@ -334,6 +334,10 @@ def building_contractor(request):
     return render(request, 'main/building-contractor.html')
 
 @login_required(login_url='main:login_required')
+def realestate_contractor_registration(request):
+    return render(request, 'main/realestate-contractor-registration.html')
+
+@login_required(login_url='main:login_required')
 def send_email(request):
     if request.method == 'POST':
         try:

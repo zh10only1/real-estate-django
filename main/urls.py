@@ -21,6 +21,7 @@ urlpatterns = [
     path('owner/', views.owner, name='owner'),
     path('real-estate-agent/', views.real_estate_agent, name='real-estate-agent'),\
     path('building-contractor/', views.building_contractor, name='building-contractor'),
+    path('realestate-contractor-registration', views.realestate_contractor_registration, name='realestate-contractor-registration'),
     # temporary
     path('login-required/', views.loginRequired, name='login_required'),
     path('translate-all/', translate_all, name='translate'),
