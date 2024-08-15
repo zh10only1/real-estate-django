@@ -318,6 +318,10 @@ def delete_property(request, id):
     return redirect('main:profile')
 
 @login_required(login_url='main:login_required')
+def faq(request):
+    return render(request, 'main/faq.html')
+
+@login_required(login_url='main:login_required')
 def send_email(request):
     if request.method == 'POST':
         try:

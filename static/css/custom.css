@@ -337,3 +337,11 @@
 	background-repeat: no-repeat;
   }
 }
+
+.title__leading summary {
+  font-weight: bold; font-size: 20px;
+}
+
+.title__leading details {
+  margin-bottom: 2.5rem;
+}

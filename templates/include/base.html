@@ -106,6 +106,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="main_nav99">
                     <ul class="navbar-nav  mx-auto">
+                        <!-- <li class="nav-item dropdown">
+                            {% comment %} <a class="nav-link active dropdown-toggle" href="/" data-toggle="dropdown"> {% trans 'Home' %} </a>
+                            <ul class="dropdown-menu dropdown-menu-left animate fade-up">
+                                <li><a class="dropdown-item" href="{% url 'account:login' %}">{% trans 'Login' %}</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="{% url 'account:signup' %}">{% trans 'Register' %}</a></li>
+                            </ul> {% endcomment %}
+                            
+                            <a class="nav-link active" href="/"> {{Home}} </a>
+                        </li> -->
+
                         <li class="nav-item dropdown">
                             {% comment %} <a class="nav-link active dropdown-toggle" href="/" data-toggle="dropdown"> {% trans 'Home' %} </a>
                             <ul class="dropdown-menu dropdown-menu-left animate fade-up">
@@ -114,23 +126,37 @@
                                 <li><a class="dropdown-item"
                                         href="{% url 'account:signup' %}">{% trans 'Register' %}</a></li>
                             </ul> {% endcomment %}
-                            <a class="nav-link active" href="/"> {{Home}} </a>
+                            <a class="nav-link active dropdown-toggle" href="" data-toggle="dropdown"> Kaufen </a>
+                            <ul class="dropdown-menu dropdown-menu-left animate fade-up" align="right">
+                                <li align="left"><a class="dropdown-item" href="#">Haus</a>
+                                </li>
+                                <li align="left"><a class="dropdown-item" href="#">Wohnung</a></li>
+                                <li align="left"><a class="dropdown-item" href="#">Neubau</a></li>
+                                <li align="left"><a class="dropdown-item" href="#">Grundstück</a></li>
+                            </ul>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        {% comment %} <li class="nav-item dropdown">
                             <a class="nav-link active" href="{% url 'main:listing' %}"> {{Listings}} </a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link active" href="{% url 'main:blog' %}"> {{Blog}} </a>
+                        </li> {% endcomment %}
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="#"> Verkaufen </a>
                         </li>
 
                         <li class="nav-item"><a class="nav-link" href="{% url 'main:contact' %}"> {{Contact}}
                             </a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'main:about' %}"> {{About}} </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'main:profile' %}"> {{Profile}}
-                            </a></li>
+                        {% comment %} <li class="nav-item"><a class="nav-link" href="{% url 'main:profile' %}"> {{Profile}}
+                            </a></li> {% endcomment %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" href="{% url 'main:faq' %}"> F.A.Q </a>
+                        </li>
                     </ul>
 
 
