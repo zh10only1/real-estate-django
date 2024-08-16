@@ -1,5 +1,8 @@
 {% extends 'include/base.html' %} {% load static %} {% block body %}
-<div class="registrationBg bg-theme-overlay">
+<div
+  style="background-position: center 0%"
+  class="registrationBg bg-theme-overlay"
+>
   <section class="section__breadcrumb">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -29,7 +32,383 @@
   </section>
 </div>
 
+<section class="bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <ul>
+          <br />
+          <form id="owner-form" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h5>Unverbindliche Anfrage zum Verkauf</h5>
+            <p>
+              Um Sie bestmöglich bei der Vermarktung Ihrer kroatischen Immobilie
+              zu unterstützen, bitten wir Sie, das folgende Formular sorgfältig
+              auszufüllen. Ihre Angaben helfen uns, ein detailliertes
+              Verständnis Ihrer Immobilie zu gewinnen und Ihnen maßgeschneiderte
+              Dienstleistungen anzubieten. Alle persönlichen Informationen
+              werden streng vertraulich behandelt.
+            </p>
 
+            <div>
+              <label>Anrede:</label><br />
+              <input
+                type="radio"
+                id="salutation_male"
+                name="salutation"
+                value="male"
+                required
+              />
+              <label for="salutation_male">Herr</label>
+              <input
+                type="radio"
+                id="salutation_female"
+                name="salutation"
+                value="female"
+                required
+              />
+              <label for="salutation_female">Frau</label>
+            </div>
+
+            <div>
+              <label for="firstname">Vorname:</label><br />
+              <input type="text" id="firstname" name="firstname" required />
+            </div>
+
+            <div>
+              <label for="lastname">Nachname:</label><br />
+              <input type="text" id="lastname" name="lastname" required />
+            </div>
+
+            <div>
+              <label for="city">Wohnort:</label><br />
+              <input type="text" id="city" name="city" required />
+            </div>
+
+            <div>
+              <label for="zipcode">Postleitzahl:</label><br />
+              <input
+                type="text"
+                id="zipcode"
+                name="zipcode"
+                required
+                pattern="\d{5}"
+              />
+            </div>
+
+            <div>
+              <label for="street">Straße:</label><br />
+              <input type="text" id="street" name="street" required />
+            </div>
+
+            <div>
+              <label for="housenumber">Hausnummer:</label><br />
+              <input type="text" id="housenumber" name="housenumber" required />
+            </div>
+
+            <div>
+              <label for="telephone">Telefonnummer:</label><br />
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                pattern="\+?\d{10,15}"
+              />
+            </div>
+
+            <div>
+              <label for="mobile">Mobilnummer:</label><br />
+              <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                required
+                pattern="\+?\d{10,15}"
+              />
+            </div>
+
+            <div>
+              <label for="email">E-Mail Adresse:</label><br />
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <br />
+            <h5>Angaben zur Immobilie:</h5>
+            <br />
+
+            <div>
+              <label for="location">Ort der Immobilie:</label><br />
+              <input type="text" id="location" name="location" required />
+            </div>
+
+            <div>
+              <label>Art der Immobilie:</label><br />
+              <input
+                type="radio"
+                id="property_house"
+                name="property_type"
+                value="house"
+                required
+              />
+              <label for="property_house">Haus</label>
+              <input
+                type="radio"
+                id="property_apartment"
+                name="property_type"
+                value="apartment"
+              />
+              <label for="property_apartment">Apartment</label>
+              <input
+                type="radio"
+                id="property_land"
+                name="property_type"
+                value="land"
+              />
+              <label for="property_land">Baugrundstück</label>
+              <input
+                type="radio"
+                id="property_other"
+                name="property_type"
+                value="other"
+              />
+              <label for="property_other">Andere (Bitte spezifizieren):</label>
+              <input
+                type="text"
+                id="other_specify"
+                name="other_specify"
+                placeholder="Bitte spezifizieren"
+              />
+            </div>
+
+            <div>
+              <label>Objekttyp:</label><br />
+              <input
+                type="radio"
+                id="property_new"
+                name="property_condition"
+                value="new"
+                required
+              />
+              <label for="property_new">Neubau</label>
+              <input
+                type="radio"
+                id="property_existing"
+                name="property_condition"
+                value="existing"
+              />
+              <label for="property_existing">Bestandsimmobilie</label>
+              <input
+                type="radio"
+                id="property_renovate"
+                name="property_condition"
+                value="renovate"
+              />
+              <label for="property_renovate">Renovierungsbedürftig</label>
+            </div>
+
+            <div>
+              <label for="year_built">Baujahr:</label><br />
+              <input
+                type="number"
+                id="year_built"
+                name="year_built"
+                required
+                min="1000"
+                max="9999"
+              />
+            </div>
+
+            <div>
+              <label for="living_area">Wohnfläche (in m²):</label><br />
+              <input
+                type="number"
+                id="living_area"
+                name="living_area"
+                required
+                min="1"
+              />
+            </div>
+
+            <div>
+              <label for="land_area">Grundstücksfläche (in m²):</label><br />
+              <input
+                type="number"
+                id="land_area"
+                name="land_area"
+                required
+                min="1"
+              />
+            </div>
+
+            <div>
+              <label for="rooms">Anzahl der Zimmer:</label><br />
+              <input type="number" id="rooms" name="rooms" required min="1" />
+            </div>
+
+            <div>
+              <label for="bathrooms">Anzahl der Badezimmer:</label><br />
+              <input
+                type="number"
+                id="bathrooms"
+                name="bathrooms"
+                required
+                min="1"
+              />
+            </div>
+
+            <div>
+              <label>Heizungsart:</label><br />
+              <input
+                type="radio"
+                id="heating_central"
+                name="heating"
+                value="central"
+                required
+              />
+              <label for="heating_central">Zentralheizung</label>
+              <input
+                type="radio"
+                id="heating_underfloor"
+                name="heating"
+                value="underfloor"
+                required
+              />
+              <label for="heating_underfloor">Fußbodenheizung</label>
+              <input
+                type="radio"
+                id="heating_other"
+                name="heating"
+                value="other"
+                required
+              />
+              <label for="heating_other">Andere (Bitte spezifizieren):</label>
+              <input
+                type="text"
+                id="heating_specify"
+                name="heating_specify"
+                placeholder="Bitte spezifizieren"
+              />
+            </div>
+
+            <div>
+              <label>Energieausweis vorhanden:</label><br />
+              <input
+                type="radio"
+                id="energy_certificate_yes"
+                name="energy_certificate"
+                value="yes"
+                required
+              />
+              <label for="energy_certificate_yes">Ja</label>
+              <input
+                type="radio"
+                id="energy_certificate_no"
+                name="energy_certificate"
+                value="no"
+                required
+              />
+              <label for="energy_certificate_no">Nein</label>
+            </div>
+
+            <div>
+              <label for="price">Verkaufspreis (in Euro):</label><br />
+              <input type="number" id="price" name="price" required min="0" />
+            </div>
+
+            <div>
+              <label for="description">Beschreibung der Immobilie:</label><br />
+              <textarea id="description" name="description" required></textarea>
+            </div>
+
+            <div>
+              <label>Weitere Angaben:</label><br />
+              <p>
+                (Optional, aber hilfreich für eine genauere Bewertung Ihrer
+                Immobilie)
+              </p>
+              <label for="special_features"
+                >Besondere Merkmale oder Ausstattungen:</label
+              ><br />
+              <textarea
+                id="special_features"
+                name="special_features"
+                required
+              ></textarea
+              ><br />
+              <label for="amenities"
+                >In der Nähe befindliche Annehmlichkeiten (z.B., Schulen,
+                Einkaufsmöglichkeiten, Strände):</label
+              ><br />
+              <textarea id="amenities" name="amenities" required></textarea
+              ><br />
+              <label for="renovations"
+                >Renovierungen oder Modernisierungen in den letzten
+                Jahren:</label
+              ><br />
+              <textarea id="renovations" name="renovations" required></textarea
+              ><br />
+              <label for="reason_for_sale">Grund für den Verkauf:</label><br />
+              <textarea
+                id="reason_for_sale"
+                name="reason_for_sale"
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="images">Bilder der Immobilie:</label><br />
+              <p>
+                (Fügen Sie gerne Bilder hinzu, um Ihre Immobilie optimal zu
+                präsentieren)
+              </p>
+              <input
+                type="file"
+                id="images"
+                name="images[]"
+                multiple
+                required
+                accept=".jpg,.jpeg,.png"
+              />
+            </div>
+
+            <br />
+            <div>
+              <label for="privacy_policy_agree">Datenschutzbestimmungen:</label
+              ><br />
+              <p>
+                (Bitte lesen Sie unsere Datenschutzbestimmungen und stimmen Sie
+                diesen zu, um fortzufahren)
+              </p>
+              <input
+                type="checkbox"
+                id="privacy_policy_agree"
+                name="privacy_policy_agree"
+                required
+              />
+              <label for="privacy_policy_agree"
+                >Ich habe die Datenschutzbestimmungen gelesen und stimme diesen
+                zu.</label
+              >
+            </div>
+
+            <br />
+            <button
+              type="submit"
+              style="
+                border-radius: 0px;
+                padding: 10px 90px;
+                color: white;
+                background-color: #003167;
+              "
+            >
+              Anfrage senden
+            </button>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="bg-gradient py-5">
   <div class="container">
