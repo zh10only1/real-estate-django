@@ -23,6 +23,7 @@ urlpatterns = [
     path('real-estate-agent/', views.real_estate_agent, name='real-estate-agent'),\
     path('building-contractor/', views.building_contractor, name='building-contractor'),
     path('realestate-contractor-registration', views.realestate_contractor_registration, name='realestate-contractor-registration'),
+    path('owner-form/', views.owner_form, name='owner-form'),
     # temporary
     path('login-required/', views.loginRequired, name='login_required'),
     path('translate-all/', translate_all, name='translate'),

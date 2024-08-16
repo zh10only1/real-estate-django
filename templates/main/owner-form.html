@@ -1,0 +1,70 @@
+{% extends 'include/base.html' %} {% load static %} {% block body %}
+<div class="registrationBg bg-theme-overlay">
+  <section class="section__breadcrumb">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8 text-center">
+          {% comment %}
+          <h2 class="text-capitalize text-white">{{About_Us}}</h2>
+          {% endcomment %}
+          <ul class="list-inline">
+            {% comment %}
+            <li class="list-inline-item">
+              <a href="/" class="text-white"> {{Home}} </a>
+            </li>
+            {% endcomment %}
+            <li class="list-inline-item">
+              <a
+                style="font-weight: bold; font-size: 2rem"
+                href="about-us.html"
+                class="text-white"
+              >
+                Eigentümer
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">
+          WIR GARANTIEREN IHNEN HÖCHSTE VERTRAULICHKEIT UND TRANSPARENZ.
+        </h2>
+        <p class="text-capitalize text-light">
+          Gerne Informieren Wir Sie Diskret Über Den Aktuellen Wert Ihrer
+          Immobilie Und Unterstützen Sie Bei Der Suche Nach Einem Passenden
+          Käufer.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
+{% endblock body %}

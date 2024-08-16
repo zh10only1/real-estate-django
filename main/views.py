@@ -343,6 +343,10 @@ def realestate_contractor_registration(request):
     return render(request, 'main/realestate-contractor-registration.html')
 
 @login_required(login_url='main:login_required')
+def owner_form(request):
+    return render(request, 'main/owner-form.html')
+
+@login_required(login_url='main:login_required')
 def send_registration_email(request):
     if request.method == 'POST':
         try:
