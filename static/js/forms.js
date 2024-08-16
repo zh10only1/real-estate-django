@@ -84,12 +84,11 @@ function handleRegistrationForm() {
             .then(response => response.json())
             .then(data => {
                 if (data.status === 'success') {
-                    alert('Form submitted successfully!');
-                    form.reset(); // Clear the form fields
+                    console.log('Form submitted successfully!');
                 } else {
                     alert('Error submitting form. Please try again later.');
-                    form.reset();
                 }
+                form.reset();
             })
             .catch(error => {
                 console.error('Error:', error);
@@ -127,7 +126,7 @@ function handleContactForm() {
             .then(response => response.json())
             .then(data => {
                 if (data.status === 'success') {
-                    alert('Form submitted successfully');
+                    console.log('Form submitted successfully');
                 }
                 else {
                     alert('Error submitting form. Please try again later.');
