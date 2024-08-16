@@ -18,6 +18,7 @@ urlpatterns = [
     path('blog/single/', views.blog_single, name="blog_single"),
     path('send-email/', views.send_email, name='send_email'),
     path('send-registration-email/', views.send_registration_email, name='send-registration-email'),
+    path('send-owner-form/', views.send_owner_form, name='send-owner-form'),
     path('faq/', views.faq, name='faq'),
     path('owner/', views.owner, name='owner'),
     path('real-estate-agent/', views.real_estate_agent, name='real-estate-agent'),\

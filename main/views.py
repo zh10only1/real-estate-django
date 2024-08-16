@@ -347,6 +347,102 @@ def owner_form(request):
     return render(request, 'main/owner-form.html')
 
 @login_required(login_url='main:login_required')
+def send_owner_form(request):
+    if request.method == 'POST':
+        try:
+            # Get form data
+            salutation = request.POST.get('salutation', '').strip()
+            firstname = request.POST.get('firstname', '').strip()
+            lastname = request.POST.get('lastname', '').strip()
+            city = request.POST.get('city', '').strip()
+            zipcode = request.POST.get('zipcode', '').strip()
+            street = request.POST.get('street', '').strip()
+            housenumber = request.POST.get('housenumber', '').strip()
+            telephone = request.POST.get('telephone', '').strip()
+            mobile = request.POST.get('mobile', '').strip()
+            email = request.POST.get('email', '').strip()
+            location = request.POST.get('location', '').strip()
+            property_type = request.POST.get('property_type', '').strip()
+            other_specify = request.POST.get('other_specify', '').strip()
+            property_condition = request.POST.get('property_condition', '').strip()
+            year_built = request.POST.get('year_built', '').strip()
+            living_area = request.POST.get('living_area', '').strip()
+            land_area = request.POST.get('land_area', '').strip()
+            rooms = request.POST.get('rooms', '').strip()
+            bathrooms = request.POST.get('bathrooms', '').strip()
+            heating = request.POST.get('heating', '').strip()
+            heating_specify = request.POST.get('heating_specify', '').strip()
+            energy_certificate = request.POST.get('energy_certificate', '').strip()
+            price = request.POST.get('price', '').strip()
+            description = request.POST.get('description', '').strip()
+            special_features = request.POST.get('special_features', '').strip()
+            amenities = request.POST.get('amenities', '').strip()
+            renovations = request.POST.get('renovations', '').strip()
+            reason_for_sale = request.POST.get('reason_for_sale', '').strip()
+            
+            # Handle file uploads
+            images = request.FILES.getlist('images[]')
+            image_files = []
+            for image in images:
+                if image.content_type not in ['image/jpeg', 'image/png']:
+                    return JsonResponse({'status': 'error', 'message': 'Please upload only JPEG or PNG images.'})
+                file_name = default_storage.save(image.name, ContentFile(image.read()))
+                image_files.append(default_storage.path(file_name))
+            
+            # Create the email
+            email_subject = 'Owner Form Submission'
+            email_body_lines = []
+            if salutation: email_body_lines.append(f"Anrede: {salutation}")
+            if firstname: email_body_lines.append(f"Vorname: {firstname}")
+            if lastname: email_body_lines.append(f"Nachname: {lastname}")
+            if city: email_body_lines.append(f"Wohnort: {city}")
+            if zipcode: email_body_lines.append(f"Postleitzahl: {zipcode}")
+            if street: email_body_lines.append(f"Straße: {street}")
+            if housenumber: email_body_lines.append(f"Hausnummer: {housenumber}")
+            if telephone: email_body_lines.append(f"Telefonnummer: {telephone}")
+            if mobile: email_body_lines.append(f"Mobilnummer: {mobile}")
+            if email: email_body_lines.append(f"E-Mail Adresse: {email}")
+            if location: email_body_lines.append(f"Ort der Immobilie: {location}")
+            if property_type: email_body_lines.append(f"Art der Immobilie: {property_type}")
+            if other_specify: email_body_lines.append(f"Andere (Bitte spezifizieren): {other_specify}")
+            if property_condition: email_body_lines.append(f"Objekttyp: {property_condition}")
+            if year_built: email_body_lines.append(f"Baujahr: {year_built}")
+            if living_area: email_body_lines.append(f"Wohnfläche: {living_area}")
+            if land_area: email_body_lines.append(f"Grundstücksfläche: {land_area}")
+            if rooms: email_body_lines.append(f"Anzahl der Zimmer: {rooms}")
+            if bathrooms: email_body_lines.append(f"Anzahl der Badezimmer: {bathrooms}")
+            if heating: email_body_lines.append(f"Heizungsart: {heating}")
+            if heating_specify: email_body_lines.append(f"Andere Heizungsart (Bitte spezifizieren): {heating_specify}")
+            if energy_certificate: email_body_lines.append(f"Energieausweis vorhanden: {energy_certificate}")
+            if price: email_body_lines.append(f"Verkaufspreis: `{price}€`")
+            if description: email_body_lines.append(f"Beschreibung der Immobilie: {description}")
+            if special_features: email_body_lines.append(f"Besondere Merkmale oder Ausstattungen: {special_features}")
+            if amenities: email_body_lines.append(f"Annehmlichkeiten in der Nähe: {amenities}")
+            if renovations: email_body_lines.append(f"Renovierungen oder Modernisierungen in den letzten Jahren: {renovations}")
+            if reason_for_sale: email_body_lines.append(f"Grund für den Verkauf: {reason_for_sale}")
+            email_body = "\n".join(email_body_lines)
+            
+            email = EmailMessage(
+                subject=email_subject,
+                body=email_body,
+                from_email='service.mahamudh472@gmail.com',
+                to=['expendables891@gmail.com'],  # Add the recipient email(s) here
+            )
+
+            for file_path in image_files:
+                email.attach_file(file_path)
+                os.remove(file_path)  # Clean up the file after attaching it
+
+            email.send()
+
+            return JsonResponse({'status': 'success', 'message': 'Form submitted successfully!'})
+        except Exception as e:
+            return JsonResponse({'status': 'error', 'message': str(e)})
+
+    return JsonResponse({'status': 'error', 'message': 'Invalid request method'})
+
+
+@login_required(login_url='main:login_required')
 def send_registration_email(request):
     if request.method == 'POST':
         try:
@@ -373,6 +469,9 @@ def send_registration_email(request):
             # Handle file upload
             business_license = request.FILES.get('business_license')
             if business_license:
+                if business_license.content_type != 'application/pdf':
+                    return JsonResponse({'status': 'error', 'message': 'Please upload a valid PDF file.'})
+                
                 # Save the uploaded file
                 file_name = default_storage.save(business_license.name, ContentFile(business_license.read()))
                 file_path = default_storage.path(file_name)
