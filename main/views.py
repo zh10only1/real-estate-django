@@ -112,6 +112,18 @@ def blog_single(request):
     return render(request, 'main/blog-single.html')
 
 @login_required(login_url='main:login_required')
+def blog_single_1(request):
+    return render(request, 'main/blog-single-1.html')
+
+@login_required(login_url='main:login_required')
+def blog_single_2(request):
+    return render(request, 'main/blog-single-2.html')
+
+@login_required(login_url='main:login_required')
+def blog_single_3(request):
+    return render(request, 'main/blog-single-3.html')
+
+@login_required(login_url='main:login_required')
 def listings(request): 
     listings = Listing.objects.filter(is_published=True)
 
