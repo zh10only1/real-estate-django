@@ -73,6 +73,10 @@
   background-image: url("../images/bg12.png");
 }
 
+.cancelPolicyBg {
+  background-image: url("../images/bg13.png");
+}
+
 .nav-item .bgColor.active {
   background-color: #013565;
 }

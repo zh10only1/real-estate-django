@@ -1,11 +1,11 @@
 {% extends 'include/base.html' %} {% load static %} {% block body %}
 <header>
-  <div class="imprintBg bg-theme-overlay">
+  <div class="cancelPolicyBg bg-theme-overlay">
     <section class="section__breadcrumb">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 text-center">
-            <h2 class="text-capitalize text-white">Impressum</h2>
+            <h2 class="text-capitalize text-white">Widerrufsbelehrung</h2>
             {% comment %}
             <ul class="list-inline">
               <li class="list-inline-item">
@@ -22,6 +22,75 @@
     </section>
   </div>
 </header>
+
+<section class="bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <h5>Widerrufsformular</h5>
+        <p>
+          (Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses
+          Formular aus und senden Sie es zurück.)
+        </p>
+        <h5>An:</h5>
+        <p>123-Kroatien.eu</p>
+        <p>
+          E-Mail:
+          <a href="mailto:widerruf@123-kroatien.eu">widerruf@123-kroatien.eu</a>
+        </p>
+
+        <p>
+          Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen
+          Vertrag über den Kauf der folgenden Waren (*)/die Erbringung der
+          folgenden Dienstleistung (*)
+        </p>
+        <p>
+          Bestellt am(*).............................. / erhalten
+          am(*)..............................
+        </p>
+
+        <p>
+          Name des/der
+          Verbraucher(s)..................................................................
+        </p>
+
+        <p>
+          Anschrift des/der
+          Verbraucher(s).............................................................
+        </p>
+        <p>
+          .............................................................................................
+        </p>
+
+        <p>
+          Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)
+          .............................................................................
+        </p>
+        <p></p>
+        <p>Datum..................................</p>
+
+        <p>(*) Unzutreffendes streichen.</p>
+        <br />
+
+        <a
+          href="https://glamlunaire.com/images/widerruf.pdf"
+          download="widerruf.pdf"
+          style="
+            background-color: #003167;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+          "
+          >Herunterladen</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="bg-gradient py-5">
   <div class="container">
