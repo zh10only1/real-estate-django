@@ -128,6 +128,10 @@ def imprint(request):
     return render(request, 'main/imprint.html')
 
 @login_required(login_url='main:login_required')
+def data_protection(request):
+    return render(request, 'main/data-protection.html')
+
+@login_required(login_url='main:login_required')
 def listings(request): 
     listings = Listing.objects.filter(is_published=True)
 

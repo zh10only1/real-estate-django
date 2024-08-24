@@ -29,6 +29,7 @@ urlpatterns = [
     path('realestate-contractor-registration', views.realestate_contractor_registration, name='realestate-contractor-registration'),
     path('owner-form/', views.owner_form, name='owner-form'),
     path('imprint/', views.imprint, name='imprint'),
+    path('data-protection/', views.data_protection, name='data-protection'),
     # temporary
     path('login-required/', views.loginRequired, name='login_required'),
     path('translate-all/', translate_all, name='translate'),
