@@ -43,40 +43,40 @@
                         <div class="link__category-two-column">
                             <ul class="list-unstyled ">
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{Imprint}}</a>
+                                    <a href="{% url 'main:imprint' %}" class="text-white">{{Imprint}}</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{PrivacyPolicy}}</a>
+                                    <a href="{% url 'main:data-protection' %}" class="text-white">{{PrivacyPolicy}}</a>
                                 </li>
                                 {% comment %} <li class="list-inline-item">
                                     <a href="#" class="text-white">{{CookiePrivacy}}
                                 </li> {% endcomment %}
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{TermsConditions}}
+                                    <a href="{% url 'main:agb' %}" class="text-white">{{TermsConditions}}
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{Withdrawal}}</a>
+                                    <a href="{% url 'main:cancellation-policy' %}" class="text-white">{{Withdrawal}}</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{Contact}}</a>
+                                    <a href="{% url 'main:contact' %}" class="text-white">{{Contact}}</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">F.A.Q</a>
+                                    <a href="{% url 'main:faq' %}" class="text-white">F.A.Q</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{Sitemap}}</a>
+                                    <a href="{% url 'main:sitemap' %}" class="text-white">{{Sitemap}}</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{Service}}</a>
+                                    <a href="{% url 'main:service' %}" class="text-white">{{Service}}</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{Login}}</a>
+                                    <a href="{% url 'account:login' %}" class="text-white">{{Login}}</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{Press}}</a>
+                                    <a href="{% url 'main:blog-single-1' %}" class="text-white">{{Press}}</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#" class="text-white">{{FreeRegistration}}</a>
+                                    <a href="{% url 'account:signup' %}" class="text-white">{{FreeRegistration}}</a>
                                 </li>
                             </ul>
                         </div>
