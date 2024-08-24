@@ -77,6 +77,10 @@
   background-image: url("../images/bg13.png");
 }
 
+.sitemapBg {
+  background-image: url("../images/bg14.png");
+}
+
 .nav-item .bgColor.active {
   background-color: #013565;
 }
@@ -366,4 +370,8 @@
   margin-bottom: 2.5rem;
 }
 
-
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minmax values as needed */
+  gap: 20px;
+}
