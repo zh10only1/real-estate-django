@@ -1,33 +1,107 @@
-{% extends 'include/base.html' %}
-{% load static %}
-{% block body %}
+{% extends 'include/base.html' %} {% load static %} {% block body %}
 <header>
-    <div class="myHeaderBg bg-theme-overlay">
-        <section class="section__breadcrumb ">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <h2 class="text-capitalize text-white">Blog Title here</h2>
-                        <ul class="list-inline ">
-                            <li class="list-inline-item">
-                                <a href="index.html" class="text-white">
-                                    {{ Home }}
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-white">
-                                    Blog details
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+  <div class="myHeaderBg bg-theme-overlay">
+    <section class="section__breadcrumb">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-capitalize text-white">NEWS und Pressebereich</h2>
+            {% comment %}
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html" class="text-white"> {{ Home }} </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white"> Blog details </a>
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </header>
 
-{% include 'include/blogs.html' %}
+<section style="padding-bottom: 0">
+  <div class="bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="single__blog-detail">
+          <figure>
+            <img src="images/footerBg3.jpg" class="img-fluid" alt="" />
+          </figure>
 
+          <p class="drop-cap">
+            123-Kroatien.eu, das ultimative Portal mit einem großen Überblick
+            kroatischer Immobilien. Von Grundstücken, Apartments, Häusern und
+            Villen bis hin zu Neubauten – hier finden Sie alles, was Ihr Herz
+            begehrt. Kroatien bietet nicht nur atemberaubende Landschaften,
+            sondern auch eine reiche Geschichte und unzählige Möglichkeiten für
+            Ihren Lebensstil. Durchstöbern Sie unser Angebot und lassen Sie sich
+            von der Vielfalt und Schönheit Kroatiens inspirieren.
+          </p>
 
+          <p>
+            123-Kroatien.eu: Öffnen Sie ein neues Kapitel in Ihrem Leben. Unsere
+            Plattform ist Ihr Tor zum kroatischen Immobilienmarkt. Dank unserer
+            langjährigen Erfahrung und umfangreichen Kontakte können wir Ihnen
+            unsere besten Angebote präsentieren. Egal, ob Sie ein Ferienhaus am
+            Meer, eine Stadtwohnung oder eine luxuriöse Villa suchen – wir
+            helfen Ihnen, Ihr Traumobjekt zu finden. Beginnen Sie noch heute
+            Ihre Reise mit 123-Kroatien.eu und lassen Sie sich von den
+            Möglichkeiten begeistern, die dieses faszinierende Land zu bieten
+            hat.
+          </p>
+
+          <p>
+            123-Kroatien.eu ist eines der führenden Portale mit dem großem
+            Überblick kroatischer Immobilien. Wir bieten Ihnen direkte Kontakte
+            zu führenden und verifizierten Immobilienmaklern in Kroatien und
+            gewährleisten stets aktuelle und umfassende Einblicke in den
+            Immobilienmarkt des Landes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'include/blogs.html' %} 
+
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">
+          VERTRAUEN SIE AUF UNSERE TRANSPARENTE BERATUNG
+        </h2>
+        <p class="text-capitalize text-light">
+          123-Kroatien.Eu, Wo Sie Ehrliche Und Offene Immobilienberatung In
+          Kroatien Erhalten.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
 {% endblock %}

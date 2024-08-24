@@ -1,33 +1,127 @@
-{% extends 'include/base.html' %}
-{% load static %}
-{% block body %}
+{% extends 'include/base.html' %} {% load static %} {% block body %}
 <header>
-    <div class="myHeaderBg bg-theme-overlay">
-        <section class="section__breadcrumb ">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <h2 class="text-capitalize text-white">Blog Title here</h2>
-                        <ul class="list-inline ">
-                            <li class="list-inline-item">
-                                <a href="index.html" class="text-white">
-                                    {{ Home }}
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-white">
-                                    Blog details
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+  <div class="myHeaderBg bg-theme-overlay">
+    <section class="section__breadcrumb">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-capitalize text-white">
+              Das Tor zu Ihrer Wunschimmobilie in Kroatien
+            </h2>
+            {% comment %}
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html" class="text-white"> {{ Home }} </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white"> Blog details </a>
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </header>
 
-{% include 'include/blogs.html' %}
+<section style="padding-bottom: 0">
+  <div class="bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="single__blog-detail">
+          <h1>Das Tor zu Ihrer Wunschimmobilie in Kroatien</h1>
 
+          <figure>
+            <img src="images/footerBg3.jpg" class="img-fluid" alt="" />
+          </figure>
 
+          <p class="drop-cap">
+            Die Neueröffnung von 123-Kroatien.eu verspricht eine revolutionäre
+            Veränderung auf dem Immobilienmarkt Kroatiens. Als eine der
+            führenden Destinationen in Europa zieht Kroatien mit seinen
+            atemberaubenden Landschaften, dem gesunden Klima und der friedlichen
+            Idylle immer mehr Menschen an, die ihren Lebensmittelpunkt hierher
+            verlagern möchten.
+          </p>
+
+          <p>
+            123-Kroatien.eu stellt sich als unverzichtbare Plattform vor, die
+            Ihnen dabei hilft, Ihre perfekte Immobilie in diesem bezaubernden
+            Land zu finden. Das Internetportal bietet einen umfassenden
+            Überblick über den kroatischen Immobilienmarkt und verbindet Sie
+            direkt mit professionellen Immobilienmaklern und Bauunternehmern vor
+            Ort.
+          </p>
+
+          <p>
+            Kroatien ist mehr als nur ein Urlaubsziel – es ist eine Lebensart,
+            von der immer mehr Menschen fasziniert. "Unser Ziel ist es, diesen
+            Menschen bei der Verwirklichung ihres Traums von einem Leben in
+            Kroatien zu helfen, indem wir ihnen den Zugang zu hochwertigen
+            Immobilien und kompetenten Maklern ermöglichen."
+          </p>
+
+          <p>
+            123-Kroatien.eu fungiert als Bindeglied zwischen Suchenden und
+            Anbietern und stellt sicher, dass Sie die bestmögliche Unterstützung
+            erhalten, um Ihre Wunschimmobilie zu finden. Unabhängig davon, ob
+            Sie kaufen, verkaufen, bauen oder ein Grundstück erwerben möchten,
+            stehen Ihnen die besten Immobilienmakler Kroatiens zur Seite.
+          </p>
+
+          <p>
+            Endlich können Kroatienfreunde auf 123-Kroatien.eu einen
+            transparenten und geordneten Überblick über den Immobilienmarkt
+            Kroatiens erhalten. Unser Ziel ist es, unseren Nutzern den lang
+            ersehnten Durchblick zu verschaffen und sie dabei zu unterstützen,
+            ihre Träume zu verwirklichen.
+          </p>
+
+          <p>
+            Die Neueröffnung von 123-Kroatien.eu markiert einen Meilenstein für
+            alle, die von einem Leben in Kroatien träumen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include 'include/blogs.html' %} 
+
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">
+            WIR GARANTIEREN IHNEN HÖCHSTE VERTRAULICHKEIT UND TRANSPARENZ.
+        </h2>
+        <p class="text-capitalize text-light">
+            Gerne Informieren Wir Sie Diskret Über Den Aktuellen Wert Ihrer Immobilie Und Unterstützen Sie Bei Der Suche Nach Einem Passenden Käufer.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
 {% endblock %}

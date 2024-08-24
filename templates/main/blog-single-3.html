@@ -1,33 +1,131 @@
-{% extends 'include/base.html' %}
-{% load static %}
-{% block body %}
+{% extends 'include/base.html' %} {% load static %} {% block body %}
 <header>
-    <div class="myHeaderBg bg-theme-overlay">
-        <section class="section__breadcrumb ">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <h2 class="text-capitalize text-white">Blog Title here</h2>
-                        <ul class="list-inline ">
-                            <li class="list-inline-item">
-                                <a href="index.html" class="text-white">
-                                    {{ Home }}
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-white">
-                                    Blog details
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+  <div class="myHeaderBg bg-theme-overlay">
+    <section class="section__breadcrumb">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-capitalize text-white">
+              Kroatien als Lebensmittelpunkt
+            </h2>
+            {% comment %}
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html" class="text-white"> {{ Home }} </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white"> Blog details </a>
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </header>
+
+<section style="padding-bottom: 0">
+  <div class="bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="single__blog-detail">
+          <h1>Eine Oase für Lebensqualität und Naturschönheit</h1>
+
+          <figure>
+            <img src="images/footerBg3.jpg" class="img-fluid" alt="" />
+          </figure>
+
+          <p class="drop-cap">
+            Kroatien erfreut sich nicht nur als beliebtes Urlaubsziel großer
+            Beliebtheit, sondern wird auch zunehmend als attraktiver
+            Lebensmittelpunkt für Menschen aus aller Welt angesehen. Mit einer
+            Fülle positiver Aspekte lockt dieses mediterrane Land Jahr für Jahr
+            eine wachsende Anzahl von Einwanderern an, die hier ein neues
+            Zuhause suchen.
+          </p>
+
+          <p>
+            Die positive Seite Kroatiens als Lebensmittelpunkt umfasst:
+            Naturschönheit: Kroatien ist gesegnet mit einer spektakulären
+            natürlichen Vielfalt, die von kristallklarem Wasser und malerischen
+            Stränden bis hin zu beeindruckenden Nationalparks und majestätischen
+            Gebirgen reicht. Diese atemberaubenden Landschaften bieten nicht nur
+            eine malerische Kulisse, sondern auch unzählige Möglichkeiten für
+            Outdoor-Aktivitäten und Erholung.
+          </p>
+
+          <p>
+            Gesundes Klima: Das mediterrane Klima Kroatiens mit milden Wintern
+            und warmen, sonnigen Sommern trägt maßgeblich zur Gesundheit und
+            Lebensqualität der Bewohner bei. Die frische Meeresluft und die
+            reichhaltige Sonneneinstrahlung sind nicht nur wohltuend für Körper
+            und Geist, sondern fördern auch einen aktiven und gesunden
+            Lebensstil.
+          </p>
+
+          <p>
+            Kulturelle Vielfalt: Kroatien ist reich an kultureller Geschichte
+            und Vielfalt, geprägt von einer faszinierenden Mischung aus
+            slawischen, mediterranen und mitteleuropäischen Einflüssen. Von
+            antiken Städten und römischen Ruinen bis hin zu lebendigen Festivals
+            und traditioneller Küche bietet das Land eine reiche kulturelle
+            Erfahrung für Einheimische und Zugezogene gleichermaßen.
+          </p>
+          <p>
+            Friedliche Idylle: Abseits vom hektischen Treiben der Großstädte
+            bietet Kroatien eine friedliche und entspannte Lebensweise, die von
+            Gelassenheit und Gemeinschaft geprägt ist. Kleinstädte und
+            malerische Dörfer laden zum Verweilen ein und bieten eine
+            willkommene Flucht aus dem Stress des Alltags.
+          </p>
+          <p>
+            Kroatien bietet eine einzigartige Lebensqualität, die immer mehr
+            Menschen dazu bewegt, hier ihren Lebensmittelpunkt zu wählen. Die
+            Neueröffnung von 123-Kroatien.eu bietet eine exzellente Möglichkeit,
+            diesen Traum zu verwirklichen und die besten Immobilienangebote in
+            diesem faszinierenden Land zu entdecken.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {% include 'include/blogs.html' %}
 
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">
+            INVESTIEREN SIE MIT VERTRAUEN
+        </h2>
+        <p class="text-capitalize text-light">
+            123-Kroatien.Eu Bietet Ihnen Geprüfte Und Transparente Immobilienlösungen In Kroatien.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
 
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
 {% endblock %}
