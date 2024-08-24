@@ -69,6 +69,10 @@
   background-image: url("../images/bg10.png");
 }
 
+.agbBg{
+  background-image: url("../images/bg12.png");
+}
+
 .nav-item .bgColor.active {
   background-color: #013565;
 }

@@ -132,6 +132,22 @@ def data_protection(request):
     return render(request, 'main/data-protection.html')
 
 @login_required(login_url='main:login_required')
+def agb(request):
+    return render(request, 'main/agb.html')
+
+@login_required(login_url='main:login_required')
+def cancellation_policy(request):
+    return render(request, 'main/cancellation-policy.html')
+
+@login_required(login_url='main:login_required')
+def sitemap(request):
+    return render(request, 'main/sitemap.html')
+
+@login_required(login_url='main:login_required')
+def service(request):
+    return render(request, 'main/service.html')
+
+@login_required(login_url='main:login_required')
 def listings(request): 
     listings = Listing.objects.filter(is_published=True)
 

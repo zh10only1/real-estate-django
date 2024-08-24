@@ -30,6 +30,10 @@ urlpatterns = [
     path('owner-form/', views.owner_form, name='owner-form'),
     path('imprint/', views.imprint, name='imprint'),
     path('data-protection/', views.data_protection, name='data-protection'),
+    path('agb', views.agb, name='agb'),
+    path('cancellation-policy', views.cancellation_policy, name='cancellation-policy'),
+    path('sitemap', views.sitemap, name='sitemap'),
+    path('service', views.service, name='service'),
     # temporary
     path('login-required/', views.loginRequired, name='login_required'),
     path('translate-all/', translate_all, name='translate'),
