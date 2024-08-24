@@ -1,0 +1,100 @@
+{% extends 'include/base.html' %} {% load static %} {% block body %}
+<header>
+  <div class="imprintBg bg-theme-overlay">
+    <section class="section__breadcrumb">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-capitalize text-white">Impressum</h2>
+            {% comment %}
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="index.html" class="text-white"> {{ Home }} </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-white"> Blog details </a>
+              </li>
+            </ul>
+            {% endcomment %}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</header>
+
+<section class="bg-white">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <title>Pflichtaufgaben nach § 5 TMG</title>
+        <h5>Pflichtaufgaben nach § 5 TMG:</h5>
+        <p>123-kroatien.eu - ein Projekt von Brandoz.eu</p>
+        <p>Rechtsform: Einzelunternehmung</p>
+        <p>Inhaber: Jörg Allmannsberger</p>
+        <p>Südstr. 116</p>
+        <p>53175 Bonn</p>
+        <p>Deutschland</p>
+        <p>Telefon: +49 228 61967990</p>
+        <p>
+          E-Mail:
+          <a href="mailto:office@123-kroatien.eu">office@123-kroatien.eu</a>
+        </p>
+        <p>
+          Plattform der EU-Kommission zur Online-Streitbeilegung:
+          <a href="https://ec.europa.eu/odr">https://ec.europa.eu/odr</a>
+        </p>
+        <p>
+          Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer
+          Verbraucherschlichtungsstelle weder verpflichtet noch bereit.
+        </p>
+        <p>Verantwortliche/r i.S.d. § 18 Abs. 2 MStV:</p>
+        <p>Jörg Allmannsberger</p>
+        <p>Südstr. 116</p>
+        <p>Deutschland- 53175 Bonn</p>
+        <p>
+          Alle Bilder der Seite 123-kroatien.eu sind der Bilderdatenbank von
+          canva entnommen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gradient py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <h2 class="text-uppercase text-light">
+          WIR GARANTIEREN IHNEN HÖCHSTE VERTRAULICHKEIT UND TRANSPARENZ.
+        </h2>
+        <p class="text-capitalize text-light">
+          Gerne Informieren Wir Sie Diskret Über Den Aktuellen Wert Ihrer
+          Immobilie Und Unterstützen Sie Bei Der Suche Nach Einem Passenden
+          Käufer.
+        </p>
+      </div>
+      {% comment %}
+      <div class="col-lg-3">
+        <a href="#" class="btn btn-light text-uppercase"
+          >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+        ></a>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+</section>
+<!-- END CALL TO ACTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <img
+        src="{% static 'images/logo-black2.png' %}"
+        alt="logo"
+        style="width: 255px; padding: 20px 0"
+      />
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -65,6 +65,10 @@
   background-image: url("../images/bg15.png");
 }
 
+.imprintBg {
+  background-image: url("../images/bg10.png");
+}
+
 .nav-item .bgColor.active {
   background-color: #013565;
 }
