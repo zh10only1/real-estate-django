@@ -462,7 +462,7 @@ def send_owner_form(request):
                 subject=email_subject,
                 body=email_body,
                 from_email='service.mahamudh472@gmail.com',
-                to=['expendables891@gmail.com'],  # Add the recipient email(s) here
+                to=['office@123-kroatien.eu'],  # Add the recipient email(s) here
             )
 
             for file_path in image_files:
@@ -541,7 +541,7 @@ def send_registration_email(request):
                 subject=email_subject,
                 body=email_body,
                 from_email='service.mahamudh472@gmail.com',
-                to=['expendables891@gmail.com'],  # Add the recipient email(s) here
+                to=['office@123-kroatien.eu'],  # Add the recipient email(s) here
             )
 
             if file_path:
@@ -583,7 +583,7 @@ def send_email(request):
                 subject,
                 message,
                 'service.mahamudh472@gmail.com',  
-                ['expendables891@gmail.com'],
+                ['office@123-kroatien.eu'],
                 fail_silently=False,
             )
 
