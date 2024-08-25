@@ -64,7 +64,8 @@
                                     <a href="{% url 'main:faq' %}" class="text-white">F.A.Q</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="{% url 'main:sitemap' %}" class="text-white">{{Sitemap}}</a>
+                                    {% comment %} <a href="{% url 'main:sitemap' %}" class="text-white">{{Sitemap}}</a> {% endcomment %}
+                                    <a href="#" class="text-white">{{Sitemap}}</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="{% url 'main:service' %}" class="text-white">{{Service}}</a>
