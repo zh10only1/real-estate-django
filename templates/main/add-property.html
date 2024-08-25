@@ -36,7 +36,7 @@
 <!-- #Add Property
         ============================================= -->
 <section id="add-property" class="add-property">
-    {% if user.agent.is_active %}
+    {% if user.is_active %}
     <div class="container">
         <div class="row">
             <div class="col-xs-2 col-md-1"></div>
@@ -547,6 +547,7 @@
         </div>
         <!-- .row end -->
     </div>
+    
     {% else %}
     <div class="container">
         <div class="row">
@@ -563,7 +564,44 @@
         </div>
     </div>
     {% endif %}
+    
 </section>
+
+<section class="bg-gradient py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-9">
+          <h2 class="text-uppercase text-light">
+            WIR GARANTIEREN IHNEN HÖCHSTE VERTRAULICHKEIT UND TRANSPARENZ.
+          </h2>
+          <p class="text-capitalize text-light">
+            Gerne Informieren Wir Sie Diskret Über Den Aktuellen Wert Ihrer Immobilie Und Unterstützen Sie Bei Der Suche Nach Einem Passenden Käufer.
+          </p>
+        </div>
+        {% comment %}
+        <div class="col-lg-3">
+          <a href="#" class="btn btn-light text-uppercase"
+            >{{requestquote}} <i class="fa fa-angle-right ml-3 arrow-btn"></i
+          ></a>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+  </section>
+  <!-- END CALL TO ACTION -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <img
+          src="{% static 'images/logo-black2.png' %}"
+          alt="logo"
+          style="width: 255px; padding: 20px 0"
+        />
+      </div>
+    </div>
+  </div>
+  
 <!-- #social-profile  end -->
 {% comment %} {% block js %}
 <script src="assets/js/jquery-2.2.4.min.js"></script>
