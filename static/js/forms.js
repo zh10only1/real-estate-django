@@ -1,3 +1,68 @@
+let captcha_user_input = document.getElementById("captcha_user_input");
+let captcha_text = ""
+
+window.addEventListener("load", () => {
+    let captcha_reload_btn = document.getElementById("captcha_reload_btn")
+    captcha_reload_btn.addEventListener("click", () => reloadCaptcha())
+    reloadCaptcha()
+});
+
+// Generate text
+function textGenerator() {
+    let generatedText = "";
+
+    // String.fromcharcode gives ASCII values from given number, total 9 letters hence loop of 3
+    for (let i = 0; i < 3; i++) {
+        // 65-90 numbers are capital letters
+        generatedText += String.fromCharCode(randomNumber(65, 90))
+        // 97-122 are small letters
+        generatedText += String.fromCharCode(randomNumber(97, 122))
+        // 48-57 are numbers
+        generatedText += String.fromCharCode(randomNumber(48, 57))
+    }
+    return generatedText
+}
+
+// Generating random numbers
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+// Drawing text on canvas
+function drawTextOnCanvas(text) {
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d")
+
+    // clear canvas
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+
+    // array of text color
+    const textColor = ["rgba(0,0,0,0.8)", "rgba(71, 45, 255, 1)"]
+
+    // space b/w lettes
+    const letterSpace = 150 / text.length
+
+    // loop through string
+    for (let i = 0; i < text.length; i++) {
+        // definding initial space for x axis
+        const xInitialSpace = 25
+        ctx.font = "20px Roboto Mono"
+        // set text color
+        ctx.fillStyle = textColor[randomNumber(0, 1)]
+        ctx.fillText(text[i], xInitialSpace + i * letterSpace, randomNumber(25, 40), 100)
+    }
+}
+
+// initial function
+function reloadCaptcha() {
+    // clearing input
+    captcha_user_input.value = ""
+    captcha_text = textGenerator()
+    // randomize the text so that everytime the position of numbers and small letters is random
+    captcha_text = [...captcha_text].sort(() => Math.random() - 0.5).join("")
+    drawTextOnCanvas(captcha_text)
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     handleRegistrationFormCheckboxes()
     handleContactForm();
@@ -44,6 +109,12 @@ function handleOwnerForm() {
             return;
         }
 
+        if (captcha_user_input.value !== captcha_text) {
+            alert("Invalid captcha. Please try again.")
+            reloadCaptcha();
+            return;
+        };
+
         const formData = new FormData(form);
 
         // Check file input for images
@@ -60,6 +131,11 @@ function handleOwnerForm() {
             }
         }
 
+        const submitButton = form.querySelector('button[type="submit"]');
+        if (submitButton) {
+            submitButton.disabled = true;
+        }
+
         // Prepare the form submission
         fetch('/send-owner-form/', {
             method: 'POST',
@@ -68,21 +144,30 @@ function handleOwnerForm() {
             },
             body: formData
         })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                console.log('Form submitted successfully!');
-                // alert('Ihre Anfrage wurde erfolgreich gesendet.');
-                // Reset the form after successful submission
-            } else {
-                alert('Fehler beim Absenden des Formulars. Bitte versuchen Sie es später noch einmal.');
-            }
-            form.reset();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            // alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.');
-        });
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    console.log('Form submitted successfully!');
+                    // alert('Ihre Anfrage wurde erfolgreich gesendet.');
+                    // Reset the form after successful submission
+                } else {
+                    alert('Fehler beim Absenden des Formulars. Bitte versuchen Sie es später noch einmal.');
+                }
+                form.reset();
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+                reloadCaptcha();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+                reloadCaptcha();
+                // alert('Ein Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.');
+            });
     });
 }
 
@@ -96,10 +181,17 @@ function handleRegistrationForm() {
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();
+
         if (!isOneCheckboxChecked()) {
             alert('Please select one of the checkboxes (Immobilienmakler or Bauunternehmen).');
             return;
         }
+
+        if (captcha_user_input.value !== captcha_text) {
+            alert("Invalid captcha. Please try again.")
+            reloadCaptcha();
+            return;
+        };
 
         changeCheckboxValue()
         const fileInput = document.getElementById('business_license');
@@ -109,6 +201,12 @@ function handleRegistrationForm() {
             alert('Please upload a PDF file for Gewerbeanmeldung.');
             fileInput.value = ''; // Clear the file input
             return;
+        }
+
+        const submitButton = form.querySelector('button[type="submit"]');
+        console.log(submitButton)
+        if (submitButton) {
+            submitButton.disabled = true;
         }
 
         const formData = new FormData(form);
@@ -127,10 +225,18 @@ function handleRegistrationForm() {
                     alert('Error submitting form. Please try again later.');
                 }
                 form.reset();
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+                reloadCaptcha();
             })
             .catch(error => {
                 console.error('Error:', error);
                 alert('An error occurred. Please try again later.');
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+                reloadCaptcha();
             });
     });
 }
@@ -144,6 +250,17 @@ function handleContactForm() {
 
     form.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the default form submission
+
+        if (captcha_user_input.value !== captcha_text) {
+            alert("Invalid captcha. Please try again.")
+            reloadCaptcha();
+            return;
+        };
+
+        const submitButton = form.querySelector('button[type="submit"]');
+        if (submitButton) {
+            submitButton.disabled = true;
+        }
 
         const formData = new FormData(form);
         const data = {};
@@ -165,14 +282,24 @@ function handleContactForm() {
             .then(data => {
                 if (data.status === 'success') {
                     console.log('Form submitted successfully');
+
                 }
                 else {
                     alert('Error submitting form. Please try again later.');
                 }
                 form.reset();
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+                reloadCaptcha();
             })
             .catch(error => {
                 console.error('Cannot parse the content to json:', error);
+                alert('An error occurred. Please try again later.');
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+                reloadCaptcha();
             });
     });
 }

@@ -250,6 +250,21 @@
                 </label>
               </div>
 
+              <div style="margin-bottom: 1rem;">
+                <div class="captcha_wrapper">
+                  <canvas id="canvas" width="200" height="60"></canvas>
+                  <button id="captcha_reload_btn">
+                    <img src="{% static 'images/reload.svg' %}" />
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  id="captcha_user_input"
+                  placeholder="Enter Captcha"
+                  required
+                />
+              </div>
+
               <div class="form-group mb-0">
                 <button
                   type="submit"
@@ -260,6 +275,7 @@
                     background-color: #003167;
                     padding: 10px 90px;
                   "
+                  id="contact_form_btn"
                 >
                   Absenden
                 </button>
