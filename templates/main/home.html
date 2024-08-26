@@ -1233,17 +1233,6 @@
                             </p>
                         </div>
                         <div class="card__image-footer">
-                            <figure>
-                                <img src="{% static 'images/p2.png' %}" alt="" class="img-fluid rounded-circle">
-                            </figure>
-                            <ul class="list-inline my-auto">
-                                <li class="list-inline-item ">
-                                    <a href="#">
-                                        tom wilson
-                                    </a>
-
-                                </li>
-                            </ul>
                             <ul class="list-inline my-auto ml-auto">
                                 <li class="list-inline-item ">
                                     <a href="{% url 'main:blog-single-1' %}" class="btn btn-sm btn-primary bg-logo2"><small
@@ -1274,7 +1263,7 @@
 
                         </div>
                         <div class="card__image-footer">
-                            <figure>
+                            {% comment %} <figure>
                                 <img src="{% static 'images/p4.png' %}" alt="" class="img-fluid rounded-circle">
                             </figure>
                             <ul class="list-inline my-auto">
@@ -1285,7 +1274,7 @@
 
                                 </li>
 
-                            </ul>
+                            </ul> {% endcomment %}
                             <ul class="list-inline my-auto ml-auto">
                                 <li class="list-inline-item">
                                     <a href="{% url 'main:blog-single-2' %}" class="btn btn-sm btn-primary bg-logo2"><small class="text-white ">{% trans 'read more' %} <i
@@ -1314,7 +1303,7 @@
                             </p>
                         </div>
                         <div class="card__image-footer">
-                            <figure>
+                            {% comment %} <figure>
                                 <img src="{% static 'images/p6.png' %}" alt="" class="img-fluid rounded-circle">
                             </figure>
                             <ul class="list-inline  my-auto">
@@ -1323,7 +1312,7 @@
                                         tom wilson
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> {% endcomment %}
                             <ul class="list-inline  my-auto ml-auto">
                                 <li class="list-inline-item">
                                     <a href="{% url 'main:blog-single-3' %}" class="btn btn-sm btn-primary bg-logo2"><small class="text-white">{% trans 'read more' %} <i
