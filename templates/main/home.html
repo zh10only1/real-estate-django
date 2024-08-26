@@ -1087,7 +1087,7 @@
     </section>
 
 
-    <!-- TESTIMONIAL -->
+    {% comment %} <!-- TESTIMONIAL -->
     <section>
         <div class="container">
             <div class="row">
@@ -1096,7 +1096,7 @@
                         <h2 class="text-center text-capitalize text-danger">
                             {{whatpeoplesays}}
                         </h2>
-                        {% comment %} <p class="text-center text-capitalize">{{peoplesaysabout}}</p> {% endcomment %}
+                        <!--  <p class="text-center text-capitalize">{{peoplesaysabout}}</p> -->
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -1196,7 +1196,7 @@
             </div>
         </div>
     </section>
-    <!-- END TESTIMONIAL -->
+    <!-- END TESTIMONIAL --> {% endcomment %}
 
 
     <!-- BLOG -->
@@ -1267,7 +1267,7 @@
                             <h6 class="">
                                 <a href="{% url 'main:blog-single-2' %}">{% trans 'News title 2' %}</a>
                             </h6>
-                            <p class="mb-0">
+                            <p class=" mb-0">
                                 {% trans 'News body 2' %}
                             </p>
 
